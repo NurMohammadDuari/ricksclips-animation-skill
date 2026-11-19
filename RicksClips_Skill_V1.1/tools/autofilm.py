@@ -59,6 +59,24 @@ CAST_WORDS = [
     (("রobot", "robot", "রোবট"), "cast:robot", 1.70),
 ]
 
+# When a script writes `00:04 [রাফি]: ...`, the label is a stronger casting clue than the words.
+SPEAKER_RULES = [
+    (("চাচা", "কাকা", "মামা", "uncle", "boss", "মালিক", "owner", "সাহেব"), "form:dad", 1.70),
+    (("মা", "মায়ের", "mother", "mom", "আম্মা"), "form:lady", 1.60),
+    (("রাফি", "নায়ক", "hero", "protagonist"), "form:standard", 1.70),
+    (("বর্ণনাকারী", "narrator", "voiceover", "voice over", "কথক"), "form:elder", 1.68),
+    (("ভাগ্নে", "নephew", "nephew", "ছেলে", "kid", "child"), "form:kid", 1.20),
+]
+
+
+def speaker_puppet(label):
+    low = (label or "").lower()
+    for keys, puppet, height in SPEAKER_RULES:
+        if any(k.lower() in low for k in keys):
+            return puppet, height
+    return None
+
+
 PROP_WORDS = [
     (("খাতা", "বই", "ডায়েরি", "book", "notebook", "ledger", "diary"), "khata", "notebook"),
     (("টাকা", "পয়সা", "মুদ্রা", "money", "cash", "coin", "gold", "sona", "সোনা"), "coin", "coin"),
@@ -205,6 +223,13 @@ def build_cast(rows):
     for r in rows:
         if r["cast"]:
             counts[r["cast"]] = counts.get(r["cast"], 0) + 1
+    for r in rows:
+        spk = (r.get("speaker") or "").lower()
+        if any(k in spk for k in ("বর্ণনাকারী", "narrator", "voiceover", "voice over", "কথক")):
+            continue
+        sp = speaker_puppet(r.get("speaker"))
+        if sp:
+            counts[sp] = counts.get(sp, 0) + 3
     chosen = []
     for (puppet, height), _n in sorted(counts.items(), key=lambda kv: -kv[1]):
         if all(p != puppet for p, _ in chosen):
@@ -223,6 +248,15 @@ def build_cast(rows):
                     "head_aspect": HEAD_ASPECT}
     for r in rows:
         r["who"] = "hero"
+        spk = (r.get("speaker") or "").lower()
+        if any(k in spk for k in ("বর্ণনাকারী", "narrator", "voiceover", "voice over", "কথক")):
+            continue                      # the narrator is a voice, not a fourth body on stage
+        sp = speaker_puppet(r.get("speaker"))
+        if sp:
+            for nm, c in cast.items():
+                if c["puppet"] == sp[0]:
+                    r["who"] = nm; break
+            continue
         if r["cast"]:
             for nm, c in cast.items():
                 if c["puppet"] == r["cast"][0]:
@@ -428,7 +462,7 @@ SLOTS = {"hero": [0.00, 0.65], "partner": [-1.55, 1.30], "other": [1.55, 1.30]}
 
 
 # --------------------------------------------------------------------------- film
-def build_film(rows, places, cast, words, title, all_places=None):
+def build_film(rows, places, cast, words, title, all_places=None, audio=None):
     words = [dict(w=w["w"], s=float(w["s"]), e=float(w["e"])) for w in words]
     n_words = len(words)
     n = len(rows)
@@ -467,7 +501,7 @@ def build_film(rows, places, cast, words, title, all_places=None):
             p[1] = sy if who == "hero" else sy + 0.70
 
     # ---- framing plan (quotas by time), one station per sentence
-    p_quota = max(1, int(round(n * (0.35 if n <= 6 else 0.22))))
+    p_quota = max(1, int(round(n * (0.35 if n <= 6 else 0.48))))
     plan = []; p_left = p_quota
     for i, r in enumerate(rows):
         lead = r["who"] == "hero"
@@ -517,20 +551,26 @@ def build_film(rows, places, cast, words, title, all_places=None):
                 first = make(0 if gi == 0 and take_i == 0 else {"s": round(max(0.0, t0 - 0.13), 2)},
                              f, who, pos, aim)
 
-            # the beat: inside a long sentence the camera closes or opens, so the film is not a slideshow
+            # beats: a long sentence earns two camera moves, a short one earns one - the film breathes
             last_beat = n > 2 and take_i == len(takes) - 1 and gi == len(t) - 1
-            if not last_beat and ((t1 - t0) > 1.55 or n <= 6):
-                bsub = who
-                if n <= 2:                                  # one-line scripts still need a real camera move
-                    bf, lens = "M", 30
-                    bpos, baim = cam_for("M", stage[who], H, side=1.15)
-                elif f in ("P", "C"):
-                    bf, lens = "W", 24
-                    bpos, baim = cam_for("W", stage[who], H, deep=deep)
-                else:
-                    bf, lens = "M", 30
-                    bpos, baim = cam_for("M", stage[who], H)
-                make({"s": round(t0 + (t1 - t0) * 0.55, 2)}, bf, bsub, bpos, baim, lens=lens)
+            if not last_beat:
+                fracs = ([0.25, 0.5, 0.75] if (t1 - t0) > 4.0 else
+                         ([0.38, 0.72] if (t1 - t0) > 2.5 else
+                          ([0.55] if ((t1 - t0) > 1.2 or n <= 6) else [])))
+                for k, frac in enumerate(fracs):
+                    if n <= 2:
+                        bf, lens = "M", 30
+                        bpos, baim = cam_for("M", stage[who], H, side=1.15)
+                    elif k == 1:
+                        bf, lens = "W", 24
+                        bpos, baim = cam_for("W", stage[who], H, deep=deep)
+                    elif f in ("P", "C"):
+                        bf, lens = "W", 24
+                        bpos, baim = cam_for("W", stage[who], H, deep=deep)
+                    else:
+                        bf, lens = "M", 30
+                        bpos, baim = cam_for("M", stage[who], H)
+                    make({"s": round(t0 + (t1 - t0) * frac, 2)}, bf, who, bpos, baim, lens=lens)
         # travel/hold from the real gaps (the arriving station owns its travel)
         for j, st in enumerate(stations):
             if j == 0:
@@ -585,6 +625,14 @@ def build_film(rows, places, cast, words, title, all_places=None):
                          "face": "curious" if i % 2 else "proud"})
         acts.append({"who": who, "at": {"s": round(max(t0 + 0.5, words[b]["e"] - 0.25), 2)},
                      "face": FACE_CYCLE[(i + 3) % len(FACE_CYCLE)]})
+    # keep every figure alive: a small face/pose beat at least every 2 s, so no frozen 8 s stare
+    for who in cast:
+        t = 1.0
+        while t < (end_f / FPS) - 0.4:
+            acts.append({"who": who, "at": {"s": round(t, 2)},
+                         "face": FACE_CYCLE[int(round(t * 2)) % len(FACE_CYCLE)],
+                         "pose": "stand" if int(t) % 2 else "cool"})
+            t += 2.0
     acts.sort(key=lambda a: a["at"]["s"] if isinstance(a["at"], dict) else a["at"])
 
     # ---- places / sentences / props
@@ -604,20 +652,31 @@ def build_film(rows, places, cast, words, title, all_places=None):
         row["nouns"] = nouns
         sentences.append(row)
 
-    # ---- moods / fx / sound / kicks
+    # ---- moods / fx / sound / kicks (when audio was analysed, loudness picks the accents)
     moods, fx, sound, kicks = [], [], [], []
+    peak = float((audio or {}).get("loudness_peak") or 0.0) or 1.0
+    fx_every = max(1, int(round(n / max(1.0, (end_f / FPS) * 0.15))))
     for i, r in enumerate(rows):
         a, b = spans[i]; t0, t1 = words[a]["s"], words[b]["e"]
-        moods.append({"at": {"s": round(max(0.05, t0), 2)}, "look": MOODS[i % len(MOODS)]})
+        gains = [float(w.get("gain", 0.0)) for w in words[a:b + 1] if "gain" in w]
+        loud = (max(gains) / peak) if (audio and gains) else 0.0
+        quiet = (sum(gains) / len(gains) / peak) if (audio and gains) else 0.0
+        mood = MOODS[i % len(MOODS)]
+        if loud > 0.72:
+            mood = "flash_red"
+        elif quiet < 0.18:
+            mood = "cool_blue"
+        moods.append({"at": {"s": round(max(0.05, t0), 2)}, "look": mood})
         moods.append({"at": {"s": round(min(t1, t0 + (t1 - t0) * 0.55), 2)}, "look": MOODS[(i + 2) % len(MOODS)]})
         on = r["prop"][0] if r["prop"] else (places[i]["feature"][3] if i % 3 == 0 else r["who"])
-        if i % 4 == 0:
-            fx.append({"at": {"s": round(t0 + 0.2, 2)}, "kind": FX_KINDS[i % len(FX_KINDS)], "on": on})
+        if i % fx_every == 0:
+            kind = FX_KINDS[min(len(FX_KINDS) - 1, int(loud * len(FX_KINDS)))] if audio else FX_KINDS[i % len(FX_KINDS)]
+            fx.append({"at": {"s": round(t0 + 0.2, 2)}, "kind": kind, "on": on})
         if i % 2 == 0:
             sound.append({"at": {"s": round(t0 + 0.12, 2)},
                           "name": ["door_knock", "paper_flutter", "coin_chink", "arrival_hit"][i % 4]})
-        if i % 3 == 1:
-            kicks.append({"at": {"s": round(t0, 2)}, "amp": 1.1})
+        if loud > 0.6 or (not audio and i % 3 == 1):
+            kicks.append({"at": {"s": round(t0, 2)}, "amp": round(1.0 + loud, 2)})
 
     film = {
         "title": title, "fps": FPS, "size": [1080, 1920], "end": end_f,
@@ -821,6 +880,9 @@ def main():
     ap.add_argument("episode", help="episodes/<slug> (created if missing)")
     ap.add_argument("--script", required=True, help="script file, or the script text itself")
     ap.add_argument("--words", help="real word timings (voice/words.json); synthetic speech timing otherwise")
+    ap.add_argument("--audio", help="narration audio (wav direct, other formats need ffmpeg): analyse it for word times + loudness")
+    ap.add_argument("--transcribe", action="store_true", help="with --audio, use faster-whisper when installed")
+    ap.add_argument("--reuse-cast", action="store_true", help="use the existing character library instead of drawing new cast from the script")
     ap.add_argument("--title", default=None)
     ap.add_argument("--lang", default="bn")
     ap.add_argument("--force", action="store_true", help="overwrite an existing film.json")
@@ -834,26 +896,61 @@ def main():
     text = a.script
     if os.path.exists(text):
         text = open(text, encoding="utf-8").read()
-    sents = split_sentences(text)
+    timed = []
+    if a.audio:
+        import audio_probe
+        sents, timed = audio_probe.parse_timestamped_script(text)
+        if not sents:
+            sents = split_sentences(text)
+    else:
+        sents = split_sentences(text)
     if not sents:
         sys.exit("no sentences found in the script")
 
-    wpath = a.words or os.path.join(ep, "voice", "words.json")
-    if wpath and os.path.exists(wpath):
-        words = json.load(open(wpath, encoding="utf-8"))
-        if not words:
-            words = synth_words(sents)
-    else:
-        words = synth_words(sents)
     os.makedirs(os.path.join(ep, "voice"), exist_ok=True)
+    audio_report = None
+    if a.audio:
+        words, audio_report = audio_probe.analyse(a.audio, sents, a.transcribe, timed=timed)
+        import shutil
+        ext = os.path.splitext(a.audio)[1].lower()
+        if ext not in (".wav", ".mp3"):
+            ext = ".mp3"                       # render.mjs muxes voice.wav or voice.mp3 only
+        dest = os.path.join(ep, "voice", "voice" + ext)
+        if os.path.abspath(a.audio) != dest:
+            shutil.copyfile(a.audio, dest)
+        for other in (".wav", ".mp3"):
+            if other != ext:
+                stale = os.path.join(ep, "voice", "voice" + other)
+                if os.path.exists(stale):
+                    os.remove(stale)
+        os.makedirs(os.path.join(ep, "out"), exist_ok=True)
+        json.dump(audio_report, open(os.path.join(ep, "out", "audio.json"), "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=1)
+    else:
+        wpath = a.words or os.path.join(ep, "voice", "words.json")
+        if wpath and os.path.exists(wpath):
+            words = json.load(open(wpath, encoding="utf-8"))
+            if not words:
+                words = synth_words(sents)
+        else:
+            words = synth_words(sents)
     json.dump(words, open(os.path.join(ep, "voice", "words.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
     rows = analyse(sents)
+    for i, r in enumerate(rows):
+        if i < len(timed):
+            r["speaker"] = timed[i]["speaker"]
+            r["stamp"] = timed[i]["t"]
     cast = build_cast(rows)
+    title = a.title or (sents[0][:58] + ("..." if len(sents[0]) > 58 else ""))
+    if not a.reuse_cast:
+        import gen_cast
+        gen_cast.write_cast_sheet(ep, cast, rows, title)
     all_places, primary = build_places(rows, os.path.basename(ep), cast)
     places = assign_places(rows, all_places)          # one place per sentence
-    title = a.title or (sents[0][:58] + ("..." if len(sents[0]) > 58 else ""))
-    film, meta = build_film(rows, places, cast, words, title, all_places)
+    film, meta = build_film(rows, places, cast, words, title, all_places, audio_report)
+    if not a.reuse_cast:
+        film["puppet_pkg"] = ["cast", "../../templates/vector2d_characters/code"]
 
     sets = write_sets(ep, all_places)
     save(ep, film)
@@ -895,6 +992,14 @@ def main():
             for g in warns:
                 f.write("| %s | %s | %s | %s |\n" % (g["name"], g["value"], g["target"],
                         "within the skill's WARN band; the plan pass is kept and the episode stays editable"))
+        if audio_report:
+            f.write("\n## Audio analysis\n\n")
+            f.write("- duration: %.2f s; word times: %s; %d speech pockets.\n" %
+                    (audio_report.get("duration", 0),
+                     "transcribed" if audio_report.get("transcribed") else
+                     ("waveform RMS" if audio_report.get("waveform_decoded") else "script timecodes + file length"),
+                     len(audio_report.get("speech_segments", []))))
+            f.write("- loud words drive the kicks, glints and light changes; the rest stay level.\n")
         f.write("\n## Camera idea\n\n%s\n\n" % film["camera_idea"]["why"])
         f.write("Signature move: %s\n" % film["camera_idea"]["signature"])
         f.write("\n## Re-bake after any edit\n\n```bash\npython tools/film_plan.py check episodes/%s/film.json\n```\n" % os.path.basename(ep))

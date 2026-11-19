@@ -72,7 +72,24 @@ node templates/threejs_film/render.mjs episodes/golden-fish/film.json --frames 0
 Output: `film.json`, `voice/words.json`, `sets/set_p1…p4.js` (plain data wrappers around
 `templates/threejs_film/sets/place_kit.js`), `SCRIPT.md`, `SETS.md`, `CAMERA_NOTE.md` (the accepted WARNs),
 and the baked plan in `out/plan/`. Edit any generated set's `layout` or `film.json` by hand afterwards —
-it stays an ordinary episode. For a real voice track, drop in `voice/voice.wav` and re-run `check`.
+it stays an ordinary episode.
+
+### With audio, and with *new* characters
+
+Point it at the narration track and a timecoded script (`00:04 [রাফি]: …`): the tool reads the audio
+duration / speech pockets and the script's own timecodes, times every word from them, and draws a
+**new cast sheet** from the speakers and role words instead of reusing the library cast.
+
+```bash
+python tools/autofilm.py episodes/<slug> --audio narration.mp3 --script story.txt --title "..."
+# optional: --transcribe (faster-whisper), --reuse-cast (skip new characters)
+```
+
+It saves `voice/voice.wav`/`.mp3` beside the film (the animatic muxes it), `voice/words.json`,
+`out/audio.json` (duration, speech pockets, loudness), `cast/sheets/story_cast.mjs` + `CAST.md`
+(new, editable characters), the generated scene sets, and a gated film. Loud words get the kicks,
+glints and light changes; timecoded speaker labels decide who is on screen. `tools/audio_probe.py`
+and `tools/gen_cast.py` are also callable on their own.
 
 ## The Law 11 episode
 

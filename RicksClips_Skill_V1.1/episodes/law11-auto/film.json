@@ -1,0 +1,4370 @@
+{
+ "title": "৪৮ শক্তির নিয়ম — নিয়ম ১১",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "end": 3661,
+ "words": "voice/words.json",
+ "camera_idea": {
+  "name": "Level the camera to each subject",
+  "why": "Every set is generated from the story, so the floor plan is known: the cast stands on it in stage slots and each beat gets a 24 mm camera levelled to that subject's own height - whole body to show the world, medium to squeeze two people, place and object frames when the beat belongs to the room or the thing.",
+  "signature": "One long flowing move at the middle of the film, from the establishing framing into the turn."
+ },
+ "cast": {
+  "hero": {
+   "puppet": "cast:story_cast/hero",
+   "height": 1.7,
+   "heads_tall": 2.8,
+   "head_aspect": 0.95,
+   "new_character": {
+    "form": "dad",
+    "size": "fat",
+    "outfit": "farmer",
+    "outfitPal": {
+     "a": "#6b7340",
+     "b": "#efe6cf",
+     "c": "#b4542a"
+    },
+    "coat": "#6b7340",
+    "face": "delight",
+    "name": "hero",
+    "label": "মালিক চাচা"
+   }
+  },
+  "partner": {
+   "puppet": "cast:story_cast/partner",
+   "height": 1.6,
+   "heads_tall": 2.8,
+   "head_aspect": 0.95,
+   "new_character": {
+    "form": "lady",
+    "size": "standard",
+    "outfit": "sundress",
+    "outfitPal": {
+     "a": "#3f7a4a",
+     "b": "#efe6cf",
+     "c": "#b4542a"
+    },
+    "coat": "#3f7a4a",
+    "face": [
+     "female",
+     "sassy"
+    ],
+    "hair": "bob",
+    "name": "partner",
+    "label": "রাফির মা"
+   }
+  },
+  "other": {
+   "puppet": "cast:story_cast/other",
+   "height": 1.7,
+   "heads_tall": 2.8,
+   "head_aspect": 0.95,
+   "new_character": {
+    "form": "standard",
+    "size": "standard",
+    "outfit": "threePiece",
+    "outfitPal": {
+     "a": "#3f7a4a",
+     "b": "#efe6cf",
+     "c": "#b4542a"
+    },
+    "coat": "#3f7a4a",
+    "face": "standard",
+    "name": "other",
+    "label": "রাফি"
+   }
+  }
+ },
+ "places": {
+  "p1": {
+   "set": "set_p1",
+   "light": "interior",
+   "backdrop": 9.0
+  },
+  "p2": {
+   "set": "set_p2",
+   "light": "golden",
+   "backdrop": 9.0
+  },
+  "p3": {
+   "set": "set_p3",
+   "light": "day",
+   "backdrop": 9.0
+  },
+  "p4": {
+   "set": "set_p4",
+   "light": "night",
+   "backdrop": 9.0
+  }
+ },
+ "props": {
+  "tea": {
+   "kind": "cup"
+  },
+  "khata": {
+   "kind": "notebook"
+  },
+  "bowl": {
+   "kind": "bowl"
+  }
+ },
+ "takes": [
+  {
+   "id": "t1",
+   "place": "p1",
+   "stations": [
+    {
+     "at": 0,
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window"
+     ],
+     "hold": 0.7
+    },
+    {
+     "at": {
+      "s": 1.48
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window"
+     ],
+     "hold": 1.15,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 2.97
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window"
+     ],
+     "hold": 1.16,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 4.45
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window"
+     ],
+     "hold": 1.15,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 5.84
+     },
+     "pos": [
+      -0.506,
+      -2.7,
+      1.45
+     ],
+     "aim": [
+      -2.52,
+      2.5,
+      1.3
+     ],
+     "lens": 21,
+     "subject": "window",
+     "framing": "P",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 0.77,
+     "travel": 0.58
+    },
+    {
+     "at": {
+      "s": 7.09
+     },
+     "pos": [
+      1.91,
+      -1.312,
+      0.51
+     ],
+     "aim": [
+      1.55,
+      1.85,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "other",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 0.59,
+     "travel": 0.66
+    },
+    {
+     "at": {
+      "s": 8.21
+     },
+     "pos": [
+      1.91,
+      -1.312,
+      0.51
+     ],
+     "aim": [
+      1.55,
+      1.85,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "other",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 0.79,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 9.33
+     },
+     "pos": [
+      1.91,
+      -1.312,
+      0.51
+     ],
+     "aim": [
+      1.55,
+      1.85,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "other",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 0.79,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 10.37
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 0.71,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 11.96
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 1.25,
+     "travel": 0.29
+    },
+    {
+     "at": {
+      "s": 13.43
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 1.14,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 14.89
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 1.13,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 16.27
+     },
+     "pos": [
+      -0.506,
+      -2.7,
+      1.45
+     ],
+     "aim": [
+      -2.52,
+      2.5,
+      1.3
+     ],
+     "lens": 21,
+     "subject": "window",
+     "framing": "P",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 0.77,
+     "travel": 0.58
+    },
+    {
+     "at": {
+      "s": 17.81
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 1.07,
+     "travel": 0.44
+    },
+    {
+     "at": {
+      "s": 19.23
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 1.09,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 20.64
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 1.08,
+     "travel": 0.28
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "place": "p2",
+   "stations": [
+    {
+     "at": {
+      "s": 21.98
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall"
+     ],
+     "hold": 0.7
+    },
+    {
+     "at": {
+      "s": 23.38
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall"
+     ],
+     "hold": 1.07,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 24.64
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall"
+     ],
+     "hold": 0.93,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 25.91
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall"
+     ],
+     "hold": 0.94,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 27.08
+     },
+     "pos": [
+      1.24,
+      -1.8,
+      1.45
+     ],
+     "aim": [
+      3.3,
+      3.4,
+      1.05
+     ],
+     "lens": 21,
+     "subject": "stall",
+     "framing": "P",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall"
+     ],
+     "hold": 0.4,
+     "travel": 0.75
+    },
+    {
+     "at": {
+      "s": 28.64
+     },
+     "pos": [
+      -1.91,
+      -1.126,
+      0.48
+     ],
+     "aim": [
+      -1.55,
+      1.85,
+      1.136
+     ],
+     "lens": 24,
+     "subject": "partner",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall"
+     ],
+     "hold": 0.97,
+     "travel": 0.58
+    },
+    {
+     "at": {
+      "s": 29.91
+     },
+     "pos": [
+      -1.91,
+      -1.126,
+      0.48
+     ],
+     "aim": [
+      -1.55,
+      1.85,
+      1.136
+     ],
+     "lens": 24,
+     "subject": "partner",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall"
+     ],
+     "hold": 0.94,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 30.87
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "khata"
+     ],
+     "hold": 0.63,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 35.38
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "khata"
+     ],
+     "hold": 3.91,
+     "travel": 0.57
+    },
+    {
+     "at": {
+      "s": 39.76
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "khata"
+     ],
+     "hold": 3.85,
+     "travel": 0.48
+    },
+    {
+     "at": {
+      "s": 44.14
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "khata"
+     ],
+     "hold": 3.78,
+     "travel": 0.57
+    },
+    {
+     "at": {
+      "s": 48.43
+     },
+     "pos": [
+      1.24,
+      -1.8,
+      1.45
+     ],
+     "aim": [
+      3.3,
+      3.4,
+      1.05
+     ],
+     "lens": 21,
+     "subject": "stall",
+     "framing": "P",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "bowl"
+     ],
+     "hold": 1.54,
+     "travel": 2.74
+    },
+    {
+     "at": {
+      "s": 49.66
+     },
+     "pos": [
+      -1.91,
+      -1.126,
+      0.48
+     ],
+     "aim": [
+      -1.55,
+      1.85,
+      1.136
+     ],
+     "lens": 24,
+     "subject": "partner",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "bowl"
+     ],
+     "hold": 0.61,
+     "travel": 0.6
+    },
+    {
+     "at": {
+      "s": 50.76
+     },
+     "pos": [
+      -1.91,
+      -1.126,
+      0.48
+     ],
+     "aim": [
+      -1.55,
+      1.85,
+      1.136
+     ],
+     "lens": 24,
+     "subject": "partner",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "bowl"
+     ],
+     "hold": 0.77,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 51.86
+     },
+     "pos": [
+      -1.91,
+      -1.126,
+      0.48
+     ],
+     "aim": [
+      -1.55,
+      1.85,
+      1.136
+     ],
+     "lens": 24,
+     "subject": "partner",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "bowl"
+     ],
+     "hold": 0.77,
+     "travel": 0.28
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "place": "p3",
+   "stations": [
+    {
+     "at": {
+      "s": 52.87
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 0.7
+    },
+    {
+     "at": {
+      "s": 58.82
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 2.7,
+     "travel": 3.2,
+     "_signature": true
+    },
+    {
+     "at": {
+      "s": 64.64
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 5.29,
+     "travel": 0.48
+    },
+    {
+     "at": {
+      "s": 70.46
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 4.81,
+     "travel": 1.0
+    },
+    {
+     "at": {
+      "s": 76.18
+     },
+     "pos": [
+      -0.506,
+      -2.7,
+      1.45
+     ],
+     "aim": [
+      -2.52,
+      2.5,
+      1.3
+     ],
+     "lens": 21,
+     "subject": "window",
+     "framing": "P",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 5.1,
+     "travel": 0.58
+    },
+    {
+     "at": {
+      "s": 77.87
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 1.25,
+     "travel": 0.43
+    },
+    {
+     "at": {
+      "s": 79.44
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 1.24,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 81.0
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 1.23,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 82.48
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window"
+     ],
+     "hold": 1.15,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 83.88
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window"
+     ],
+     "hold": 1.07,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 85.15
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window"
+     ],
+     "hold": 0.94,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 86.41
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window"
+     ],
+     "hold": 0.93,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 87.58
+     },
+     "pos": [
+      -0.506,
+      -2.7,
+      1.45
+     ],
+     "aim": [
+      -2.52,
+      2.5,
+      1.3
+     ],
+     "lens": 21,
+     "subject": "window",
+     "framing": "P",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 0.46,
+     "travel": 0.69
+    },
+    {
+     "at": {
+      "s": 88.98
+     },
+     "pos": [
+      1.91,
+      -1.312,
+      0.51
+     ],
+     "aim": [
+      1.55,
+      1.85,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "other",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 0.83,
+     "travel": 0.55
+    },
+    {
+     "at": {
+      "s": 90.26
+     },
+     "pos": [
+      1.91,
+      -1.312,
+      0.51
+     ],
+     "aim": [
+      1.55,
+      1.85,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "other",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 0.95,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 91.53
+     },
+     "pos": [
+      1.91,
+      -1.312,
+      0.51
+     ],
+     "aim": [
+      1.55,
+      1.85,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "other",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "window",
+      "tea"
+     ],
+     "hold": 0.94,
+     "travel": 0.28
+    }
+   ]
+  },
+  {
+   "id": "t4",
+   "place": "p4",
+   "stations": [
+    {
+     "at": {
+      "s": 92.71
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall"
+     ],
+     "hold": 0.7
+    },
+    {
+     "at": {
+      "s": 94.64
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall"
+     ],
+     "hold": 1.53,
+     "travel": 0.35
+    },
+    {
+     "at": {
+      "s": 96.44
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall"
+     ],
+     "hold": 1.43,
+     "travel": 0.32
+    },
+    {
+     "at": {
+      "s": 98.25
+     },
+     "pos": [
+      0.1,
+      -1.094,
+      0.935
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.224
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall"
+     ],
+     "hold": 1.43,
+     "travel": 0.33
+    },
+    {
+     "at": {
+      "s": 99.97
+     },
+     "pos": [
+      1.24,
+      -1.8,
+      1.45
+     ],
+     "aim": [
+      3.3,
+      3.4,
+      1.05
+     ],
+     "lens": 21,
+     "subject": "stall",
+     "framing": "P",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "khata"
+     ],
+     "hold": 0.85,
+     "travel": 0.83
+    },
+    {
+     "at": {
+      "s": 103.15
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "khata"
+     ],
+     "hold": 2.56,
+     "travel": 0.59
+    },
+    {
+     "at": {
+      "s": 106.21
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "khata"
+     ],
+     "hold": 2.53,
+     "travel": 0.48
+    },
+    {
+     "at": {
+      "s": 109.26
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "khata"
+     ],
+     "hold": 2.52,
+     "travel": 0.48
+    },
+    {
+     "at": {
+      "s": 112.21
+     },
+     "pos": [
+      0.1,
+      -1.74,
+      0.51
+     ],
+     "aim": [
+      0.0,
+      1.15,
+      1.207
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "stall",
+      "tea"
+     ],
+     "hold": 2.42,
+     "travel": 0.48
+    }
+   ]
+  }
+ ],
+ "acts": [
+  {
+   "who": "hero",
+   "at": 0,
+   "pos": [
+    0.0,
+    1.15,
+    0.0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 0.02
+   },
+   "pos": [
+    -1.55,
+    1.8499999999999999,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 0.02
+   },
+   "pos": [
+    1.55,
+    1.8499999999999999,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 0.02
+   },
+   "pose": "stand",
+   "face": "cool",
+   "say": [
+    0,
+    11
+   ],
+   "look": "cam"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 1.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 1.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 1.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 3.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 3.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 3.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 3.56
+   },
+   "face": "proud"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 5.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 5.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 5.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 5.68
+   },
+   "face": "curious"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 5.91
+   },
+   "pose": "hold_out",
+   "face": "proud",
+   "say": [
+    12,
+    20
+   ],
+   "look": "cam",
+   "prop": "tea",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 7.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 7.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 7.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 8.66
+   },
+   "face": "curious"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 9.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 9.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 9.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 10.2
+   },
+   "face": "sweetSmile"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 10.44
+   },
+   "pose": "hands_hips",
+   "face": "standard",
+   "say": [
+    21,
+    33
+   ],
+   "look": "cam",
+   "prop": "tea",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 11.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 11.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 11.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 13.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 13.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 13.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 14.01
+   },
+   "face": "proud"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 15.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 15.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 15.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 16.11
+   },
+   "face": "smug"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 16.34
+   },
+   "pose": "point_out",
+   "face": "curious",
+   "say": [
+    34,
+    45
+   ],
+   "look": "cam",
+   "prop": "tea",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 17.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 17.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 17.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 19.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 19.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 19.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 19.79
+   },
+   "face": "curious"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 21.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 21.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 21.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 21.81
+   },
+   "face": "judging"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 22.05
+   },
+   "pose": "stand",
+   "face": "sweetSmile",
+   "say": [
+    46,
+    56
+   ],
+   "look": "cam"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 22.111
+   },
+   "pos": [
+    0.0,
+    1.15,
+    0.0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 22.111
+   },
+   "pos": [
+    -1.55,
+    1.8499999999999999,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 22.111
+   },
+   "pos": [
+    1.55,
+    1.8499999999999999,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 23.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 23.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 23.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 25.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 25.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 25.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 25.15
+   },
+   "face": "proud"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 26.92
+   },
+   "face": "delight"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 27.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 27.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 27.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 27.15
+   },
+   "pose": "stand",
+   "face": "smug",
+   "say": [
+    57,
+    64
+   ],
+   "look": "cam"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 29.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 29.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 29.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 29.46
+   },
+   "face": "curious"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 30.72
+   },
+   "face": "cool"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 30.94
+   },
+   "pose": "point_out",
+   "face": "giggle",
+   "say": [
+    65,
+    101
+   ],
+   "look": "cam",
+   "prop": "khata",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 31.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 31.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 31.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 33.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 33.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 33.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 35.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 35.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 35.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 37.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 37.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 37.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 39.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 39.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 39.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 41.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 41.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 41.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 41.51
+   },
+   "face": "proud"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 43.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 43.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 43.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 45.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 45.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 45.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 47.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 47.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 47.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 48.27
+   },
+   "face": "proud"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 48.5
+   },
+   "pose": "hold_out",
+   "face": "delight",
+   "say": [
+    102,
+    110
+   ],
+   "look": "cam",
+   "prop": "bowl",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 49.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 49.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 49.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 51.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 51.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 51.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 51.2
+   },
+   "face": "curious"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 52.71
+   },
+   "face": "standard"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 52.94
+   },
+   "pose": "point_out",
+   "face": "angryFist",
+   "say": [
+    111,
+    158
+   ],
+   "look": "cam",
+   "prop": "tea",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 53.0
+   },
+   "pos": [
+    0.0,
+    1.15,
+    0.0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 53.0
+   },
+   "pos": [
+    -1.55,
+    1.8499999999999999,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 53.0
+   },
+   "pos": [
+    1.55,
+    1.8499999999999999,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 53.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 53.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 53.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 55.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 55.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 55.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 57.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 57.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 57.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 59.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 59.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 59.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 61.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 61.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 61.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 63.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 63.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 63.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 65.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 65.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 65.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 66.97
+   },
+   "face": "proud"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 67.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 67.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 67.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 69.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 69.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 69.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 71.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 71.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 71.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 73.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 73.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 73.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 75.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 75.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 75.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 76.03
+   },
+   "face": "curious"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 76.25
+   },
+   "pose": "point_out",
+   "face": "proud",
+   "say": [
+    159,
+    171
+   ],
+   "look": "cam",
+   "prop": "tea",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 77.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 77.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 77.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 79.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 79.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 79.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 80.06
+   },
+   "face": "curious"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 81.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 81.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 81.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 82.32
+   },
+   "face": "sweetSmile"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 82.55
+   },
+   "pose": "stand",
+   "face": "standard",
+   "say": [
+    172,
+    182
+   ],
+   "look": "cam"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 83.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 83.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 83.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 85.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 85.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 85.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 85.65
+   },
+   "face": "proud"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 87.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 87.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 87.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 87.43
+   },
+   "face": "smug"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 87.64
+   },
+   "pose": "hold_out",
+   "face": "curious",
+   "say": [
+    183,
+    193
+   ],
+   "look": "cam",
+   "prop": "tea",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 89.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 89.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 89.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 90.77
+   },
+   "face": "curious"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 91.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 91.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 91.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 92.56
+   },
+   "face": "judging"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 92.78
+   },
+   "pose": "stand",
+   "face": "sweetSmile",
+   "say": [
+    194,
+    208
+   ],
+   "look": "cam"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 92.837
+   },
+   "pos": [
+    0.0,
+    1.15,
+    0.0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 92.837
+   },
+   "pos": [
+    -1.55,
+    1.8499999999999999,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 92.837
+   },
+   "pos": [
+    1.55,
+    1.8499999999999999,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 93.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 93.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 93.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 95.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 95.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 95.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 97.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 97.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 97.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 97.17
+   },
+   "face": "proud"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 99.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 99.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 99.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 99.8
+   },
+   "face": "delight"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 100.03
+   },
+   "pose": "point_out",
+   "face": "smug",
+   "say": [
+    209,
+    234
+   ],
+   "look": "cam",
+   "prop": "khata",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 101.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 101.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 101.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 103.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 103.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 103.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 105.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 105.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 105.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 107.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 107.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 107.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 107.43
+   },
+   "face": "curious"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 109.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 109.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 109.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 111.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 111.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 111.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 112.07
+   },
+   "face": "cool"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 112.28
+   },
+   "pose": "write",
+   "face": "judging",
+   "say": [
+    235,
+    253
+   ],
+   "look": "cam",
+   "prop": "tea",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 113.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 113.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 113.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 115.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 115.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 115.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 117.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 117.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 117.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 117.72
+   },
+   "face": "proud"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 119.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 119.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 119.0
+   },
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 121.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 121.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 121.0
+   },
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 121.06
+   },
+   "face": "proud"
+  }
+ ],
+ "sentences": [
+  {
+   "text": "কাল থেকে আর আসা লাগবে না, রাফি। আমার ভাগ্নে এখন সব পারে।",
+   "words": [
+    0,
+    11
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "window"
+   ],
+   "nouns": []
+  },
+  {
+   "text": "চাচা, ১০ বছর... আপনার ভাগ্নেরে তো সব আমিই শিখাইলাম!",
+   "words": [
+    12,
+    20
+   ],
+   "subject": "other",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "window",
+    "tea"
+   ],
+   "nouns": [
+    {
+     "word": "চাচা",
+     "at": {
+      "s": 8.21
+     },
+     "show": "tea"
+    }
+   ]
+  },
+  {
+   "text": "কিন্তু ৩ মাস পর, সেই চাচাই মিষ্টির প্যাকেট হাতে... রাফির বাসায় এসে হাজির!",
+   "words": [
+    21,
+    33
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "window",
+    "tea"
+   ],
+   "nouns": [
+    {
+     "word": "কিন্তু",
+     "at": {
+      "s": 13.43
+     },
+     "show": "tea"
+    }
+   ]
+  },
+  {
+   "text": "অথচ ১ বছর আগে, চাচা নিজেই ভাগ্নেকে নিয়ে রাফির বাসায় এসে বলেছিলেন,",
+   "words": [
+    34,
+    45
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "window",
+    "tea"
+   ],
+   "nouns": [
+    {
+     "word": "অথচ",
+     "at": {
+      "s": 19.23
+     },
+     "show": "tea"
+    }
+   ]
+  },
+  {
+   "text": "রাফি, পোলাটারে কাজ শিখায় দাও... তুমি তো আমার নিজের পোলার মতো!",
+   "words": [
+    46,
+    56
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "stall"
+   ],
+   "nouns": []
+  },
+  {
+   "text": "সব শিখাইস না, বাবা... মালিকের ভাগ্নে, মালিকেরই লোক!",
+   "words": [
+    57,
+    64
+   ],
+   "subject": "partner",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "stall"
+   ],
+   "nouns": []
+  },
+  {
+   "text": "মায়ের কথা হেসে উড়িয়ে, রাফি ভাগ্নেকে শিখালো সাপ্লায়ারদের নম্বর, বাকির খাতা... আর চিনিয়ে দিলো সব বাকির খদ্দের। ভাগ্নে সব শিখে ফেলতেই, চাচা বললেন সেই কথা... আর ১০ বছর পর, রাফি মাত্র ১ মাসের বেতন নিয়ে বাসায় ফিরলো।",
+   "words": [
+    65,
+    101
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "stall",
+    "khata"
+   ],
+   "nouns": [
+    {
+     "word": "মায়ের",
+     "at": {
+      "s": 39.76
+     },
+     "show": "khata"
+    }
+   ]
+  },
+  {
+   "text": "যার পাতে ভাত দিলি... সেই তোর ভাত কাড়লো, বাবা!",
+   "words": [
+    102,
+    110
+   ],
+   "subject": "partner",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "stall",
+    "bowl"
+   ],
+   "nouns": [
+    {
+     "word": "যার",
+     "at": {
+      "s": 50.76
+     },
+     "show": "bowl"
+    }
+   ]
+  },
+  {
+   "text": "১ মাস পর, পাশের দোকানে অর্ধেক বেতনে চাকরি নিয়ে, রাফি এবার সবাইকে কাজ শিখালো... কিন্তু কিছু বড় খদ্দের রাখলো নিজের হাতে। ওদিকে বাকির খাতা ছিলো ভাগ্নের হাতে... কিন্তু বাকির খদ্দেররা চিনতো শুধু রাফিকে। ভাগ্নে বাকির টাকা চাইতে গিয়ে খদ্দেরদের বললো চোর... আর তারা মাল নিতে গেলো রাফির কাছে!",
+   "words": [
+    111,
+    158
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "window",
+    "tea"
+   ],
+   "nouns": [
+    {
+     "word": "১",
+     "at": {
+      "s": 64.64
+     },
+     "show": "tea"
+    }
+   ]
+  },
+  {
+   "text": "৩ মাসে বিক্রি অর্ধেক হতেই, চাচা মিষ্টির প্যাকেট হাতে রাফির বাসায় এসে বললেন,",
+   "words": [
+    159,
+    171
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "window",
+    "tea"
+   ],
+   "nouns": [
+    {
+     "word": "৩",
+     "at": {
+      "s": 79.44
+     },
+     "show": "tea"
+    }
+   ]
+  },
+  {
+   "text": "রাফি, কাল থেকে আবার আসো, বাবা... ভাগ্নে আমার কিছুই পারে না!",
+   "words": [
+    172,
+    182
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "window"
+   ],
+   "nouns": []
+  },
+  {
+   "text": "চাচা, কাজ তো সবই শিখাইছিলাম... খালি মানুষের ভরসাটা শিখানো যায় না।",
+   "words": [
+    183,
+    193
+   ],
+   "subject": "other",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "window",
+    "tea"
+   ],
+   "nouns": [
+    {
+     "word": "চাচা",
+     "at": {
+      "s": 90.26
+     },
+     "show": "tea"
+    }
+   ]
+  },
+  {
+   "text": "রাফি আর ফিরলো না... ৬ মাস পর, পাশের দোকানের মালিক ওকে ৪ আনার অংশীদার বানালেন!",
+   "words": [
+    194,
+    208
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "stall"
+   ],
+   "nouns": []
+  },
+  {
+   "text": "কাজ সবাইকে শেখান... কিন্তু নিজের জায়গাটা কাউকে শিখিয়ে দিবেন না। রবার্ট গ্রিনের বইয়ের ১১ নম্বর নিয়ম বলে, নিজেকে এমন জায়গায় নাও, যেখানে তোমাকে ছাড়া চলে না।",
+   "words": [
+    209,
+    234
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "stall",
+    "khata"
+   ],
+   "nouns": [
+    {
+     "word": "কাজ",
+     "at": {
+      "s": 106.21
+     },
+     "show": "khata"
+    }
+   ]
+  },
+  {
+   "text": "আপনার চাকরিতেও কি, মালিকের আত্মীয় এসে কারো জায়গা নিয়েছে? কী হয়েছিলো? কমেন্টে লিখুন। এমন আরো গল্প পেতে ফলো করুন।",
+   "words": [
+    235,
+    253
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "stall",
+    "tea"
+   ],
+   "nouns": [
+    {
+     "word": "আপনার",
+     "at": {
+      "s": 116.82
+     },
+     "show": "tea"
+    }
+   ]
+  }
+ ],
+ "fx": [
+  {
+   "at": {
+    "s": 0.2
+   },
+   "kind": "glow",
+   "on": "window"
+  },
+  {
+   "at": {
+    "s": 6.17
+   },
+   "kind": "glow",
+   "on": "tea"
+  },
+  {
+   "at": {
+    "s": 10.7
+   },
+   "kind": "glow",
+   "on": "tea"
+  },
+  {
+   "at": {
+    "s": 16.59
+   },
+   "kind": "glow",
+   "on": "tea"
+  },
+  {
+   "at": {
+    "s": 22.31
+   },
+   "kind": "glow",
+   "on": "hero"
+  },
+  {
+   "at": {
+    "s": 27.41
+   },
+   "kind": "glow",
+   "on": "partner"
+  },
+  {
+   "at": {
+    "s": 31.2
+   },
+   "kind": "glow",
+   "on": "khata"
+  },
+  {
+   "at": {
+    "s": 48.77
+   },
+   "kind": "glow",
+   "on": "bowl"
+  },
+  {
+   "at": {
+    "s": 53.2
+   },
+   "kind": "glow",
+   "on": "tea"
+  },
+  {
+   "at": {
+    "s": 76.51
+   },
+   "kind": "glow",
+   "on": "tea"
+  },
+  {
+   "at": {
+    "s": 82.81
+   },
+   "kind": "glow",
+   "on": "hero"
+  },
+  {
+   "at": {
+    "s": 87.91
+   },
+   "kind": "glow",
+   "on": "tea"
+  },
+  {
+   "at": {
+    "s": 93.04
+   },
+   "kind": "glow",
+   "on": "stall"
+  },
+  {
+   "at": {
+    "s": 100.3
+   },
+   "kind": "glow",
+   "on": "khata"
+  },
+  {
+   "at": {
+    "s": 112.54
+   },
+   "kind": "glow",
+   "on": "tea"
+  }
+ ],
+ "moods": [
+  {
+   "at": {
+    "s": 0.05
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 3.26
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 5.97
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 8.43
+   },
+   "look": "gold_wash"
+  },
+  {
+   "at": {
+    "s": 10.5
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 13.72
+   },
+   "look": "flash_red"
+  },
+  {
+   "at": {
+    "s": 16.39
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 19.51
+   },
+   "look": "warm_glow"
+  },
+  {
+   "at": {
+    "s": 22.11
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 24.9
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 27.21
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 29.27
+   },
+   "look": "spot_hero"
+  },
+  {
+   "at": {
+    "s": 31.0
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 40.64
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 48.56
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 50.98
+   },
+   "look": "gold_wash"
+  },
+  {
+   "at": {
+    "s": 53.0
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 65.8
+   },
+   "look": "flash_red"
+  },
+  {
+   "at": {
+    "s": 76.31
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 79.75
+   },
+   "look": "warm_glow"
+  },
+  {
+   "at": {
+    "s": 82.61
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 85.4
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 87.7
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 90.51
+   },
+   "look": "spot_hero"
+  },
+  {
+   "at": {
+    "s": 92.84
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 96.8
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 100.09
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 106.82
+   },
+   "look": "gold_wash"
+  },
+  {
+   "at": {
+    "s": 112.34
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 117.27
+   },
+   "look": "flash_red"
+  }
+ ],
+ "sound": [
+  {
+   "at": {
+    "s": 0.12
+   },
+   "name": "door_knock"
+  },
+  {
+   "at": {
+    "s": 10.62
+   },
+   "name": "coin_chink"
+  },
+  {
+   "at": {
+    "s": 22.23
+   },
+   "name": "door_knock"
+  },
+  {
+   "at": {
+    "s": 31.12
+   },
+   "name": "coin_chink"
+  },
+  {
+   "at": {
+    "s": 53.12
+   },
+   "name": "door_knock"
+  },
+  {
+   "at": {
+    "s": 82.73
+   },
+   "name": "coin_chink"
+  },
+  {
+   "at": {
+    "s": 92.96
+   },
+   "name": "door_knock"
+  },
+  {
+   "at": {
+    "s": 112.46
+   },
+   "name": "coin_chink"
+  }
+ ],
+ "kicks": [],
+ "puppet_pkg": [
+  "cast",
+  "../../templates/vector2d_characters/code"
+ ]
+}

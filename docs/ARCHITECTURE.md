@@ -68,6 +68,25 @@ The generated sets are imported by `film.js` from the episode's own `sets/` fold
 so what you see in the render is exactly the saved set. `SCRIPT.md`, `SETS.md` and `CAMERA_NOTE.md`
 document the result inside the episode.
 
+## 1c. `tools/audio_probe.py` + `tools/gen_cast.py` — audio and new characters
+
+| tool | input | saved assets |
+|---|---|---|
+| `audio_probe.py` | narration wav/mp3 + script (optionally `00:04 [speaker]: …` timed) | `voice/words.json` (`w/s/e/gain`), `out/audio.json` (duration, speech pockets, loudness) |
+| `gen_cast.py` | speaker labels + role words + emotions | `cast/sheets/story_cast.mjs`, `CAST.md`; `film.json.puppet_pkg` + `cast:story_cast/<role>` |
+
+`audio_probe.analyse(path, sentences, transcribe_audio=False, timed=None)` returns `(words, report)`.
+WAV is decoded with `wave`; other formats via ffmpeg; when ffmpeg is absent it falls back to mutagen
+duration + the script's timecodes (no fabricated times). `align_to_script()` shares each real speech
+pocket over the script words and attaches a measured `gain`; `autofilm.py` uses that gain to choose the
+moods, fx and kicks instead of sprinkling them at arbitrary beats.
+
+`gen_cast.write_cast_sheet(ep, cast, rows, title)` derives a castkit spec per role: `form`/`size` from
+the speaker's role, `outfit`/`coat` from the job word, `face` from the emotion words in that speaker's
+lines. The sheet is loaded by `render.mjs` because `film.json.puppet_pkg` points at the episode's
+`cast/` folder plus the locked character code; `film.js` indexes every `CAST` export as
+`cast:<sheet>/<name>`. No SVG is generated — all characters still animate with the kit.
+
 ## 2. The one file: `film.json`
 
 Everything about a film lives in one JSON file. `tools/film_plan.py` is the only interpreter; both the three.js preview

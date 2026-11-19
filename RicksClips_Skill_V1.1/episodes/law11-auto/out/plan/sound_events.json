@@ -1,0 +1,42 @@
+[
+ {
+  "t": 0.133,
+  "name": "door_knock",
+  "gain": 0
+ },
+ {
+  "t": 10.633,
+  "name": "coin_chink",
+  "gain": 0
+ },
+ {
+  "t": 22.233,
+  "name": "door_knock",
+  "gain": 0
+ },
+ {
+  "t": 31.133,
+  "name": "coin_chink",
+  "gain": 0
+ },
+ {
+  "t": 53.133,
+  "name": "door_knock",
+  "gain": 0
+ },
+ {
+  "t": 82.733,
+  "name": "coin_chink",
+  "gain": 0
+ },
+ {
+  "t": 92.967,
+  "name": "door_knock",
+  "gain": 0
+ },
+ {
+  "t": 112.467,
+  "name": "coin_chink",
+  "gain": 0
+ }
+]

@@ -50,6 +50,28 @@ What it does, in order:
 Then continue with §3–§7 as usual. If you supply `--words`, use the same words file for the voice track so
 captions and lip-sync line up. Re-running with `--force` overwrites the generated episode.
 
+### With narration audio + new characters
+
+```bash
+python tools/autofilm.py episodes/<slug> --audio narration.mp3 --script story.txt \
+    [--title "..."] [--transcribe] [--reuse-cast] [--force]
+```
+
+`tools/audio_probe.py` reads the audio: WAV directly, other formats through ffmpeg. If ffmpeg is not
+available it still uses the file's duration (mutagen) plus the script's `00:04 [রাফি]: …` timecodes, so
+word times are audio-accurate without a decoder. `--transcribe` uses faster-whisper when installed.
+The per-word loudness is measured from the waveform when possible, otherwise from punctuation;
+`autofilm.py` spends kicks / glints / light changes on the loud words.
+
+Unless `--reuse-cast` is given, `tools/gen_cast.py` writes `cast/sheets/story_cast.mjs` — brand-new
+castkit specs (`form`, `size`, `outfit`, `coat`, `face`, `hair`) picked from the speakers and the role
+words in the script. `film.json` gets `puppet_pkg: ["cast", "../../templates/vector2d_characters/code"]`
+and `cast:story_cast/<role>`; the sheet and its `CAST.md` are ordinary editable files. The generator
+also saves `voice/voice.wav` (or `.mp3`) next to `film.json`, which is what the animatic muxes.
+
+Standalone: `python tools/audio_probe.py narration.wav --script story.txt --words … --report …` and
+`python tools/gen_cast.py episodes/<slug> analysis.json`.
+
 ## 2. Plan the film in `film.json`
 
 Fill in `title, size, fps, end, words, camera_idea, cast, places, props, takes, acts, sentences, fx, moods, sound`.
