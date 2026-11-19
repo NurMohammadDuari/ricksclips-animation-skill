@@ -85,6 +85,7 @@ Fish Audio key only if you generate voice with the skill instead of supplying yo
 ## Contributors
 
 See [`CONTRIBUTORS.md`](CONTRIBUTORS.md). Maintainer: [@NurMohammadDuari](https://github.com/NurMohammadDuari).
+Want to improve the pipeline? Read [`CONTRIBUTING.md`](CONTRIBUTING.md) — new sets, poses, gates and docs are welcome.
 
 ## Licence
 
