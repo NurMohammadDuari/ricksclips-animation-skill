@@ -1,1 +1,10 @@
-Personal use licence. You may use this skill to make your own videos, including commercial videos. You may not share, resell or publish the skill files. Copyright (c) 2026 Viral Shorts by CB.
+RicksClips Animation Skill — © 2026 Nur Mohammad Duari (Viral Shorts by CB)
+
+Licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+You may share and adapt this material for any purpose, including commercially,
+as long as you give appropriate credit and link to the license.
+
+Full text: see ../LICENSE or https://creativecommons.org/licenses/by/4.0/
+
+Attribution example:
+  "RicksClips Animation Skill" by Nur Mohammad Duari, CC BY 4.0

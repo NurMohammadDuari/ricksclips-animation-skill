@@ -51,6 +51,7 @@ or you will silently render the old plan.
 ## Style
 
 - Bangla/English both welcome in docs; code comments in English, short and factual.
+- By contributing you agree that your contribution is licensed under **CC BY 4.0**, the license of this repo.
 - One idea per commit, imperative subject line (`fix: raise behind-counter cameras in law11`).
 - When you fix a bug that cost you time, add it to `RicksClips_Skill_V1.1/library/pitfall/` with cause and fix —
   that library is the most valuable file in the repo.

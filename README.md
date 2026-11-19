@@ -1,5 +1,8 @@
 # RicksClips — animated true-story Shorts pipeline
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 A working animation studio in a folder: it turns a Bangla/English narration track into a Ricks Clips-style
 3D-cartoon vertical Short — three.js sets, flat 2D characters inside the 3D world, word-by-word captions,
 a measured camera, and 42 automatic quality gates taken from 24 reference films.
@@ -89,5 +92,6 @@ Want to improve the pipeline? Read [`CONTRIBUTING.md`](CONTRIBUTING.md) — new 
 
 ## Licence
 
-`RicksClips_Skill_V1.1/LICENSE.txt` — personal use, commercial videos allowed; the skill files may not be
-resold or publicly published. Reference videos, music, SFX and BlenderKit assets are not included.
+[CC BY 4.0](LICENSE) — use, remix and ship it commercially, just credit
+**Nur Mohammad Duari (Viral Shorts by CB)** with a link to the licence. See [`LICENSE`](LICENSE).
+Reference videos, music, SFX and BlenderKit assets are not included in this repository.
