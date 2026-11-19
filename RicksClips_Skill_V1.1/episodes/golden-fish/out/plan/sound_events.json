@@ -1,0 +1,22 @@
+[
+ {
+  "t": 0.267,
+  "name": "door_knock",
+  "gain": 0
+ },
+ {
+  "t": 4.867,
+  "name": "coin_chink",
+  "gain": 0
+ },
+ {
+  "t": 9.233,
+  "name": "door_knock",
+  "gain": 0
+ },
+ {
+  "t": 12.8,
+  "name": "coin_chink",
+  "gain": 0
+ }
+]

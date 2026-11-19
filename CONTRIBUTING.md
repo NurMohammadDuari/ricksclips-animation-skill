@@ -40,6 +40,8 @@ or you will silently render the old plan.
 
 | area | what to do | entry point |
 |---|---|---|
+| **Any-script generator** | lexicons, levelled camera formulas, stage clearing, gate repair | `tools/autofilm.py` |
+| **New set archetypes** | a data-driven maker + a layout recipe | `templates/threejs_film/sets/place_kit.js` |
 | **New sets** | one module per set, `build(THREE, scene, film, ctx)` | `episodes/<ep>/sets/*.js` |
 | **Poses** | add a hand target line | `templates/threejs_film/poses.mjs` |
 | **Characters** | new cast sheet / body form | `templates/vector2d_characters/` |

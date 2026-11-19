@@ -43,7 +43,7 @@ if (has('--serve')) { console.log(`Open ${BASE}/kit/film_page.html?film=/ep/${pa
 
 let chromium; try { ({ chromium } = await import('playwright')); } catch { ({ chromium } = require(process.env.PLAYWRIGHT_DIR || '/opt/node-tools/node_modules/playwright')); }
 const [FW, FH] = film.size || [1080, 1920], scale = +val('--scale', has('--storyboard') ? 0.4 : 0.5), W = Math.round(FW * scale / 2) * 2, H = Math.round(FH * scale / 2) * 2;
-const browser = await chromium.launch(), page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
+const browser = await chromium.launch(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}), page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
 page.on('console', m => { if ((m.type() === 'warning' || m.type() === 'error') && !/GL Driver Message/.test(m.text())) console.log('[page]', m.text()); }); page.on('pageerror', e => console.log('[page error]', e.message));
 await page.goto(`${BASE}/kit/film_page.html`);
 const info = await page.evaluate(c => window.setup(c), { film: '/ep/' + path.basename(FILM), W, H, captions: !has('--no-captions'), sheets: SHEETS, epSets: fs.existsSync(path.join(EP, 'sets')) ? fs.readdirSync(path.join(EP, 'sets')) : [] });

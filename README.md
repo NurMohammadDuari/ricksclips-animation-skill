@@ -52,6 +52,28 @@ node ../../templates/threejs_film/render.mjs film.json --animatic --tmp /tmp/ope
 **Important:** renders read the *baked* plan in `out/plan/`. After editing `film.json`, always re-run
 `python tools/film_plan.py check …` first.
 
+## Any script → a complete film
+
+No hand-built sets needed. Give the tool any Bangla or English story; it reads the topic, creates the
+sets it needs, saves them as normal editable modules under `episodes/<slug>/sets/`, stages and levels the
+cast on those sets, writes the whole `film.json`, and repairs the plan until it has **0 FAIL**.
+
+```bash
+cd RicksClips_Skill_V1.1
+printf 'একদিন এক জেলে নদীতে জাল ফেলল।\nহঠাৎ জালে সোনার মাছ আটকে গেল।\n' > /tmp/story.txt
+python tools/autofilm.py episodes/golden-fish --script /tmp/story.txt --title "সোনার মাছ"
+# optional: supply real word timings instead of the generated speech-like track
+python tools/autofilm.py episodes/golden-fish --script /tmp/story.txt --words voice/words.json --force
+
+node templates/threejs_film/render.mjs episodes/golden-fish/film.json --storyboard
+node templates/threejs_film/render.mjs episodes/golden-fish/film.json --frames 0,300,900
+```
+
+Output: `film.json`, `voice/words.json`, `sets/set_p1…p4.js` (plain data wrappers around
+`templates/threejs_film/sets/place_kit.js`), `SCRIPT.md`, `SETS.md`, `CAMERA_NOTE.md` (the accepted WARNs),
+and the baked plan in `out/plan/`. Edit any generated set's `layout` or `film.json` by hand afterwards —
+it stays an ordinary episode. For a real voice track, drop in `voice/voice.wav` and re-run `check`.
+
 ## The Law 11 episode
 
 - 121.5 s, 30 fps, 1080×1920 plan, 11 takes, 45 stations, 6 characters, 4 light states.

@@ -6,7 +6,7 @@ __pycache__/
 *.pyc
 
 # render temp / caches (regenerable)
-out/.puppet_cache/
+.puppet_cache/
 film_frames_*/
 *.blend1
 

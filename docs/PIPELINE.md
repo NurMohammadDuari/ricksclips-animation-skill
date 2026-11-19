@@ -24,6 +24,32 @@ This episode's file was written from the source track's line timings with `episo
 (302 words, 0.1–120.9 s). Alternative: `tools/voice_prep.py` / `tools/fish_tts.py` for Fish Audio.
 Always check that the last word time matches the audio length.
 
+## 1b. Start from any script (`autofilm.py`)
+
+You do **not** have to write `film.json` or sets by hand. `tools/autofilm.py` takes a script (Bangla or
+English, a file or a quoted string) and produces a complete episode:
+
+```bash
+python tools/autofilm.py episodes/<slug> --script story.txt [--title "..."] [--words voice/words.json] [--force]
+```
+
+What it does, in order:
+
+1. Splits the script into sentences and times every word (real `words.json`, if given, or a speech-like track).
+2. Reads the topic with Bangla + English word lists: place, character, prop, face, pose.
+3. **Builds and saves all needed sets** in `episodes/<slug>/sets/set_pN.js` — ordinary editable modules,
+   each a small `layout` dict passed to the shared `templates/threejs_film/sets/place_kit.js`.
+   Furniture is placed by Python in explicit metres, and `clear_stage()` keeps the acting area empty.
+4. **Levels** the 24 mm camera to each subject's own height (W / M / C / P formulas solved against
+   `film_plan.py`'s projection): every character stands on the floor — short ones on a saved step — and
+   the camera aims at their head height, not at a fixed world point.
+5. Writes cast, takes, stations, acts, moods, fx, sound, `SCRIPT.md`, `SETS.md` and `CAMERA_NOTE.md`.
+6. Runs `film_plan.py check` and repairs the plan until it reports **0 FAIL**. WARNs are listed with reasons
+   in `CAMERA_NOTE.md`.
+
+Then continue with §3–§7 as usual. If you supply `--words`, use the same words file for the voice track so
+captions and lip-sync line up. Re-running with `--force` overwrites the generated episode.
+
 ## 2. Plan the film in `film.json`
 
 Fill in `title, size, fps, end, words, camera_idea, cast, places, props, takes, acts, sentences, fx, moods, sound`.

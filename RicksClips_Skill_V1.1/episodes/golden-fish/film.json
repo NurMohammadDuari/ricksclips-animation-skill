@@ -1,0 +1,1111 @@
+{
+ "title": "সোনার মাছ",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "end": 545,
+ "words": "voice/words.json",
+ "camera_idea": {
+  "name": "Level the camera to each subject",
+  "why": "Every set is generated from the story, so the floor plan is known: the cast stands on it in stage slots and each beat gets a 24 mm camera levelled to that subject's own height - whole body to show the world, medium to squeeze two people, place and object frames when the beat belongs to the room or the thing.",
+  "signature": "One long flowing move at the middle of the film, from the establishing framing into the turn."
+ },
+ "cast": {
+  "hero": {
+   "puppet": "cast:sailor",
+   "height": 1.68,
+   "heads_tall": 2.8,
+   "head_aspect": 0.95
+  },
+  "partner": {
+   "puppet": "form:lady",
+   "height": 1.6,
+   "heads_tall": 2.8,
+   "head_aspect": 0.95
+  },
+  "other": {
+   "puppet": "form:standard",
+   "height": 1.7,
+   "heads_tall": 2.8,
+   "head_aspect": 0.95
+  }
+ },
+ "places": {
+  "p1": {
+   "set": "set_p1",
+   "light": "morning",
+   "backdrop": 24.0
+  },
+  "p2": {
+   "set": "set_p2",
+   "light": "golden",
+   "backdrop": 9.0
+  },
+  "p3": {
+   "set": "set_p3",
+   "light": "day",
+   "backdrop": 24.0
+  },
+  "p4": {
+   "set": "set_p4",
+   "light": "night",
+   "backdrop": 9.0
+  }
+ },
+ "props": {
+  "net": {
+   "kind": "net"
+  },
+  "fish": {
+   "kind": "fish"
+  }
+ },
+ "takes": [
+  {
+   "id": "t1",
+   "place": "p1",
+   "stations": [
+    {
+     "at": 0,
+     "pos": [
+      0.1,
+      -1.756,
+      0.504
+     ],
+     "aim": [
+      0.0,
+      1.1,
+      1.193
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field",
+      "net"
+     ],
+     "hold": 0.7
+    },
+    {
+     "at": {
+      "s": 1.32
+     },
+     "pos": [
+      0.1,
+      -1.118,
+      0.924
+     ],
+     "aim": [
+      0.0,
+      1.1,
+      1.21
+     ],
+     "lens": 30,
+     "subject": "hero",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field",
+      "net"
+     ],
+     "hold": 0.99,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 2.48
+     },
+     "pos": [
+      0.25,
+      -2.2,
+      1.45
+     ],
+     "aim": [
+      0.0,
+      3.0,
+      0.8
+     ],
+     "lens": 21,
+     "subject": "field",
+     "framing": "P",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field"
+     ],
+     "hold": 0.68,
+     "travel": 0.43
+    },
+    {
+     "at": {
+      "s": 3.59
+     },
+     "pos": [
+      0.1,
+      -1.756,
+      0.504
+     ],
+     "aim": [
+      0.0,
+      1.1,
+      1.193
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field"
+     ],
+     "hold": 0.68,
+     "travel": 0.43
+    },
+    {
+     "at": {
+      "s": 4.61
+     },
+     "pos": [
+      -1.91,
+      -1.176,
+      0.48
+     ],
+     "aim": [
+      -1.55,
+      1.8,
+      1.136
+     ],
+     "lens": 24,
+     "subject": "partner",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field",
+      "net"
+     ],
+     "hold": 0.69,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 5.91
+     },
+     "pos": [
+      -1.91,
+      -0.312,
+      0.88
+     ],
+     "aim": [
+      -1.55,
+      1.8,
+      1.152
+     ],
+     "lens": 30,
+     "subject": "partner",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field",
+      "net"
+     ],
+     "hold": 0.97,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 7.07
+     },
+     "pos": [
+      0.1,
+      -0.387,
+      1.546
+     ],
+     "aim": [
+      0.0,
+      1.1,
+      1.26
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "C",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field",
+      "fish"
+     ],
+     "hold": 0.7,
+     "travel": 0.45
+    },
+    {
+     "at": {
+      "s": 8.06
+     },
+     "pos": [
+      0.1,
+      -1.756,
+      0.504
+     ],
+     "aim": [
+      0.0,
+      1.1,
+      1.193
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field",
+      "fish"
+     ],
+     "hold": 0.52,
+     "travel": 0.46
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "place": "p3",
+   "stations": [
+    {
+     "at": {
+      "s": 8.98
+     },
+     "pos": [
+      -1.91,
+      -0.312,
+      0.88
+     ],
+     "aim": [
+      -1.55,
+      1.8,
+      1.152
+     ],
+     "lens": 24,
+     "subject": "partner",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field",
+      "fish"
+     ],
+     "hold": 0.7
+    },
+    {
+     "at": {
+      "s": 9.98
+     },
+     "pos": [
+      -1.91,
+      -0.312,
+      0.88
+     ],
+     "aim": [
+      -1.55,
+      1.8,
+      1.152
+     ],
+     "lens": 30,
+     "subject": "partner",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field",
+      "fish"
+     ],
+     "hold": 0.45,
+     "travel": 1.0,
+     "_signature": true
+    },
+    {
+     "at": {
+      "s": 10.9
+     },
+     "pos": [
+      0.25,
+      -2.2,
+      1.45
+     ],
+     "aim": [
+      0.0,
+      3.0,
+      0.8
+     ],
+     "lens": 21,
+     "subject": "field",
+     "framing": "P",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field",
+      "fish"
+     ],
+     "hold": 0.46,
+     "travel": 0.45
+    },
+    {
+     "at": {
+      "s": 12.56
+     },
+     "pos": [
+      -1.91,
+      -1.176,
+      0.48
+     ],
+     "aim": [
+      -1.55,
+      1.8,
+      1.136
+     ],
+     "lens": 24,
+     "subject": "partner",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field",
+      "net"
+     ],
+     "hold": 1.18,
+     "travel": 0.47
+    },
+    {
+     "at": {
+      "s": 13.94
+     },
+     "pos": [
+      -1.91,
+      -0.312,
+      0.88
+     ],
+     "aim": [
+      -1.55,
+      1.8,
+      1.152
+     ],
+     "lens": 30,
+     "subject": "partner",
+     "framing": "M",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field",
+      "net"
+     ],
+     "hold": 1.05,
+     "travel": 0.28
+    },
+    {
+     "at": {
+      "s": 15.18
+     },
+     "pos": [
+      0.1,
+      -1.756,
+      0.504
+     ],
+     "aim": [
+      0.0,
+      1.1,
+      1.193
+     ],
+     "lens": 24,
+     "subject": "hero",
+     "framing": "W",
+     "shows": [
+      "hero",
+      "partner",
+      "other",
+      "field"
+     ],
+     "hold": 0.91,
+     "travel": 0.28
+    }
+   ]
+  }
+ ],
+ "acts": [
+  {
+   "who": "hero",
+   "at": 0,
+   "pos": [
+    0.0,
+    1.1,
+    0.0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 0.09
+   },
+   "pose": "hold_out",
+   "face": "cool",
+   "say": [
+    0,
+    6
+   ],
+   "look": "cam",
+   "prop": "net",
+   "hand": "R"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 0.15
+   },
+   "pos": [
+    -1.55,
+    1.8,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 0.15
+   },
+   "pos": [
+    1.55,
+    1.8,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 1.42
+   },
+   "face": "proud"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 2.02
+   },
+   "face": "curious"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 2.55
+   },
+   "pose": "stand",
+   "face": "proud",
+   "say": [
+    7,
+    12
+   ],
+   "look": "cam"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 3.68
+   },
+   "face": "curious"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 4.15
+   },
+   "face": "sweetSmile"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 4.68
+   },
+   "pose": "hold_out",
+   "face": "standard",
+   "say": [
+    13,
+    19
+   ],
+   "look": "cam",
+   "prop": "net",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 6.01
+   },
+   "face": "proud"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 6.61
+   },
+   "face": "smug"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 7.14
+   },
+   "pose": "point_up",
+   "face": "amazed",
+   "say": [
+    20,
+    24
+   ],
+   "look": "cam",
+   "prop": "fish",
+   "hand": "R"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 8.14
+   },
+   "face": "curious"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 8.52
+   },
+   "face": "judging"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 9.05
+   },
+   "pose": "point_out",
+   "face": "sweetSmile",
+   "say": [
+    25,
+    29
+   ],
+   "look": "cam",
+   "prop": "fish",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 9.11
+   },
+   "pos": [
+    0.0,
+    1.1,
+    0.0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 9.11
+   },
+   "pos": [
+    -1.55,
+    1.8,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "other",
+   "at": {
+    "s": 9.11
+   },
+   "pos": [
+    1.55,
+    1.8,
+    0.0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "look": "cam"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 10.06
+   },
+   "face": "proud"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 10.44
+   },
+   "face": "delight"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 10.97
+   },
+   "pose": "hold_out",
+   "face": "smug",
+   "say": [
+    30,
+    33
+   ],
+   "look": "cam",
+   "prop": "fish",
+   "hand": "R"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 11.82
+   },
+   "face": "curious"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 12.1
+   },
+   "face": "cool"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 12.63
+   },
+   "pose": "hold_out",
+   "face": "judging",
+   "say": [
+    34,
+    41
+   ],
+   "look": "cam",
+   "prop": "net",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 14.06
+   },
+   "face": "proud"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 14.72
+   },
+   "face": "proud"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 15.25
+   },
+   "pose": "stand",
+   "face": "proud",
+   "say": [
+    42,
+    47
+   ],
+   "look": "cam"
+  },
+  {
+   "who": "partner",
+   "at": {
+    "s": 16.59
+   },
+   "face": "curious"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 17.19
+   },
+   "face": "standard"
+  }
+ ],
+ "sentences": [
+  {
+   "text": "একদিন এক গরিব জেলে নদীতে জাল ফেলল।",
+   "words": [
+    0,
+    6
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "field",
+    "net"
+   ],
+   "nouns": [
+    {
+     "word": "একদিন",
+     "at": {
+      "s": 1.21
+     },
+     "show": "net"
+    }
+   ]
+  },
+  {
+   "text": "সে ভেবেছিল আজও কিছু পাবে না।",
+   "words": [
+    7,
+    12
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "field"
+   ],
+   "nouns": []
+  },
+  {
+   "text": "হঠাৎ জালে একটা সোনার মাছ আটকে গেল।",
+   "words": [
+    13,
+    19
+   ],
+   "subject": "partner",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "field",
+    "net"
+   ],
+   "nouns": [
+    {
+     "word": "হঠাৎ",
+     "at": {
+      "s": 5.8
+     },
+     "show": "net"
+    }
+   ]
+  },
+  {
+   "text": "জেলে অবাক হয়ে মাছটা দেখল।",
+   "words": [
+    20,
+    24
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "field",
+    "fish"
+   ],
+   "nouns": [
+    {
+     "word": "জেলে",
+     "at": {
+      "s": 7.98
+     },
+     "show": "fish"
+    }
+   ]
+  },
+  {
+   "text": "মাছটা বলল, আমাকে ছেড়ে দাও।",
+   "words": [
+    25,
+    29
+   ],
+   "subject": "partner",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "field",
+    "fish"
+   ],
+   "nouns": [
+    {
+     "word": "মাছটা",
+     "at": {
+      "s": 9.9
+     },
+     "show": "fish"
+    }
+   ]
+  },
+  {
+   "text": "জেলে মাছটাকে ছেড়ে দিল।",
+   "words": [
+    30,
+    33
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "field",
+    "fish"
+   ],
+   "nouns": [
+    {
+     "word": "জেলে",
+     "at": {
+      "s": 11.69
+     },
+     "show": "fish"
+    }
+   ]
+  },
+  {
+   "text": "পরের দিন সে জালে অনেক বড় মাছ পেল।",
+   "words": [
+    34,
+    41
+   ],
+   "subject": "partner",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "field",
+    "net"
+   ],
+   "nouns": [
+    {
+     "word": "পরের",
+     "at": {
+      "s": 13.83
+     },
+     "show": "net"
+    }
+   ]
+  },
+  {
+   "text": "গ্রামের সবাই তার নামে গর্ব করল।",
+   "words": [
+    42,
+    47
+   ],
+   "subject": "hero",
+   "show": [
+    "hero",
+    "partner",
+    "other",
+    "field"
+   ],
+   "nouns": []
+  }
+ ],
+ "fx": [
+  {
+   "at": {
+    "s": 0.35
+   },
+   "kind": "glow",
+   "on": "net"
+  },
+  {
+   "at": {
+    "s": 9.31
+   },
+   "kind": "coin_glint",
+   "on": "fish"
+  }
+ ],
+ "moods": [
+  {
+   "at": {
+    "s": 0.15
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 1.32
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 2.61
+   },
+   "look": "spot_hero"
+  },
+  {
+   "at": {
+    "s": 3.59
+   },
+   "look": "gold_wash"
+  },
+  {
+   "at": {
+    "s": 4.74
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 5.91
+   },
+   "look": "flash_red"
+  },
+  {
+   "at": {
+    "s": 7.2
+   },
+   "look": "gold_wash"
+  },
+  {
+   "at": {
+    "s": 8.06
+   },
+   "look": "warm_glow"
+  },
+  {
+   "at": {
+    "s": 9.11
+   },
+   "look": "flash_red"
+  },
+  {
+   "at": {
+    "s": 9.98
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 11.03
+   },
+   "look": "warm_glow"
+  },
+  {
+   "at": {
+    "s": 11.76
+   },
+   "look": "spot_hero"
+  },
+  {
+   "at": {
+    "s": 12.69
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 13.94
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 15.31
+   },
+   "look": "spot_hero"
+  },
+  {
+   "at": {
+    "s": 16.48
+   },
+   "look": "gold_wash"
+  }
+ ],
+ "sound": [
+  {
+   "at": {
+    "s": 0.27
+   },
+   "name": "door_knock"
+  },
+  {
+   "at": {
+    "s": 4.86
+   },
+   "name": "coin_chink"
+  },
+  {
+   "at": {
+    "s": 9.23
+   },
+   "name": "door_knock"
+  },
+  {
+   "at": {
+    "s": 12.81
+   },
+   "name": "coin_chink"
+  }
+ ],
+ "kicks": [
+  {
+   "at": {
+    "s": 2.61
+   },
+   "amp": 1.1
+  },
+  {
+   "at": {
+    "s": 9.11
+   },
+   "amp": 1.1
+  },
+  {
+   "at": {
+    "s": 15.31
+   },
+   "amp": 1.1
+  }
+ ]
+}

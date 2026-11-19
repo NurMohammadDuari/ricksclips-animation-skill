@@ -50,6 +50,24 @@ For the step-by-step production runbook see [`PIPELINE.md`](PIPELINE.md); for ep
 | `examples/lightning-spear/` | a complete finished film's docs + code (no media) |
 | `episodes/<name>/` | one film per folder: `film.json`, `sets/`, `voice/`, docs, `out/` artifacts |
 
+## 1b. `tools/autofilm.py` — script → sets + levelled film
+
+`autofilm.py` is the generic entry point: no story-specific code, no hard-coded `shop.js`/`home.js`.
+It writes a whole episode from any Bangla/English script, then calls `film_plan.py check` and autotunes.
+
+| stage | file | notes |
+|---|---|---|
+| topic reading | `autofilm.py` lexicons | place / cast / prop / face / pose word lists, Bangla + English |
+| set generation | `episodes/<ep>/sets/set_pN.js` | a `layout` dict + `buildPlace()`; plain data, human-editable |
+| shared geometry | `templates/threejs_film/sets/place_kit.js` | one kit for room, shop, office, kitchen, class, street, market, field, station; Z up, base-centred boxes |
+| levelling | `autofilm.py::cam_for` | distances/aims solved from the gate's projection: W `1.70H / 0.30H / 0.71H`, M `1.32H / 0.55H / 0.72H`, C `0.885H / 0.92H / 0.75H`; aim is `[x, y, z]` subject x, subject y, aim height |
+| staging | `autofilm.py::SLOTS`, `STAGE_Y`, `clear_stage()` | three fixed slots in front, furniture behind them, short cast on a saved step |
+| repair | `autofilm.py::repair`, `speed_repair()` | measures the baked plan, re-shoots bad framings and gives fast travels more frames |
+
+The generated sets are imported by `film.js` from the episode's own `sets/` folder (with a kit fallback),
+so what you see in the render is exactly the saved set. `SCRIPT.md`, `SETS.md` and `CAMERA_NOTE.md`
+document the result inside the episode.
+
 ## 2. The one file: `film.json`
 
 Everything about a film lives in one JSON file. `tools/film_plan.py` is the only interpreter; both the three.js preview
