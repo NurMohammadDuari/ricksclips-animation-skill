@@ -1,0 +1,541 @@
+{
+ "title": "The Lantern Keeper — demo 10 s (self-written test short, not a fact-checked story)",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "words": "voice/words.json",
+ "camera_idea": {
+  "name": "One unbroken walk",
+  "why": "The camera walks with the keeper down the lantern row exactly once, never cutting: a single flowing dolly that starts wide behind him, drifts close as he lights each lantern, swings to the kid at the last lantern, and settles as the kid lights it. No cuts, no travel-spikes — the move itself is the story.",
+  "signature": "one continuous take, keeper leading, lantern glow growing behind the lens"
+ },
+ "cast": {
+  "keeper": {
+   "puppet": "cast:aviator",
+   "height": 1.8,
+   "heads_tall": 3.0
+  },
+  "kid": {
+   "puppet": "cast:bbqdad",
+   "height": 1.1,
+   "heads_tall": 2.3
+  }
+ },
+ "places": {
+  "market": {
+   "set": "market",
+   "light": "night",
+   "backdrop": 7.0
+  }
+ },
+ "props": {
+  "lantern_last": {
+   "pos": [
+    0.0,
+    0.6,
+    0
+   ],
+   "kind": "paper_lantern"
+  },
+  "match": {
+   "held_by": "kid"
+  }
+ },
+ "takes": [
+  {
+   "id": "t1",
+   "place": "market",
+   "stations": [
+    {
+     "at": 0,
+     "pos": [
+      0.4,
+      -3.4,
+      0.7
+     ],
+     "aim": [
+      0.0,
+      0.4,
+      1.45
+     ],
+     "lens": 24,
+     "subject": "keeper",
+     "framing": "W",
+     "shows": [
+      "lantern_last",
+      "kid"
+     ],
+     "hold": 0.3
+    },
+    {
+     "at": [
+      "lantern",
+      1
+     ],
+     "lead": 3,
+     "pos": [
+      -0.5,
+      -2.4,
+      0.9
+     ],
+     "aim": [
+      0.1,
+      0.4,
+      1.2500000000000002
+     ],
+     "lens": 24,
+     "subject": "keeper",
+     "framing": "M",
+     "shows": [
+      "lantern_last"
+     ],
+     "word": "lantern",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "one",
+      2
+     ],
+     "lead": 4,
+     "pos": [
+      -1.0,
+      -1.5,
+      1.0
+     ],
+     "aim": [
+      0.2,
+      0.6,
+      1.45
+     ],
+     "lens": 24,
+     "subject": "keeper",
+     "framing": "W",
+     "shows": [
+      "lantern_last"
+     ],
+     "word": "one",
+     "travel": 0.7,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "tonight",
+      1
+     ],
+     "lead": 4,
+     "via": [
+      [
+       -1.2,
+       -2.0,
+       0.8
+      ]
+     ],
+     "pos": [
+      -0.2,
+      -1.6,
+      1.3
+     ],
+     "aim": [
+      0.0,
+      0.7,
+      1.2500000000000002
+     ],
+     "lens": 24,
+     "subject": "keeper",
+     "framing": "M",
+     "word": "tonight",
+     "travel": 0.9,
+     "hold": 0.4
+    },
+    {
+     "at": [
+      "already",
+      1
+     ],
+     "lead": 3,
+     "pos": [
+      0.9,
+      -1.2,
+      1.4
+     ],
+     "aim": [
+      -0.1,
+      0.8,
+      1.05
+     ],
+     "lens": 24,
+     "subject": "keeper",
+     "framing": "C",
+     "shows": [
+      "lantern_last"
+     ],
+     "word": "already",
+     "travel": 0.6,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "small",
+      1
+     ],
+     "lead": 4,
+     "pos": [
+      1.4,
+      -1.8,
+      1.0
+     ],
+     "aim": [
+      -0.6,
+      1.0,
+      0.8499999999999999
+     ],
+     "lens": 24,
+     "subject": "kid",
+     "framing": "M",
+     "shows": [
+      "lantern_last",
+      "match"
+     ],
+     "word": "small",
+     "travel": 0.4,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "held",
+      1
+     ],
+     "lead": 3,
+     "pos": [
+      -0.8,
+      -1.6,
+      1.2
+     ],
+     "aim": [
+      0.1,
+      1.1,
+      1.05
+     ],
+     "lens": 24,
+     "subject": "kid",
+     "framing": "M",
+     "shows": [
+      "match",
+      "lantern_last"
+     ],
+     "word": "held",
+     "travel": 0.35,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "smiled",
+      1
+     ],
+     "lead": 4,
+     "pos": [
+      0.2,
+      -2.2,
+      0.9
+     ],
+     "aim": [
+      -0.1,
+      0.8,
+      1.45
+     ],
+     "lens": 24,
+     "subject": "keeper",
+     "framing": "W",
+     "shows": [
+      "kid",
+      "lantern_last"
+     ],
+     "word": "smiled",
+     "travel": 0.7,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "it",
+      1
+     ],
+     "lead": 0,
+     "pos": [
+      0.4,
+      -3.4,
+      0.7
+     ],
+     "aim": [
+      0.0,
+      0.4,
+      1.45
+     ],
+     "lens": 24,
+     "subject": "keeper",
+     "framing": "W",
+     "shows": [
+      "lantern_last",
+      "kid"
+     ],
+     "word": "it",
+     "travel": 1.1,
+     "travel_roll": 3,
+     "loop": true
+    }
+   ],
+   "rigs": []
+  }
+ ],
+ "acts": [
+  {
+   "who": "keeper",
+   "at": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "keeper",
+   "at": [
+    "lantern",
+    1
+   ],
+   "face": "proud",
+   "pose": "point_up"
+  },
+  {
+   "who": "keeper",
+   "at": [
+    "one",
+    2
+   ],
+   "face": "cool",
+   "pose": "hands_hips"
+  },
+  {
+   "who": "keeper",
+   "at": [
+    "tonight",
+    1
+   ],
+   "face": "sus",
+   "pose": "stand",
+   "view": "34",
+   "dir": 1
+  },
+  {
+   "who": "keeper",
+   "at": [
+    "already",
+    1
+   ],
+   "face": "omg",
+   "pose": "point_out",
+   "view": "front",
+   "dir": -1
+  },
+  {
+   "who": "keeper",
+   "at": [
+    "smiled",
+    1
+   ],
+   "face": "delight",
+   "pose": "clap"
+  },
+  {
+   "who": "keeper",
+   "at": [
+    "it",
+    1
+   ],
+   "face": "delight",
+   "pose": "stand",
+   "view": "front",
+   "dir": 1
+  },
+  {
+   "who": "kid",
+   "at": 0,
+   "pos": [
+    -0.6,
+    1.0,
+    0.55
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "kid",
+   "at": [
+    "small",
+    1
+   ],
+   "face": "cool",
+   "pose": "finger_up",
+   "pos": [
+    -0.6,
+    1.0,
+    0.55
+   ]
+  },
+  {
+   "who": "kid",
+   "at": [
+    "held",
+    1
+   ],
+   "face": "fangirl",
+   "pose": "point_up",
+   "prop": "match",
+   "hand": "R",
+   "pos": [
+    -0.6,
+    1.0,
+    0.55
+   ]
+  },
+  {
+   "who": "kid",
+   "at": [
+    "it",
+    1
+   ],
+   "face": "delight",
+   "pose": "clap",
+   "punch": true,
+   "punch_s": 0.4,
+   "pos": [
+    -0.6,
+    1.0,
+    0.55
+   ]
+  }
+ ],
+ "sentences": [
+  {
+   "text": "Every night the lantern keeper lit the market one by one.",
+   "words": [
+    0,
+    10
+   ],
+   "subject": "keeper",
+   "nouns": [
+    {
+     "word": "lantern",
+     "show": "lantern_last"
+    }
+   ]
+  },
+  {
+   "text": "But tonight, the last lantern was already glowing,",
+   "words": [
+    11,
+    18
+   ],
+   "subject": "keeper",
+   "nouns": [
+    {
+     "word": "lantern",
+     "show": "lantern_last"
+    }
+   ]
+  },
+  {
+   "text": "and a small kid held the match.",
+   "words": [
+    19,
+    25
+   ],
+   "subject": "kid",
+   "show": [
+    "match",
+    "lantern_last"
+   ],
+   "nouns": [
+    {
+     "word": "match",
+     "show": "match"
+    },
+    {
+     "word": "kid",
+     "show": "kid"
+    }
+   ]
+  },
+  {
+   "text": "The keeper smiled, and let the kid light it.",
+   "words": [
+    26,
+    34
+   ],
+   "subject": "keeper",
+   "show": [
+    "kid",
+    "lantern_last"
+   ]
+  }
+ ],
+ "kicks": [
+  {
+   "at": [
+    "smiled",
+    1
+   ],
+   "amp": 1.6
+  },
+  {
+   "at": [
+    "it",
+    1
+   ],
+   "amp": 2.0
+  }
+ ],
+ "fx": [
+  {
+   "at": [
+    "one",
+    2
+   ],
+   "kind": "glow",
+   "on": "lantern_last"
+  },
+  {
+   "at": [
+    "it",
+    1
+   ],
+   "kind": "glow",
+   "on": "lantern_last"
+  }
+ ],
+ "moods": [
+  {
+   "at": [
+    "tonight",
+    1
+   ],
+   "look": "warm_up"
+  },
+  {
+   "at": [
+    "small",
+    1
+   ],
+   "look": "spot_hero"
+  }
+ ],
+ "sound": []
+}

@@ -1,0 +1,3596 @@
+{
+ "title": "৪৮ শক্তির নিয়ম — নিয়ম ১১ (বাংলা): কাজ সবাইকে শেখান, জায়গা কাউকে না",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "end": 3645,
+ "words": "voice/words.json",
+ "camera_idea": {
+  "name": "The counter that changes hands",
+  "why": "The sweet-shop counter is the seat of power, so every era of the story is told by WHO stands behind it: the uncle alone, Rafi behind it while the nephew learns in front, Rafi driven to the neighbour's counter for half pay, and finally Rafi back behind a counter he partly owns. The camera crosses from the customer side to the owner side whenever the power moves.",
+  "signature": "The home door: the uncle arrives through the same dark doorway three times - firing, scheming, begging - and the third arrival is a night knock staged from further away, so his fall reads in the framing."
+ },
+ "cast": {
+  "chacha": {
+   "puppet": "cast:bbqdad",
+   "height": 1.68,
+   "heads_tall": 2.7
+  },
+  "rafi": {
+   "puppet": "cast:barista",
+   "height": 1.7,
+   "heads_tall": 2.8
+  },
+  "nephew": {
+   "puppet": "cast:backpack",
+   "height": 1.35,
+   "heads_tall": 2.4
+  },
+  "ma": {
+   "puppet": "form:lady",
+   "height": 1.58,
+   "heads_tall": 2.8
+  },
+  "neighbor": {
+   "puppet": "cast:business",
+   "height": 1.72,
+   "heads_tall": 2.8
+  },
+  "helper": {
+   "puppet": "cast:scout",
+   "height": 1.5,
+   "heads_tall": 2.5
+  }
+ },
+ "places": {
+  "shop": {
+   "set": "shop",
+   "light": "morning",
+   "backdrop": 9.0
+  },
+  "home": {
+   "set": "home",
+   "light": "interior",
+   "backdrop": 7.0
+  },
+  "home_door": {
+   "set": "home",
+   "light": "night",
+   "backdrop": 8.0
+  },
+  "shop2": {
+   "set": "shop",
+   "light": "golden",
+   "backdrop": 10.0
+  }
+ },
+ "props": {
+  "khata": {
+   "kind": "notebook"
+  },
+  "coin": {
+   "kind": "coin"
+  }
+ },
+ "takes": [
+  {
+   "id": "t1",
+   "place": "shop",
+   "stations": [
+    {
+     "at": 0,
+     "pos": [
+      1.0,
+      -1.3,
+      1.9
+     ],
+     "aim": [
+      0.85,
+      2.15,
+      1.55
+     ],
+     "lens": 24,
+     "subject": "chacha",
+     "framing": "W",
+     "shows": [
+      "nephew",
+      "counter"
+     ],
+     "hold": 0.35,
+     "travel": 0.5,
+     "drift": [
+      0.35,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "at": {
+      "s": 4.0
+     },
+     "lead": 4,
+     "pos": [
+      0.0,
+      -1.106,
+      1.25
+     ],
+     "aim": [
+      0.15,
+      0.35,
+      1.376
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "M",
+     "shows": [
+      "chacha",
+      "nephew",
+      "counter"
+     ],
+     "word": "চাচা",
+     "hold": 0.35,
+     "travel": 1.2
+    },
+    {
+     "at": {
+      "s": 6.3
+     },
+     "pos": [
+      -1.35,
+      -1.2,
+      1.05
+     ],
+     "aim": [
+      0.65,
+      1.5,
+      1.1
+     ],
+     "lens": 24,
+     "subject": "counter",
+     "framing": "P",
+     "shows": [
+      "counter",
+      "nephew"
+     ],
+     "hold": 0.4,
+     "travel": 0.9
+    },
+    {
+     "at": {
+      "s": 8.5
+     },
+     "lead": 4,
+     "pos": [
+      -3.5,
+      -2.0,
+      1.4
+     ],
+     "aim": [
+      -2.8,
+      1.4,
+      1.35
+     ],
+     "lens": 24,
+     "subject": "counter",
+     "framing": "P",
+     "shows": [
+      "counter",
+      "sign_face",
+      "shelf_board"
+     ],
+     "hold": 0.2,
+     "travel": 0.85
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "place": "home",
+   "stations": [
+    {
+     "at": {
+      "s": 9.0
+     },
+     "lead": 5,
+     "pos": [
+      1.65,
+      0.45,
+      1.0
+     ],
+     "aim": [
+      2.05,
+      2.75,
+      1.349
+     ],
+     "lens": 24,
+     "subject": "chacha",
+     "framing": "W",
+     "shows": [
+      "box",
+      "door",
+      "rafi"
+     ],
+     "word": "কিন্তু",
+     "hold": 0.35,
+     "travel": 0.35
+    },
+    {
+     "at": {
+      "s": 15.2
+     },
+     "lead": 4,
+     "pos": [
+      1.85,
+      -0.4,
+      1.0
+     ],
+     "aim": [
+      1.2000000000000002,
+      1.9,
+      1.349
+     ],
+     "lens": 24,
+     "subject": "chacha",
+     "framing": "W",
+     "shows": [
+      "nephew",
+      "box"
+     ],
+     "word": "অথচ",
+     "hold": 0.4,
+     "travel": 1.8,
+     "creep": 0
+    },
+    {
+     "at": {
+      "s": 18.2
+     },
+     "pos": [
+      0.5,
+      0.3,
+      1.2
+     ],
+     "aim": [
+      3.25,
+      3.3,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "door",
+     "framing": "P",
+     "shows": [
+      "door",
+      "chacha"
+     ],
+     "hold": 0.4,
+     "travel": 1.0
+    },
+    {
+     "at": {
+      "s": 21.2
+     },
+     "lead": 4,
+     "pos": [
+      1.2,
+      -1.0,
+      1.0
+     ],
+     "aim": [
+      1.15,
+      2.6,
+      1.35
+     ],
+     "lens": 24,
+     "subject": "chacha",
+     "framing": "W",
+     "shows": [
+      "rafi",
+      "nephew"
+     ],
+     "word": "রাফি",
+     "hold": 0.35,
+     "travel": 1.1
+    },
+    {
+     "at": {
+      "s": 27.7
+     },
+     "pos": [
+      1.15,
+      -0.6,
+      0.95
+     ],
+     "aim": [
+      -0.5499999999999999,
+      1.5,
+      0.8
+     ],
+     "lens": 24,
+     "subject": "table",
+     "framing": "P",
+     "shows": [
+      "table",
+      "rafi",
+      "nephew"
+     ],
+     "hold": 0.4,
+     "travel": 1.1
+    },
+    {
+     "at": {
+      "s": 25.2
+     },
+     "lead": 4,
+     "pos": [
+      -0.75,
+      -1.07,
+      1.25
+     ],
+     "aim": [
+      -0.95,
+      0.35,
+      1.278
+     ],
+     "lens": 24,
+     "subject": "ma",
+     "framing": "M",
+     "shows": [
+      "chacha",
+      "nephew"
+     ],
+     "word": "সব",
+     "hold": 0.4,
+     "travel": 1.2
+    },
+    {
+     "at": {
+      "s": 30.2
+     },
+     "lead": 4,
+     "pos": [
+      0.6,
+      -1.6,
+      1.0
+     ],
+     "aim": [
+      -0.35,
+      0.9,
+      1.38
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "W",
+     "shows": [
+      "nephew",
+      "ma",
+      "chacha"
+     ],
+     "word": "লোক",
+     "hold": 0.3,
+     "travel": 0.7
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "place": "shop",
+   "stations": [
+    {
+     "at": {
+      "s": 31.3
+     },
+     "lead": 5,
+     "pos": [
+      0.25,
+      -0.3,
+      1.75
+     ],
+     "aim": [
+      -0.6,
+      2.1,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "W",
+     "shows": [
+      "khata",
+      "counter",
+      "nephew"
+     ],
+     "word": "মায়ের",
+     "hold": 0.4,
+     "travel": 0.55,
+     "creep": 0
+    },
+    {
+     "at": {
+      "s": 34.4
+     },
+     "pos": [
+      -1.5,
+      -0.9,
+      1.0
+     ],
+     "aim": [
+      -0.25,
+      1.5,
+      1.1
+     ],
+     "lens": 24,
+     "subject": "counter",
+     "framing": "P",
+     "shows": [
+      "counter",
+      "khata"
+     ],
+     "hold": 0.4,
+     "travel": 1.2
+    },
+    {
+     "at": {
+      "s": 37.6
+     },
+     "lead": 4,
+     "pos": [
+      0.45,
+      0.85,
+      1.5
+     ],
+     "aim": [
+      0.0,
+      2.02,
+      1.35
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "C",
+     "shows": [
+      "khata",
+      "rafi",
+      "nephew"
+     ],
+     "word": "নম্বর",
+     "hold": 0.4,
+     "travel": 1.2
+    },
+    {
+     "at": {
+      "s": 43.0
+     },
+     "lead": 4,
+     "pos": [
+      -3.4,
+      -2.2,
+      1.5
+     ],
+     "aim": [
+      -1.3,
+      1.0,
+      1.4
+     ],
+     "lens": 24,
+     "subject": "shelf_board",
+     "framing": "P",
+     "shows": [
+      "shelf_board",
+      "coin"
+     ],
+     "word": "সেই",
+     "hold": 0.35,
+     "travel": 4.3
+    },
+    {
+     "at": {
+      "s": 46.6
+     },
+     "lead": 4,
+     "pos": [
+      0.55,
+      -0.3,
+      1.75
+     ],
+     "aim": [
+      0.30000000000000004,
+      2.1,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "W",
+     "shows": [
+      "khata",
+      "coin"
+     ],
+     "word": "ফিরলো",
+     "hold": 0.3,
+     "travel": 1.0
+    }
+   ]
+  },
+  {
+   "id": "t4",
+   "place": "home",
+   "stations": [
+    {
+     "at": {
+      "s": 48.45
+     },
+     "lead": 4,
+     "pos": [
+      0.0,
+      -2.517,
+      1.0
+     ],
+     "aim": [
+      -0.55,
+      0.35,
+      1.278
+     ],
+     "lens": 24,
+     "subject": "ma",
+     "framing": "W",
+     "shows": [
+      "rafi"
+     ],
+     "word": "ভাত",
+     "hold": 0.45
+    }
+   ]
+  },
+  {
+   "id": "t5",
+   "place": "shop2",
+   "stations": [
+    {
+     "at": {
+      "s": 53.2
+     },
+     "lead": 5,
+     "pos": [
+      0.05,
+      -1.9,
+      1.75
+     ],
+     "aim": [
+      -0.05,
+      0.4,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "W",
+     "shows": [
+      "counter",
+      "neighbor",
+      "coin"
+     ],
+     "word": "পাশের",
+     "hold": 0.4,
+     "travel": 0.75
+    },
+    {
+     "at": {
+      "s": 55.6
+     },
+     "lead": 4,
+     "pos": [
+      0.35,
+      -0.2,
+      1.75
+     ],
+     "aim": [
+      -0.14999999999999997,
+      2.1,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "W",
+     "shows": [
+      "coin",
+      "neighbor"
+     ],
+     "word": "বেতনে",
+     "hold": 0.35,
+     "travel": 0.55
+    },
+    {
+     "at": {
+      "s": 58.2
+     },
+     "pos": [
+      2.05,
+      -1.0,
+      1.0
+     ],
+     "aim": [
+      0.25,
+      1.5,
+      1.1
+     ],
+     "lens": 24,
+     "subject": "counter",
+     "framing": "P",
+     "shows": [
+      "counter",
+      "coin"
+     ],
+     "hold": 0.4,
+     "travel": 0.9
+    },
+    {
+     "at": {
+      "s": 60.5
+     },
+     "lead": 4,
+     "pos": [
+      -1.9,
+      -1.2,
+      1.75
+     ],
+     "aim": [
+      -0.25,
+      2.05,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "W",
+     "shows": [
+      "helper",
+      "neighbor",
+      "khata"
+     ],
+     "word": "শিখালো",
+     "hold": 0.4,
+     "travel": 1.0,
+     "creep": 0
+    },
+    {
+     "at": {
+      "s": 63.6
+     },
+     "lead": 6,
+     "pos": [
+      0.6,
+      -0.72,
+      1.25
+     ],
+     "aim": [
+      1.15,
+      0.7,
+      1.18
+     ],
+     "lens": 24,
+     "subject": "helper",
+     "framing": "M",
+     "shows": [
+      "rafi",
+      "khata"
+     ],
+     "word": "হাতে",
+     "hold": 0.3,
+     "travel": 1.4
+    }
+   ]
+  },
+  {
+   "id": "t6",
+   "place": "shop",
+   "stations": [
+    {
+     "at": {
+      "s": 64.8
+     },
+     "lead": 4,
+     "pos": [
+      -0.4,
+      -1.05,
+      1.3
+     ],
+     "aim": [
+      0.0,
+      0.55,
+      1.1
+     ],
+     "lens": 24,
+     "subject": "nephew",
+     "framing": "W",
+     "shows": [
+      "khata",
+      "counter"
+     ],
+     "hold": 0.4,
+     "travel": 0.55
+    },
+    {
+     "at": {
+      "s": 68.8
+     },
+     "lead": 4,
+     "pos": [
+      0.3,
+      -1.05,
+      1.3
+     ],
+     "aim": [
+      0.0,
+      0.55,
+      1.05
+     ],
+     "lens": 24,
+     "subject": "nephew",
+     "framing": "W",
+     "shows": [
+      "khata",
+      "counter"
+     ],
+     "hold": 0.3,
+     "travel": 0.5
+    }
+   ]
+  },
+  {
+   "id": "t7",
+   "place": "shop2",
+   "stations": [
+    {
+     "at": {
+      "s": 69.8
+     },
+     "lead": 4,
+     "pos": [
+      -0.7,
+      0.68,
+      1.75
+     ],
+     "aim": [
+      -0.15,
+      2.1,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "M",
+     "shows": [
+      "counter",
+      "neighbor"
+     ],
+     "word": "রাফিকে",
+     "hold": 0.35,
+     "travel": 0.35
+    },
+    {
+     "at": {
+      "s": 71.4
+     },
+     "pos": [
+      1.9,
+      -0.6,
+      1.0
+     ],
+     "aim": [
+      0.25,
+      1.5,
+      1.1
+     ],
+     "lens": 24,
+     "subject": "counter",
+     "framing": "P",
+     "shows": [
+      "counter",
+      "rafi"
+     ],
+     "hold": 0.4,
+     "travel": 0.9
+    },
+    {
+     "at": {
+      "s": 73.0
+     },
+     "lead": 4,
+     "pos": [
+      0.75,
+      -0.767,
+      1.75
+     ],
+     "aim": [
+      -0.2,
+      2.1,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "W",
+     "shows": [
+      "helper",
+      "neighbor",
+      "rafi"
+     ],
+     "word": "কাছে",
+     "hold": 0.3,
+     "travel": 0.7
+    }
+   ]
+  },
+  {
+   "id": "t8",
+   "place": "home_door",
+   "stations": [
+    {
+     "at": {
+      "s": 75.2
+     },
+     "lead": 5,
+     "pos": [
+      1.924,
+      0.119,
+      1.0
+     ],
+     "aim": [
+      1.624,
+      2.419,
+      1.349
+     ],
+     "lens": 24,
+     "subject": "chacha",
+     "framing": "W",
+     "shows": [
+      "box",
+      "door"
+     ],
+     "word": "প্যাকেট",
+     "hold": 0.35,
+     "travel": 0.35,
+     "creep": 0
+    },
+    {
+     "at": {
+      "s": 79.9
+     },
+     "lead": 4,
+     "pos": [
+      -0.9,
+      -1.2,
+      1.0
+     ],
+     "aim": [
+      1.45,
+      2.4,
+      1.35
+     ],
+     "lens": 24,
+     "subject": "chacha",
+     "framing": "W",
+     "shows": [
+      "box",
+      "door"
+     ],
+     "word": "বললেন",
+     "hold": 0.3,
+     "travel": 1.3
+    }
+   ]
+  },
+  {
+   "id": "t9",
+   "place": "home",
+   "stations": [
+    {
+     "at": {
+      "s": 81.2
+     },
+     "lead": 4,
+     "pos": [
+      2.0,
+      0.1,
+      1.0
+     ],
+     "aim": [
+      1.45,
+      2.4,
+      1.349
+     ],
+     "lens": 24,
+     "subject": "chacha",
+     "framing": "W",
+     "shows": [
+      "box",
+      "nephew"
+     ],
+     "word": "আবার",
+     "hold": 0.35,
+     "travel": 0.35
+    },
+    {
+     "at": {
+      "s": 83.6
+     },
+     "pos": [
+      0.5,
+      0.3,
+      1.1
+     ],
+     "aim": [
+      2.45,
+      3.3,
+      1.4
+     ],
+     "lens": 24,
+     "subject": "door",
+     "framing": "P",
+     "shows": [
+      "door",
+      "chacha"
+     ],
+     "hold": 0.4,
+     "travel": 0.9
+    },
+    {
+     "at": {
+      "s": 86.2
+     },
+     "lead": 4,
+     "pos": [
+      -0.2,
+      -1.02,
+      1.25
+     ],
+     "aim": [
+      0.1,
+      0.4,
+      1.376
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "M",
+     "shows": [
+      "khata",
+      "chacha"
+     ],
+     "word": "ভরসাটা",
+     "hold": 0.35,
+     "travel": 1.6
+    },
+    {
+     "at": {
+      "s": 90.6
+     },
+     "lead": 4,
+     "pos": [
+      1.2,
+      -2.0,
+      1.0
+     ],
+     "aim": [
+      -0.05,
+      0.4,
+      1.38
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "W",
+     "shows": [
+      "chacha",
+      "ma"
+     ],
+     "word": "না",
+     "hold": 1.15,
+     "travel": 0.9
+    }
+   ]
+  },
+  {
+   "id": "t10",
+   "place": "shop2",
+   "stations": [
+    {
+     "at": {
+      "s": 92.2
+     },
+     "lead": 5,
+     "pos": [
+      0.5,
+      -1.9,
+      1.75
+     ],
+     "aim": [
+      -0.5,
+      0.4,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "W",
+     "shows": [
+      "counter",
+      "neighbor"
+     ],
+     "word": "ফিরলো",
+     "hold": 0.35,
+     "travel": 0.35
+    },
+    {
+     "at": {
+      "s": 95.0
+     },
+     "lead": 4,
+     "pos": [
+      -2.1,
+      -1.9,
+      1.0
+     ],
+     "aim": [
+      -1.5,
+      0.4,
+      1.393
+     ],
+     "lens": 24,
+     "subject": "neighbor",
+     "framing": "W",
+     "shows": [
+      "coin",
+      "rafi"
+     ],
+     "word": "অংশীদার",
+     "hold": 0.35,
+     "travel": 1.1
+    },
+    {
+     "at": {
+      "s": 97.4
+     },
+     "lead": 4,
+     "pos": [
+      0.0,
+      0.35,
+      1.85
+     ],
+     "aim": [
+      0.0,
+      1.5,
+      1.05
+     ],
+     "lens": 24,
+     "subject": "coin",
+     "framing": "O",
+     "shows": [
+      "coin"
+     ],
+     "word": "বানালেন",
+     "hold": 0.3,
+     "travel": 1.0
+    },
+    {
+     "at": {
+      "s": 99.2
+     },
+     "lead": 5,
+     "pos": [
+      -1.3,
+      -1.833,
+      1.9
+     ],
+     "aim": [
+      -0.65,
+      2.1,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "P",
+     "shows": [
+      "counter",
+      "sign_face",
+      "rafi"
+     ],
+     "word": "শেখান",
+     "hold": 0.5,
+     "travel": 0.6
+    },
+    {
+     "at": {
+      "s": 104.6
+     },
+     "lead": 4,
+     "pos": [
+      -0.55,
+      -0.3,
+      1.75
+     ],
+     "aim": [
+      -0.25,
+      2.1,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "W",
+     "shows": [
+      "counter",
+      "rafi"
+     ],
+     "word": "শিখিয়ে",
+     "hold": 0.4,
+     "travel": 2.2
+    },
+    {
+     "at": {
+      "s": 106.2
+     },
+     "pos": [
+      -2.2,
+      -1.4,
+      1.05
+     ],
+     "aim": [
+      0.0,
+      1.5,
+      1.1
+     ],
+     "lens": 24,
+     "subject": "counter",
+     "framing": "P",
+     "shows": [
+      "counter",
+      "rafi"
+     ],
+     "hold": 0.4,
+     "travel": 0.9
+    },
+    {
+     "at": {
+      "s": 107.8
+     },
+     "lead": 4,
+     "pos": [
+      0.45,
+      -1.6,
+      1.0
+     ],
+     "aim": [
+      1.45,
+      0.7,
+      1.18
+     ],
+     "lens": 24,
+     "subject": "helper",
+     "framing": "W",
+     "shows": [
+      "khata",
+      "rafi"
+     ],
+     "word": "নম্বর",
+     "hold": 0.35,
+     "travel": 0.35
+    },
+    {
+     "at": {
+      "s": 110.4
+     },
+     "lead": 4,
+     "pos": [
+      -0.25,
+      0.85,
+      1.5
+     ],
+     "aim": [
+      0.0,
+      2.02,
+      1.35
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "C",
+     "shows": [
+      "khata",
+      "rafi"
+     ],
+     "word": "না",
+     "hold": 0.3,
+     "travel": 0.8
+    }
+   ]
+  },
+  {
+   "id": "t12",
+   "place": "shop2",
+   "stations": [
+    {
+     "at": {
+      "s": 112.2
+     },
+     "lead": 5,
+     "pos": [
+      -0.3,
+      -0.2,
+      1.75
+     ],
+     "aim": [
+      0.0,
+      2.1,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "W",
+     "shows": [
+      "helper",
+      "counter"
+     ],
+     "word": "চাকরিতেও",
+     "hold": 0.5,
+     "travel": 0.35
+    },
+    {
+     "at": {
+      "s": 116.4
+     },
+     "lead": 4,
+     "pos": [
+      -0.7,
+      0.68,
+      1.75
+     ],
+     "aim": [
+      -0.15,
+      2.1,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "M",
+     "shows": [
+      "rafi",
+      "counter"
+     ],
+     "word": "লিখুন",
+     "hold": 0.5,
+     "travel": 1.2
+    },
+    {
+     "at": {
+      "s": 118.4
+     },
+     "pos": [
+      1.85,
+      -1.2,
+      1.0
+     ],
+     "aim": [
+      0.25,
+      1.5,
+      1.1
+     ],
+     "lens": 24,
+     "subject": "counter",
+     "framing": "P",
+     "shows": [
+      "counter",
+      "helper"
+     ],
+     "hold": 0.4,
+     "travel": 1.0
+    },
+    {
+     "at": {
+      "s": 120.4
+     },
+     "lead": 4,
+     "pos": [
+      0.7,
+      -1.1,
+      1.75
+     ],
+     "aim": [
+      -0.15,
+      2.1,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "rafi",
+     "framing": "P",
+     "shows": [
+      "counter",
+      "sign_face"
+     ],
+     "word": "করুন",
+     "hold": 0.4,
+     "travel": 0.8
+    }
+   ]
+  }
+ ],
+ "kicks": [
+  {
+   "at": {
+    "s": 4.6
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 14.2
+   },
+   "amp": 1.3
+  },
+  {
+   "at": {
+    "s": 21.6
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 31.8
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 38.2
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 47.5
+   },
+   "amp": 1.2
+  },
+  {
+   "at": {
+    "s": 55.0
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 64.0
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 70.2
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 73.3
+   },
+   "amp": 1.2
+  },
+  {
+   "at": {
+    "s": 75.9
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 81.6
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 84.0
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 88.5
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 92.6
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 94.0
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 96.8
+   },
+   "amp": 1.3
+  },
+  {
+   "at": {
+    "s": 100.2
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 105.4
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 106.4
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 111.2
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 117.4
+   },
+   "amp": 1.4
+  },
+  {
+   "at": {
+    "s": 118.6
+   },
+   "amp": 1.4
+  }
+ ],
+ "acts": [
+  {
+   "who": "chacha",
+   "at": 0,
+   "pos": [
+    0.55,
+    2.15,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "hands_hips",
+   "face": "proud",
+   "say": [
+    0,
+    12
+   ]
+  },
+  {
+   "who": "rafi",
+   "at": 0,
+   "pos": [
+    0,
+    0.35,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "nephew",
+   "at": 0,
+   "pos": [
+    2.2,
+    2.4,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "proud"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 2.0
+   },
+   "pose": "lean_in",
+   "face": "deadInside"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 2.07
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 2.7
+   },
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 2.77
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 4.0
+   },
+   "say": [
+    13,
+    24
+   ],
+   "face": "deadInside"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 8.0
+   },
+   "pose": "stand",
+   "face": "grumpy"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 8.8
+   },
+   "exit": true
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 9.0
+   },
+   "pos": [
+    2.05,
+    2.75,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "grip_box",
+   "face": "smug"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 9.0
+   },
+   "pos": [
+    -0.2,
+    0.9,
+    0
+   ],
+   "face": "confused"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 9.0
+   },
+   "enter": true,
+   "pos": [
+    -0.75,
+    0.35,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "confused"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 10.93
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 11.0
+   },
+   "face": "cool"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 11.0
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 11.4
+   },
+   "pose": "lean_in",
+   "face": "confused"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 11.6
+   },
+   "face": "sweetSmile"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 11.6
+   },
+   "pose": "hands_hips",
+   "face": "confused"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 11.7
+   },
+   "face": "cool"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 11.7
+   },
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 13.6
+   },
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 14.3
+   },
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 14.4
+   },
+   "face": "proud"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 15.2
+   },
+   "pos": [
+    1.5,
+    1.9,
+    0
+   ],
+   "pose": "stand",
+   "face": "smug"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 15.2
+   },
+   "face": "standard"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 15.2
+   },
+   "visible": true,
+   "pos": [
+    1.15,
+    1.35,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "lean_in",
+   "face": "curious"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 16.8
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 17.2
+   },
+   "face": "cool"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 17.23
+   },
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 17.6
+   },
+   "pose": "point_out",
+   "face": "smug"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 17.8
+   },
+   "face": "suspicious"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 17.9
+   },
+   "face": "cool"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 17.93
+   },
+   "face": "cool"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 18.2
+   },
+   "face": "giggle"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 18.6
+   },
+   "pose": "lean_in",
+   "face": "confused"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 19.53
+   },
+   "face": "cool"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 19.7
+   },
+   "face": "cool"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 20.1
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 20.5
+   },
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 21.2
+   },
+   "pose": "hands_hips",
+   "face": "proud",
+   "say": [
+    55,
+    68
+   ]
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 21.4
+   },
+   "face": "happyCry"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 21.6
+   },
+   "face": "confused"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 22.4
+   },
+   "pose": "stand",
+   "face": "awkward"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 23.0
+   },
+   "pose": "hands_hips",
+   "face": "offended"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 23.23
+   },
+   "face": "cool"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 23.4
+   },
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 23.93
+   },
+   "face": "cool"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 24.1
+   },
+   "face": "cool"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 25.2
+   },
+   "say": [
+    69,
+    80
+   ],
+   "pose": "stand",
+   "face": "judging"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 25.4
+   },
+   "pose": "flinch",
+   "face": "sick"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 25.6
+   },
+   "face": "confused"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 27.13
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 27.4
+   },
+   "pose": "stand",
+   "face": "shy"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 27.8
+   },
+   "pose": "point_out",
+   "face": "angryFist"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 30.7
+   },
+   "exit": true
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 30.7
+   },
+   "exit": true
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 30.7
+   },
+   "exit": true
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 30.7
+   },
+   "exit": true
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 31.15
+   },
+   "visible": true,
+   "pos": [
+    0,
+    2.1,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "write",
+   "prop": "khata",
+   "hand": "R",
+   "face": "proud"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 31.3
+   },
+   "visible": true,
+   "pos": [
+    -0.5,
+    0.9,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "lean_in",
+   "face": "curious"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 33.33
+   },
+   "face": "cool"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 33.33
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 34.0
+   },
+   "face": "cool"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 34.03
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 34.03
+   },
+   "face": "cool"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 34.4
+   },
+   "pose": "stand",
+   "face": "amazed"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 36.33
+   },
+   "face": "cool"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 37.0
+   },
+   "pose": "stand",
+   "face": "amazed"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 43.0
+   },
+   "pose": "write",
+   "prop": "khata",
+   "hand": "R",
+   "face": "proud"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 43.2
+   },
+   "pose": "stand",
+   "prop": null,
+   "face": "proud"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 45.6
+   },
+   "prop": "coin",
+   "hand": "R",
+   "pose": "hold_out",
+   "face": "money"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 47.6
+   },
+   "exit": true
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 47.7
+   },
+   "exit": true
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 48.2
+   },
+   "visible": true,
+   "pos": [
+    0.1,
+    0.4,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "deadInside"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 48.2
+   },
+   "visible": true,
+   "say": [
+    124,
+    135
+   ],
+   "pose": "stand",
+   "face": "wail"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 50.13
+   },
+   "face": "cool"
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 50.6
+   },
+   "pose": "point_out",
+   "face": "angryFist"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 50.8
+   },
+   "pose": "press_watch",
+   "face": "sick"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 52.7
+   },
+   "exit": true
+  },
+  {
+   "who": "ma",
+   "at": {
+    "s": 52.7
+   },
+   "exit": true
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 53.05
+   },
+   "visible": true,
+   "pos": [
+    0,
+    2.1,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 53.05
+   },
+   "enter": true,
+   "pos": [
+    -1.5,
+    0.4,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "proud"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 53.2
+   },
+   "enter": true,
+   "pos": [
+    1.3,
+    0.7,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "confused"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 54.6
+   },
+   "pose": "hold_watch",
+   "face": "money"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 55.4
+   },
+   "face": "curious"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 56.0
+   },
+   "face": "curious"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 57.8
+   },
+   "pose": "point_out",
+   "face": "proud"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 57.9
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 58.5
+   },
+   "prop": null,
+   "pose": "point_out",
+   "face": "proud"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 58.6
+   },
+   "pose": "lean_in",
+   "face": "curious"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 60.5
+   },
+   "pos": [
+    -1.2,
+    0.5,
+    0
+   ],
+   "face": "standard"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 61.0
+   },
+   "face": "cool"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 61.2
+   },
+   "pose": "stand",
+   "face": "starstruck"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 63.0
+   },
+   "face": "smug"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 63.4
+   },
+   "pose": "hands_hips",
+   "face": "smug"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 64.7
+   },
+   "exit": true
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 64.7
+   },
+   "exit": true
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 64.7
+   },
+   "exit": true
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 64.65
+   },
+   "visible": true,
+   "pos": [
+    0,
+    2.1,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "write",
+   "prop": "khata",
+   "hand": "R",
+   "face": "proud"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 66.8
+   },
+   "face": "confused"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 68.6
+   },
+   "pose": "shrug",
+   "face": "confused"
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 69.7
+   },
+   "exit": true
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 69.7
+   },
+   "exit": true
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 69.65
+   },
+   "pose": "stand",
+   "face": "standard",
+   "visible": true
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 69.8
+   },
+   "face": "confused",
+   "visible": true
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 71.5
+   },
+   "visible": true,
+   "pos": [
+    1.5,
+    0.35,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "point_out",
+   "face": "angryFist"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 71.5
+   },
+   "pose": "point_out",
+   "face": "angryFist"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 71.5
+   },
+   "visible": true,
+   "pos": [
+    1.2,
+    0.5,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "confused"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 71.8
+   },
+   "face": "smug"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 73.3
+   },
+   "pos": [
+    0.2,
+    0.4,
+    0
+   ],
+   "face": "sus"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 73.6
+   },
+   "pose": "hands_hips",
+   "face": "proud"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 74.6
+   },
+   "exit": true
+  },
+  {
+   "who": "nephew",
+   "at": {
+    "s": 74.6
+   },
+   "exit": true
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 74.6
+   },
+   "exit": true
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 74.6
+   },
+   "exit": true
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 75.0
+   },
+   "visible": true,
+   "pos": [
+    2.05,
+    2.75,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "knock",
+   "face": "sweetSmile"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 75.0
+   },
+   "visible": true,
+   "pos": [
+    0.1,
+    0.4,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "confused"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 76.8
+   },
+   "pos": [
+    1.6,
+    2.4,
+    0
+   ],
+   "pose": "grip_box",
+   "face": "sweetSmile"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 77.03
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 77.73
+   },
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 78.6
+   },
+   "face": "pout"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 79.9
+   },
+   "pose": "stand",
+   "face": "strain"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 81.2
+   },
+   "pose": "shrug",
+   "face": "strain",
+   "say": [
+    205,
+    219
+   ]
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 81.2
+   },
+   "face": "judging"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 83.2
+   },
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 83.23
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 83.9
+   },
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 83.93
+   },
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 84.2
+   },
+   "face": "sweetSmile"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 86.2
+   },
+   "say": [
+    220,
+    232
+   ],
+   "pose": "point_up",
+   "face": "standard"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 86.5
+   },
+   "face": "bruh"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 88.0
+   },
+   "face": "smug"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 88.4
+   },
+   "pose": "stand",
+   "face": "grumpy"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 90.0
+   },
+   "pose": "hands_hips",
+   "face": "cool"
+  },
+  {
+   "who": "chacha",
+   "at": {
+    "s": 90.4
+   },
+   "exit": true
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 91.9
+   },
+   "exit": true
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 92.2
+   },
+   "visible": true,
+   "pos": [
+    0,
+    2.1,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 92.2
+   },
+   "visible": true,
+   "pos": [
+    -1.5,
+    0.4,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "stand",
+   "face": "delight"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 92.2
+   },
+   "visible": true,
+   "pos": [
+    1.3,
+    0.7,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "starstruck"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 94.8
+   },
+   "prop": "coin",
+   "hand": "R",
+   "pose": "hold_out",
+   "face": "money"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 95.0
+   },
+   "pose": "hold_out",
+   "face": "delight"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 95.2
+   },
+   "face": "amazed"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 96.6
+   },
+   "prop": null,
+   "pose": "stand",
+   "face": "proud"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 96.8
+   },
+   "prop": "coin",
+   "hand": "R",
+   "pose": "hold_out",
+   "face": "money"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 98.4
+   },
+   "pose": "stand",
+   "face": "proud"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 99.0
+   },
+   "pose": "hands_hips",
+   "face": "proud"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 99.2
+   },
+   "pose": "point_out",
+   "face": "cool"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 99.4
+   },
+   "pose": "lean_in",
+   "face": "curious"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 101.13
+   },
+   "face": "confused"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 101.33
+   },
+   "face": "cool"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 101.6
+   },
+   "face": "amazed"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 102.0
+   },
+   "pose": "hands_hips",
+   "face": "cool"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 103.23
+   },
+   "face": "confused"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 103.5
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 103.93
+   },
+   "face": "confused"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 104.6
+   },
+   "face": "smug"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 104.6
+   },
+   "face": "smug"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 104.6
+   },
+   "pose": "stand",
+   "face": "starstruck"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 107.8
+   },
+   "pose": "point_out",
+   "face": "proud"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 107.8
+   },
+   "pose": "lean_in",
+   "face": "curious"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 109.0
+   },
+   "pos": [
+    -1.2,
+    0.5,
+    0
+   ],
+   "face": "standard"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 110.4
+   },
+   "pose": "write",
+   "prop": "khata",
+   "hand": "R",
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 112.2
+   },
+   "pose": "stand",
+   "prop": null,
+   "face": "cool"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 112.2
+   },
+   "pose": "write",
+   "prop": "khata",
+   "hand": "R",
+   "face": "happyCry"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 112.4
+   },
+   "face": "proud"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 114.0
+   },
+   "face": "proud"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 116.4
+   },
+   "pose": "hands_hips",
+   "face": "smug"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 116.4
+   },
+   "pose": "clap",
+   "face": "happyCry"
+  },
+  {
+   "who": "neighbor",
+   "at": {
+    "s": 118.33
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 118.43
+   },
+   "face": "cool"
+  },
+  {
+   "who": "helper",
+   "at": {
+    "s": 118.6
+   },
+   "face": "proud"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 119.13
+   },
+   "face": "cool"
+  },
+  {
+   "who": "rafi",
+   "at": {
+    "s": 119.2
+   },
+   "face": "proud"
+  }
+ ],
+ "sentences": [
+  {
+   "text": "কাল থেকে আর আসা লাগবে না, রাফি। আমার ভাগ্নে এখন সব পারে।",
+   "words": [
+    0,
+    12
+   ],
+   "subject": "chacha",
+   "nouns": [
+    {
+     "word": "ভাগ্নে",
+     "show": "nephew"
+    }
+   ]
+  },
+  {
+   "text": "চাচা, ১০ বছর... আপনার ভাগ্নেরে তো সব আমিই শিখাইলাম!",
+   "words": [
+    13,
+    24
+   ],
+   "subject": "rafi",
+   "nouns": [
+    {
+     "word": "ভাগ্নেরে",
+     "show": "nephew"
+    }
+   ]
+  },
+  {
+   "text": "কিন্তু ৩ মাস পর, সেই চাচাই মিষ্টির প্যাকেট হাতে... রাফির বাসায় এসে হাজির!",
+   "words": [
+    25,
+    40
+   ],
+   "subject": "chacha",
+   "nouns": [
+    {
+     "word": "মিষ্টির",
+     "show": "box"
+    },
+    {
+     "word": "বাসায়",
+     "show": "door"
+    }
+   ]
+  },
+  {
+   "text": "অথচ ১ বছর আগে, চাচা নিজেই ভাগ্নেকে নিয়ে রাফির বাসায় এসে বলেছিলেন,",
+   "words": [
+    41,
+    54
+   ],
+   "subject": "chacha",
+   "nouns": [
+    {
+     "word": "ভাগ্নেকে",
+     "show": "nephew"
+    }
+   ]
+  },
+  {
+   "text": "রাফি, পোলাটারে কাজ শিখায় দাও... তুমি তো আমার নিজের পোলার মতো!",
+   "words": [
+    55,
+    68
+   ],
+   "subject": "chacha",
+   "nouns": [
+    {
+     "word": "কাজ",
+     "show": "rafi"
+    }
+   ]
+  },
+  {
+   "text": "সব শিখাইস না, বাবা... মালিকের ভাগ্নে, মালিকেরই লোক!",
+   "words": [
+    69,
+    80
+   ],
+   "subject": "ma",
+   "nouns": [
+    {
+     "word": "ভাগ্নে",
+     "n": 2,
+     "show": "nephew"
+    }
+   ]
+  },
+  {
+   "text": "মায়ের কথা হেসে উড়িয়ে, রাফি ভাগ্নেকে শিখালো সাপ্লায়ারদের নম্বর, বাকির খাতা... আর চিনিয়ে দিলো সব বাকির খদ্দের। ভাগ্নে সব শিখে ফেলতেই, চাচা বললেন সেই কথা... আর ১০ বছর পর, রাফি মাত্র ১ মাসের বেতন নিয়ে বাসায় ফিরলো।",
+   "words": [
+    81,
+    123
+   ],
+   "subject": "rafi",
+   "nouns": [
+    {
+     "word": "খাতা",
+     "show": "khata"
+    },
+    {
+     "word": "বেতন",
+     "show": "coin"
+    },
+    {
+     "word": "ভাগ্নে",
+     "n": 3,
+     "show": "nephew"
+    }
+   ]
+  },
+  {
+   "text": "যার পাতে ভাত দিলি... সেই তোর ভাত কাড়লো, বাবা!",
+   "words": [
+    124,
+    135
+   ],
+   "subject": "ma",
+   "nouns": [
+    {
+     "word": "ভাত",
+     "n": 2,
+     "show": "rafi"
+    }
+   ]
+  },
+  {
+   "text": "১ মাস পর, পাশের দোকানে অর্ধেক বেতনে চাকরি নিয়ে, রাফি এবার সবাইকে কাজ শিখালো... কিন্তু কিছু বড় খদ্দের রাখলো নিজের হাতে। ওদিকে বাকির খাতা ছিলো ভাগ্নের হাতে... কিন্তু বাকির খদ্দেররা চিনতো শুধু রাফিকে। ভাগ্নে বাকির টাকা চাইতে গিয়ে খদ্দেরদের বললো চোর... আর তারা মাল নিতে গেলো রাফির কাছে!",
+   "words": [
+    136,
+    189
+   ],
+   "subject": "rafi",
+   "nouns": [
+    {
+     "word": "বেতনে",
+     "show": "coin"
+    },
+    {
+     "word": "খাতা",
+     "n": 2,
+     "show": "khata"
+    }
+   ]
+  },
+  {
+   "text": "৩ মাসে বিক্রি অর্ধেক হতেই, চাচা মিষ্টির প্যাকেট হাতে রাফির বাসায় এসে বললেন,",
+   "words": [
+    190,
+    204
+   ],
+   "subject": "chacha",
+   "nouns": [
+    {
+     "word": "মিষ্টির",
+     "n": 2,
+     "show": "box"
+    }
+   ]
+  },
+  {
+   "text": "রাফি, কাল থেকে আবার আসো, বাবা... ভাগ্নে আমার কিছুই পারে না!",
+   "words": [
+    205,
+    219
+   ],
+   "subject": "chacha",
+   "nouns": [
+    {
+     "word": "ভাগ্নে",
+     "n": 4,
+     "show": "nephew"
+    }
+   ]
+  },
+  {
+   "text": "চাচা, কাজ তো সবই শিখাইছিলাম... খালি মানুষের ভরসাটা শিখানো যায় না।",
+   "words": [
+    220,
+    232
+   ],
+   "subject": "rafi",
+   "nouns": [
+    {
+     "word": "কাজ",
+     "n": 3,
+     "show": "khata"
+    }
+   ]
+  },
+  {
+   "text": "রাফি আর ফিরলো না... ৬ মাস পর, পাশের দোকানের মালিক ওকে ৪ আনার অংশীদার বানালেন!",
+   "words": [
+    233,
+    250
+   ],
+   "subject": "rafi",
+   "nouns": [
+    {
+     "word": "অংশীদার",
+     "show": "coin"
+    }
+   ]
+  },
+  {
+   "text": "কাজ সবাইকে শেখান... কিন্তু নিজের জায়গাটা কাউকে শিখিয়ে দিবেন না। রবার্ট গ্রিনের বইয়ের ১১ নম্বর নিয়ম বলে, নিজেকে এমন জায়গায় নাও, যেখানে তোমাকে ছাড়া চলে না।",
+   "words": [
+    251,
+    279
+   ],
+   "subject": "rafi",
+   "nouns": [
+    {
+     "word": "জায়গাটা",
+     "show": "counter"
+    }
+   ]
+  },
+  {
+   "text": "আপনার চাকরিতেও কি, মালিকের আত্মীয় এসে কারো জায়গা নিয়েছে? কী হয়েছিলো? কমেন্টে লিখুন। এমন আরো গল্প পেতে ফলো করুন।",
+   "words": [
+    280,
+    301
+   ],
+   "subject": "rafi",
+   "nouns": [
+    {
+     "word": "জায়গা",
+     "show": "counter"
+    }
+   ]
+  }
+ ],
+ "fx": [
+  {
+   "at": {
+    "s": 9.0
+   },
+   "kind": "door_knock",
+   "on": "door"
+  },
+  {
+   "at": {
+    "s": 14.2
+   },
+   "kind": "dust_hit",
+   "on": "door"
+  },
+  {
+   "at": {
+    "s": 31.4
+   },
+   "kind": "glow",
+   "on": "khata"
+  },
+  {
+   "at": {
+    "s": 34.2
+   },
+   "kind": "glint",
+   "on": "khata"
+  },
+  {
+   "at": {
+    "s": 37.8
+   },
+   "kind": "glow",
+   "on": "khata"
+  },
+  {
+   "at": {
+    "s": 45.8
+   },
+   "kind": "coin_glint",
+   "on": "coin"
+  },
+  {
+   "at": {
+    "s": 47.4
+   },
+   "kind": "dust_puff"
+  },
+  {
+   "at": {
+    "s": 55.2
+   },
+   "kind": "coin_glint",
+   "on": "coin"
+  },
+  {
+   "at": {
+    "s": 58.6
+   },
+   "kind": "paper_flutter",
+   "on": "khata"
+  },
+  {
+   "at": {
+    "s": 63.2
+   },
+   "kind": "glint",
+   "on": "khata"
+  },
+  {
+   "at": {
+    "s": 65.0
+   },
+   "kind": "glow",
+   "on": "khata"
+  },
+  {
+   "at": {
+    "s": 68.0
+   },
+   "kind": "steam_puff"
+  },
+  {
+   "at": {
+    "s": 72.9
+   },
+   "kind": "ink_drops"
+  },
+  {
+   "at": {
+    "s": 75.3
+   },
+   "kind": "door_knock",
+   "on": "door"
+  },
+  {
+   "at": {
+    "s": 79.9
+   },
+   "kind": "dust_hit",
+   "on": "door"
+  },
+  {
+   "at": {
+    "s": 96.8
+   },
+   "kind": "coin_glow",
+   "on": "coin"
+  },
+  {
+   "at": {
+    "s": 104.8
+   },
+   "kind": "glow",
+   "on": "counter"
+  },
+  {
+   "at": {
+    "s": 110.6
+   },
+   "kind": "glint",
+   "on": "khata"
+  },
+  {
+   "at": {
+    "s": 117.0
+   },
+   "kind": "glow",
+   "on": "sign_face"
+  }
+ ],
+ "moods": [
+  {
+   "at": {
+    "s": 0.2
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 4.2
+   },
+   "look": "spot_hero"
+  },
+  {
+   "at": {
+    "s": 9.2
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 14.2
+   },
+   "look": "flash_red"
+  },
+  {
+   "at": {
+    "s": 15.4
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 21.4
+   },
+   "look": "gold_wash"
+  },
+  {
+   "at": {
+    "s": 25.4
+   },
+   "look": "flash_red"
+  },
+  {
+   "at": {
+    "s": 27.8
+   },
+   "look": "spot_hero"
+  },
+  {
+   "at": {
+    "s": 31.4
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 34.2
+   },
+   "look": "gold_wash"
+  },
+  {
+   "at": {
+    "s": 37.8
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 43.2
+   },
+   "look": "gold_wash"
+  },
+  {
+   "at": {
+    "s": 45.8
+   },
+   "look": "flash_red"
+  },
+  {
+   "at": {
+    "s": 48.4
+   },
+   "look": "flash_red"
+  },
+  {
+   "at": {
+    "s": 50.8
+   },
+   "look": "spot_hero"
+  },
+  {
+   "at": {
+    "s": 53.4
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 55.6
+   },
+   "look": "gold_wash"
+  },
+  {
+   "at": {
+    "s": 58.6
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 63.2
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 65.0
+   },
+   "look": "warm_glow"
+  },
+  {
+   "at": {
+    "s": 69.0
+   },
+   "look": "spot_hero"
+  },
+  {
+   "at": {
+    "s": 71.8
+   },
+   "look": "flash_red"
+  },
+  {
+   "at": {
+    "s": 75.2
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 78.6
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 81.2
+   },
+   "look": "flash_red"
+  },
+  {
+   "at": {
+    "s": 86.4
+   },
+   "look": "spot_hero"
+  },
+  {
+   "at": {
+    "s": 92.4
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 96.8
+   },
+   "look": "gold_wash"
+  },
+  {
+   "at": {
+    "s": 99.4
+   },
+   "look": "cool_blue"
+  },
+  {
+   "at": {
+    "s": 104.8
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 110.6
+   },
+   "look": "spot_hero"
+  },
+  {
+   "at": {
+    "s": 112.4
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 116.6
+   },
+   "look": "gold_wash"
+  },
+  {
+   "at": {
+    "s": 119.4
+   },
+   "look": "spot_hero"
+  }
+ ],
+ "sound": [
+  {
+   "at": {
+    "s": 9.0
+   },
+   "name": "door_knock"
+  },
+  {
+   "at": {
+    "s": 14.2
+   },
+   "name": "arrival_hit"
+  },
+  {
+   "at": {
+    "s": 37.8
+   },
+   "name": "khata_flip"
+  },
+  {
+   "at": {
+    "s": 55.0
+   },
+   "name": "coin_chink"
+  },
+  {
+   "at": {
+    "s": 58.6
+   },
+   "name": "paper_flutter"
+  },
+  {
+   "at": {
+    "s": 75.2
+   },
+   "name": "door_knock"
+  },
+  {
+   "at": {
+    "s": 96.8
+   },
+   "name": "coin_chink"
+  },
+  {
+   "at": {
+    "s": 119.9
+   },
+   "name": "follow_pop"
+  }
+ ]
+}

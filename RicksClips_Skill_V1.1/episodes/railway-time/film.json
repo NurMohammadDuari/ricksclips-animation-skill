@@ -1,0 +1,100 @@
+{
+ "title": "Railway Time: Why Your Watch Lies to the Sun (10 s silent test short)",
+ "fps": 30,
+ "size": [1080, 1920],
+ "end": 300,
+ "words": "voice/words.json",
+ "camera_idea": {
+  "name": "The two clocks",
+  "why": "Two clocks disagree through the whole story, so the camera keeps choosing which one to believe: it starts on the man's pocket watch, swings wide to the station clock when the trains are late, comes close when the railway forces one time on everybody, and lets the lady check her own watch on the last line.",
+  "signature": "On the last word the camera sweeps back along the same path and settles exactly on frame 0, so the film loops like a watch that was just set."
+ },
+ "cast": {
+  "master": { "puppet": "stationmaster", "height": 1.75, "heads_tall": 2.9 },
+  "lady": { "puppet": "form:lady", "height": 1.6, "heads_tall": 2.8 }
+ },
+ "places": {
+  "platform": { "set": "platform", "light": "morning", "backdrop": 5.5 }
+ },
+ "props": {
+  "clock": { "pos": [1.5, 0.6, 0], "kind": "post_clock" },
+  "train": { "pos": [0, 4.2, 0], "kind": "train" },
+  "watch": { "held_by": "master" }
+ },
+ "takes": [
+  {
+   "id": "t1",
+   "place": "platform",
+   "stations": [
+    { "at": 0, "pos": [0.8, -1.95, 0.9], "aim": [0.0, 0, 1.17], "lens": 24,
+      "subject": "master", "framing": "W", "shows": ["watch"], "hold": 0.0 },
+    { "at": ["clocks", 1], "lead": 4, "via": [[0.3, -2.2, 0.7]],
+      "pos": [0.05, -2.3, 0.6], "aim": [-0.32, 0, 1.25], "lens": 24,
+      "subject": "master", "framing": "W", "shows": ["train"], "word": "clocks", "hold": 0.4 },
+    { "at": ["late", 1], "lead": 3, "pos": [0.17, -1.24, 1.15], "aim": [0, 0, 1.39],
+      "lens": 24, "subject": "master", "framing": "M", "shows": ["watch"], "word": "late", "hold": 0.4 },
+    { "at": ["Britain", 1], "lead": 4, "pos": [-0.27, -2.55, 0.7], "aim": [0.62, 0.3, 1.4],
+      "lens": 24, "subject": "master", "framing": "W", "shows": ["clock"], "word": "Britain", "hold": 0.4 },
+    { "at": ["tell", 1], "lead": 4, "pos": [0.0, -1.25, 1.15], "aim": [-0.04, 0, 1.39],
+      "lens": 24, "subject": "master", "framing": "M", "word": "tell", "hold": 0.4, "travel": 0.8 },
+    { "at": ["lies", 1], "lead": 4, "pos": [-1.84, -2.2, 0.45], "aim": [-0.24, 0.1, 1.28],
+      "lens": 24, "subject": "lady", "framing": "W", "shows": ["clock", "lady", "watch"], "word": "lies", "hold": 0.45 },
+    { "at": ["sun", 2], "lead": 0, "pos": [0.928, -2.019, 0.886], "aim": [0.0, 0, 1.17],
+      "lens": 24, "subject": "master", "framing": "W", "shows": ["watch"], "word": ["sun", 2],
+      "travel": 1.0, "travel_roll": 2, "loop": true }
+   ],
+   "rigs": [
+    {
+     "beat": ["clocks", 1],
+     "action": "the late train is heard, not touched: no train moves in this set",
+     "subject_path": "point: the station master in front of the train face, [0, 0, 1.2]",
+     "recipe": "slow push toward the train face = the creep of the 'clocks' rest; kick 7 f on the word (amp 2.0); flash <= 2 f; the camera leaves for the man on the next beat",
+     "note": "keep the contact 0-3 f before 'clocks' and stage it above the lens, never across it"
+    }
+   ]
+  }
+ ],
+ "kicks": [ { "at": ["clocks", 1], "amp": 2.0 } ],
+ "acts": [
+  { "who": "master", "at": 0, "pos": [0, 0, 0], "view": "front", "dir": 1,
+    "pose": "hands_hips", "face": "proud", "prop": "watch", "hand": "R" },
+  { "who": "master", "at": ["clocks", 1], "face": "terrified", "pose": "flinch" },
+  { "who": "master", "at": ["late", 1], "face": "deadInside", "pose": "stand" },
+  { "who": "master", "at": ["tell", 1], "view": "front", "pose": "point_out",
+    "face": "standard", "say": [24, 27] },
+  { "who": "master", "at": ["watch", 1], "face": "evil", "pose": "hold_watch" },
+  { "who": "lady", "at": 0, "pos": [-2.0, 0.0, 0], "view": "34", "dir": 1,
+    "pose": "stand", "face": "confused" },
+  { "who": "lady", "at": ["late", 1], "face": "judging", "pose": "hand_mouth" },
+  { "who": "lady", "at": ["time", 1], "face": "starstruck", "pose": "show_wrist" },
+  { "who": "lady", "at": ["lies", 1], "pos": [-1.12, -0.5, 0], "face": "deadInside", "pose": "stand" }
+ ],
+ "sentences": [
+  { "text": "In 1840, every town kept its own sun.",
+    "words": [0, 7], "subject": "master",
+    "nouns": [ { "word": "sun", "show": "watch" } ] },
+  { "text": "Trains ran on two clocks, and still ran late.",
+    "words": [8, 16], "subject": "master", "show": ["train"],
+    "nouns": [ { "word": "clocks", "show": "train" } ] },
+  { "text": "So one railway forced all of Britain, to tell one time.",
+    "words": [17, 27], "subject": "master",
+    "nouns": [ { "word": "one", "n": 2, "show": "clock" } ] },
+  { "text": "And that is why your watch lies to the sun.",
+    "words": [28, 37], "subject": "lady",
+    "nouns": [ { "word": "watch", "show": "watch" }, { "word": "sun", "n": 2, "show": "clock" } ] }
+ ],
+ "fx": [
+  { "at": ["clocks", 1], "kind": "dust_hit", "on": "train" },
+  { "at": ["one", 2], "kind": "glow", "on": "clock" }
+ ],
+ "moods": [
+  { "at": ["clocks", 1], "look": "flash_red" },
+  { "at": ["tell", 1], "look": "warm_up" },
+  { "at": ["lies", 1], "look": "spot_hero" }
+ ],
+ "sound": [
+  { "at": ["clocks", 1], "name": "train_crash_far" },
+  { "at": ["one", 2], "name": "bell_big" },
+  { "at": ["sun", 2], "name": "tick_loop" }
+ ]
+}

@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# python
+__pycache__/
+*.pyc
+
+# render temp / caches (regenerable)
+out/.puppet_cache/
+film_frames_*/
+*.blend1
+
+# session dumps / private notes
+ricksclips-full-analysis.json
+
+# OS
+.DS_Store

@@ -1,0 +1,17 @@
+[
+ {
+  "t": 2.867,
+  "name": "train_crash_far",
+  "gain": 0
+ },
+ {
+  "t": 6.167,
+  "name": "bell_big",
+  "gain": 0
+ },
+ {
+  "t": 8.633,
+  "name": "tick_loop",
+  "gain": 0
+ }
+]
