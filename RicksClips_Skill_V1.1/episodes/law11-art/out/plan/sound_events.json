@@ -1,0 +1,52 @@
+[
+ {
+  "t": 2.3,
+  "name": "bag_land",
+  "gain": 0
+ },
+ {
+  "t": 9.9,
+  "name": "door_knock",
+  "gain": 0
+ },
+ {
+  "t": 13.8,
+  "name": "arrival_hit",
+  "gain": 0
+ },
+ {
+  "t": 17.1,
+  "name": "door_knock",
+  "gain": 0
+ },
+ {
+  "t": 36.933,
+  "name": "khata_flip",
+  "gain": 0
+ },
+ {
+  "t": 45.5,
+  "name": "bag_land",
+  "gain": 0
+ },
+ {
+  "t": 58.6,
+  "name": "kettle_steam",
+  "gain": 0
+ },
+ {
+  "t": 76.6,
+  "name": "door_knock",
+  "gain": 0
+ },
+ {
+  "t": 97.033,
+  "name": "coin_chink",
+  "gain": 0
+ },
+ {
+  "t": 119.9,
+  "name": "follow_pop",
+  "gain": 0
+ }
+]

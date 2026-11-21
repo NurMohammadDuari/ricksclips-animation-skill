@@ -24,6 +24,8 @@
 - [sibling-stretch-folders-copied-sets](pitfall/sibling-stretch-folders-copied-sets.md) — MED: copied sets per stretch folder drift; one episode folder, merged sets with place keys
 - [camera-fix-rounds-add-hops](pitfall/camera-fix-rounds-add-hops.md) — HIGH: fix rounds' fly-ins/outs took check_film to 4 FAIL; plan camera flow once per stretch, re-run check_film each round
 - [costume-breaks-story-rule](pitfall/costume-breaks-story-rule.md) — MED: a top-hat extra digging read as the hero; costume check against the story's rules, not only the period
+- [exit-hides-until-visible-true](pitfall/exit-hides-until-visible-true.md) — CRITICAL [adopted]: exit=True persists until an act sets visible=True; plan gates still pass while the star of the scene is invisible — audit visibility spans per character
+- [cast-leaks-across-place-cuts](pitfall/cast-leaks-across-place-cuts.md) — HIGH: one world, many sets — every character without an act AT the place cut keeps its stale position (Ma's sari in the night shop, chacha 428 f into the ending); enter/exit + fresh pos land ON the cut frame, audit per-take on-screen counts
 
 ## Solutions
 - [far-ink-fades-with-haze](solution/far-ink-fades-with-haze.md) — the reference drops ink on far architecture; fadeNear/Far 90/260, farOpacity 0.7
@@ -40,3 +42,8 @@
 - solution/locked-look-package.md — the approved look is a package plus one check runner; episodes supply only props, staging and preset
 - pitfall/old-gates-punish-no-ink.md — score no-outline frames with --style 3d; weave aliasing, grain direction, f/5.6, clamped lamps
 - pitfall/materials-before-dense-scene.md — finish Stage A (full Python build in the toon look, polished until the gates pass) before any Stage B work
+- solution/short-cast-raised-on-stool.md — a short cast member behind hero furniture reads only raised on a stool: seat under the mark, act z to the seat, W aims at their eyeline, night ai/si +0.2; visibility.json passes while the story doesn't
+
+## Modules (2026-11-21)
+- module/law11-sweetshop-world.md — deep-scene pass (2026-11-22): sheet17 bazaar extras (cast:khoddeder/khoddeder2/bepari), PROPS.wage (yellow envelope) + PROPS.khata (open ledger) replace placeholder letter circles, 3 sets dressed to reference density (boxes, clocks, price boards, portrait, plants, tea row). Extras: ~3 m deep on the aim axis, face beat every <=3 s.
+- [law11-sweetshop-world](module/law11-sweetshop-world.md) — Bangla bazaar world: 5-cast sheet (sheet16, auto-registered as cast:rafi/chacha/ma/nephew/dokandar) + 3 place_kit sets (mithai_shop/mithai_home/mithai_padosi) + Bangla signTex helper + lineup.mjs renderer
