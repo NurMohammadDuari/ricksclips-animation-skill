@@ -1,12 +1,8 @@
-# Frame-by-frame QA of a rendered vertical short (every frame at 30 fps): specs, loudness, per-frame luma /
-# saturation / motion, black-white-frozen-pop detection (ignoring planned flashes and crossfades), per-shot colour
-# stats and 2 s contact sheets (60 frames each, frame numbers burned in for the reviewer only).
-# Usage: python tools/short_qa.py <video.mp4> <outdir> [shots.json]
-#   shots.json: [{"id":1,"a":0,"b":130}, ...] plus optional {"flash":[130,134], "xfade":[[1131,1137], ...]}
-# Provenance: vendored from library/reference/cartoon3d-short (upstream mromidev/claude-animated-shorts, MIT,
-# commit e3b817b) with two community fixes applied:
-#   - PR#3: keep the SPECS line for videos without an audio stream (conditional bound to the whole append arg)
-#   - PR#21 (issue #13): flush a frozen span that runs to the last frame (was silently dropped)
+# [adopted 2026-11-22 from library/reference/cartoon3d-short (claude-animated-shorts)] vendored QA tooling; see MODULE.md roadmap item 1/2.
+# Frame-by-frame QA of a rendered vertical short (every frame at 30 fps): specs, loudness, per-frame luma / saturation /
+# motion, black-white-frozen-pop detection (ignoring planned flashes and crossfades), per-shot colour stats and 2 s
+# contact sheets (60 frames each, frame numbers burned in for the reviewer only).
+# Usage: python scripts/short_qa.py <video.mp4> <outdir> [shots.json]
 #   shots.json: [{"id":1,"a":0,"b":130}, ...] plus optional {"flash":[130,134], "xfade":[[1131,1137], ...]}
 import json, os, subprocess, sys
 import numpy as np
@@ -27,10 +23,8 @@ R = []
 pr = json.loads(run("ffprobe", "-v", "error", "-show_entries", "stream=codec_type,codec_name,width,height,r_frame_rate,nb_frames,sample_rate,channels:format=duration", "-of", "json", vid).stdout)
 v = next(s for s in pr["streams"] if s["codec_type"] == "video")
 au = [s for s in pr["streams"] if s["codec_type"] == "audio"]
-# PR#3 fix (upstream): build the audio description first, then always append a complete SPECS line
-au_desc = ", ".join(f"{s['codec_name']} {s['sample_rate']} Hz {s['channels']}ch" for s in au) or "NONE"
-R.append(f"SPECS {v['width']}x{v['height']} {v['r_frame_rate']} fps, {v.get('nb_frames')} frames, "
-         f"{float(pr['format']['duration']):.3f} s; audio: {au_desc}")
+R.append(f"SPECS {v['width']}x{v['height']} {v['r_frame_rate']} fps, {v.get('nb_frames')} frames, {float(pr['format']['duration']):.3f} s; audio: "
+         + ", ".join(f"{s['codec_name']} {s['sample_rate']} Hz {s['channels']}ch" for s in au) if au else "NONE")
 if au:
     e = run("ffmpeg", "-i", vid, "-map", "0:a:0", "-af", "ebur128=peak=true", "-f", "null", "-").stderr
     tail = e[e.rfind("Summary:"):]
@@ -61,9 +55,6 @@ for i in range(len(diff)):
     else:
         if run_start is not None and i - run_start >= 12: frozen.append((run_start, i))
         run_start = None
-# PR#21 fix (upstream, issue #13): a freeze that runs to the last frame never meets a "resumed motion"
-# frame, so flush it here or a render that stalls through the end of the export is silently dropped.
-if run_start is not None and len(diff) - run_start >= 12: frozen.append((run_start, len(diff)))
 R.append(f"FRAMES {n}; black {black[:20]}; unplanned white {white[:20]}; frozen spans >=12f {frozen[:20]}")
 R.append(f"POPS (unplanned frame-diff spikes > 3x local median): {pops[:40]}")
 R.append(f"MOTION mean diff {diff.mean():.2f}; frames with diff<0.3 (held): {int((diff < 0.3).sum())} ({(diff < 0.3).mean() * 100:.0f}%)")

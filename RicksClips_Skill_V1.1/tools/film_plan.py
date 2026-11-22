@@ -244,13 +244,39 @@ def screen_speed(cam):
 
 # ------------------------------------------------------------------ performance (acting, faces, mouths, blinks)
 VIS = [("mbp", "MBP"), ("fv", "FV"), ("l", "L"), ("wq", "WQ"), ("cdgkstnxzjryh", "CDGK"), ("ai", "AI"), ("e", "E"), ("o", "O"), ("u", "U")]
+# Bengali (abugida) -> visemes: consonants carry an inherent "a" vowel, so they open the mouth; vowel signs refine it.
+# 2026-11-22: Bengali episodes (Law series) had static mouths because the Latin table never matched.
+BENGALI_VIS = {
+    # independent vowels + the inherent vowel of a bare consonant -> open
+    "অ": "AI", "আ": "AI", "এ": "E", "অ্যা": "AI", "ও": "O", "ঔ": "O", "ঐ": "E", "ই": "E", "ঈ": "E", "উ": "U", "ঊ": "U",
+    # vowel signs
+    "া": "AI", "ো": "O", "ৌ": "O", "়": "O", "ি": "E", "ী": "E", "ে": "E", "ৈ": "E", "ু": "U", "ূ": "U", "ৃ": "U", "ুঁ": "O",
+    # labials
+    "প": "MBP", "ফ": "FV", "ব": "MBP", "ভ": "MBP", "ম": "MBP", "ব়": "MBP",
+    # liquids / semivowels
+    "ল": "L", "য": "WQ", "য়": "WQ", "ৱ": "WQ", "ড়": "CDGK", "ঢ়": "CDGK",
+    # dental / sibilant / nasal / the rest of the consonants -> CDGK class (mouth mostly closed, small jaw)
+    "ক": "CDGK", "খ": "CDGK", "গ": "CDGK", "ঘ": "CDGK", "ঙ": "CDGK",
+    "চ": "CDGK", "ছ": "CDGK", "জ": "CDGK", "ঝ": "CDGK", "ঞ": "CDGK",
+    "ট": "CDGK", "ঠ": "CDGK", "ড": "CDGK", "ঢ": "CDGK", "ণ": "CDGK",
+    "ত": "CDGK", "থ": "CDGK", "দ": "CDGK", "ধ": "CDGK", "ন": "CDGK",
+    "স": "CDGK", "শ": "CDGK", "ষ": "CDGK", "হ": "CDGK", "র": "CDGK", "ল়": "CDGK",
+    "ৎ": "CDGK", "ং": "CDGK", "ঃ": "CDGK", "ঁ": "CDGK",
+    # digits (১০, ৩ ...)
+    "০": "O", "১": "CDGK", "২": "CDGK", "৩": "CDGK", "৪": "FV", "৫": "MBP", "৬": "CDGK", "৭": "E", "৮": "AI", "৯": "CDGK",
+}
 def visemes(word):
     out = []
     for ch in word.lower():
-        for letters, name in VIS:
-            if ch in letters:
-                if not out or out[-1] != name: out.append(name)
-                break
+        hit = None
+        if ch in BENGALI_VIS: hit = BENGALI_VIS[ch]
+        else:
+            for letters, name in VIS:
+                if ch in letters:
+                    if not out or out[-1] != name: out.append(name)
+                    break
+            else: hit = None
+        if hit and (not out or out[-1] != hit): out.append(hit)
     return out or ["rest"]
 
 def bake_performance(F):

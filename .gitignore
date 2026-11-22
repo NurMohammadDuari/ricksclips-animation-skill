@@ -15,3 +15,9 @@ ricksclips-full-analysis.json
 
 # OS
 .DS_Store
+# bake outputs stay local: out/plan/, out/lock/, out/render_stills/, puppet cache, tmp dirs
+RicksClips_Skill_V1.1/episodes/*/out/plan/
+RicksClips_Skill_V1.1/episodes/*/out/lock/
+RicksClips_Skill_V1.1/episodes/*/out/render_stills/
+RicksClips_Skill_V1.1/episodes/*/out/.puppet_cache/
+RicksClips_Skill_V1.1/episodes/*/out/stills/

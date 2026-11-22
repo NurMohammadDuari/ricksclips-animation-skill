@@ -1,6 +1,6 @@
+# [adopted 2026-11-22 from library/reference/cartoon3d-short (claude-animated-shorts)] vendored QA tooling; see MODULE.md roadmap item 1/2.
 # Side-by-side review sheet: row 1 = our frames, row 2 = reference frames, all scaled to the same height.
-# Usage: python tools/sbs_sheet.py out.jpg --ours a.jpg b.jpg ... --ref r1.jpg r2.jpg ... [--h 640]
-# Provenance: vendored from library/reference/cartoon3d-short (upstream mromidev/claude-animated-shorts, MIT).
+# Usage: python scripts/sbs_sheet.py out.jpg --ours a.jpg b.jpg ... --ref r1.jpg r2.jpg ... [--h 640]
 import sys
 from PIL import Image
 
