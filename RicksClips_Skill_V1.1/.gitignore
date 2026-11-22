@@ -12,3 +12,9 @@ episodes/*/out/video_full.mp4
 episodes/*/out/concat.txt
 episodes/*/out/audio_full.m4a
 episodes/*/out/*-full.mp4
+law11-fresh-c*/out/
+episodes/law11-fresh/out/stills/
+episodes/*/out/.puppet_cache/
+episodes/*/out/plan/
+episodes/*/out/film_check/
+episodes/*/film_check/

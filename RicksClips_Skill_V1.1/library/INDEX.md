@@ -48,3 +48,6 @@
 ## Reference modules (vendored)
 - [reference/cartoon3d-short](reference/cartoon3d-short/MODULE.md) — claude-animated-shorts vendored whole: Remotion+three.js bridge pipeline, 7 quantised style reports, STYLE_BIBLE.md, programmatic audio stack, short_qa.py + sbs_sheet.py tooling. Same white-capsule-head cartoon-3D family as ricksclips-dna; complementary directions (DNA = measure the channel; cartoon3d-short = render from a bible). Integration roadmap inside MODULE.md.
 - [reference/claude-animated-shorts-api](reference/claude-animated-shorts-api/) — GitHub API capture of the upstream repo's issues + comments (recurring gotcha list; SwiftShader/software-GL limits match our sandbox renders).
+
+## Episodes (this skill, built in this workspace)
+- [episodes/law11-fresh](../episodes/law11-fresh/SCRIPT.md) — Law 11, FULL 121.3 s Bangla episode driven by the user's own narration: 7 NEW characters (`cast/sheets/fresh_cast.mjs`: kaka/rafi/bhagne/ma/pashi/tulu/khoddor), 5 NEW sets (`sets/dokan.js`, `basha_door.js`, `bhitore.js`, `pasher.js`, `rasta.js`), 9 place/light combos, film plan 0 FAIL / 10 WARN of 41 gates, word timings energy-aligned from the real MP3 via `tools/audio_probe.py`, camera cuts only on the script's place/time jumps, every named noun on screen at its word. Script-direction map + dispositions in `episodes/law11-fresh/SCRIPT.md` + `CAMERA_NOTE.md`.
