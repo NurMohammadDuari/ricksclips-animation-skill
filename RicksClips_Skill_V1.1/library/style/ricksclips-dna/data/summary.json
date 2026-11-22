@@ -1,0 +1,144 @@
+{
+ "videos_analyzed": 7,
+ "total_frames": 12761,
+ "resolution": "720x1280 (9:16 vertical)",
+ "fps": 30,
+ "duration_range_s": [
+  55.33,
+  66.87
+ ],
+ "cuts_per_min": {
+  "mean": 5.5143,
+  "min": 0.9,
+  "max": 8.8
+ },
+ "median_shot_s": {
+  "mean": 12.7743,
+  "min": 2.9,
+  "max": 33.43
+ },
+ "lum_mean": {
+  "mean": 98.8129,
+  "min": 64.84,
+  "max": 119.47
+ },
+ "sat_mean": {
+  "mean": 0.392,
+  "min": 0.2681,
+  "max": 0.5078
+ },
+ "warm_mean": {
+  "mean": 7.0957,
+  "min": -22.59,
+  "max": 56.71
+ },
+ "edge_mean": {
+  "mean": 19.9914,
+  "min": 13.97,
+  "max": 23.36
+ },
+ "motion_mean": {
+  "mean": 7.2883,
+  "min": 4.734,
+  "max": 9.192
+ },
+ "caption_zone_edge_ratio": {
+  "mean": 0.5406,
+  "min": 0.29,
+  "max": 0.684
+ },
+ "hook_lum_vs_body": 1.063,
+ "palette_union": {
+  "#202020": 1.028,
+  "#404040": 0.93,
+  "#c0c0c0": 0.649,
+  "#000020": 0.645,
+  "#606060": 0.406,
+  "#202040": 0.295,
+  "#604020": 0.295,
+  "#4080c0": 0.217,
+  "#202000": 0.205,
+  "#608080": 0.2,
+  "#806020": 0.187,
+  "#606020": 0.181
+ },
+ "per_video": {
+  "How_Mine_Salting_Worked": {
+   "frames": 1833,
+   "duration_s": 61.1,
+   "cut_count": 9,
+   "cuts_per_min": 8.8,
+   "median_shot_s": 5.87,
+   "lum_mean": 100.89,
+   "sat_mean": 0.4951,
+   "warm_mean": 56.71,
+   "caption_zone_edge_ratio": 0.581
+  },
+  "How_One_Cart_Stopped_an_Entire_Army": {
+   "frames": 2006,
+   "duration_s": 66.87,
+   "cut_count": 1,
+   "cuts_per_min": 0.9,
+   "median_shot_s": 33.43,
+   "lum_mean": 112.33,
+   "sat_mean": 0.3779,
+   "warm_mean": 11.77,
+   "caption_zone_edge_ratio": 0.614
+  },
+  "The_Instinct_That_Makes_You_Crash": {
+   "frames": 1784,
+   "duration_s": 59.47,
+   "cut_count": 7,
+   "cuts_per_min": 7.1,
+   "median_shot_s": 6.82,
+   "lum_mean": 112.41,
+   "sat_mean": 0.2681,
+   "warm_mean": 9.43,
+   "caption_zone_edge_ratio": 0.684
+  },
+  "The_Prisoner_Who_Tunneled_Into_a_Bank": {
+   "frames": 1660,
+   "duration_s": 55.33,
+   "cut_count": 1,
+   "cuts_per_min": 1.1,
+   "median_shot_s": 27.67,
+   "lum_mean": 119.47,
+   "sat_mean": 0.3135,
+   "warm_mean": 6.64,
+   "caption_zone_edge_ratio": 0.617
+  },
+  "Why_Astronauts_Cant_Flush_in_Space": {
+   "frames": 1837,
+   "duration_s": 61.23,
+   "cut_count": 7,
+   "cuts_per_min": 6.9,
+   "median_shot_s": 2.9,
+   "lum_mean": 64.84,
+   "sat_mean": 0.5078,
+   "warm_mean": -17.93,
+   "caption_zone_edge_ratio": 0.611
+  },
+  "Why_Drivers_Started_Filming_The_Road": {
+   "frames": 1868,
+   "duration_s": 62.27,
+   "cut_count": 8,
+   "cuts_per_min": 7.7,
+   "median_shot_s": 5.93,
+   "lum_mean": 102.58,
+   "sat_mean": 0.4321,
+   "warm_mean": -22.59,
+   "caption_zone_edge_ratio": 0.387
+  },
+  "Why_Samurai_Feared_The_Flying_Thunder": {
+   "frames": 1773,
+   "duration_s": 59.1,
+   "cut_count": 6,
+   "cuts_per_min": 6.1,
+   "median_shot_s": 6.8,
+   "lum_mean": 79.17,
+   "sat_mean": 0.3495,
+   "warm_mean": 5.64,
+   "caption_zone_edge_ratio": 0.29
+  }
+ }
+}
