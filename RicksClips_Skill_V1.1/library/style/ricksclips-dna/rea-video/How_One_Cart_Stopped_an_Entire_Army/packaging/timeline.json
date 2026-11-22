@@ -1,0 +1,163 @@
+{
+  "text": [],
+  "stickers": [],
+  "sfx": [
+    {
+      "t": 0.929,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 2.38,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 2.682,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 11.204,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 11.691,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 12.806,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 14.385,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 14.512,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 20.782,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 40.821,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 41.378,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 42.33,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 49.969,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 51.618,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 59.629,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 59.768,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 60.349,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "cut",
+        "what": "cut",
+        "dt": 0.051,
+        "ref": null
+      }
+    },
+    {
+      "t": 60.662,
+      "type": "pop",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 65.109,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    }
+  ]
+}

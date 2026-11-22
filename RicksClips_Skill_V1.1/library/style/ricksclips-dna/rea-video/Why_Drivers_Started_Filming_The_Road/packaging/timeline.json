@@ -1,0 +1,114 @@
+{
+  "text": [],
+  "stickers": [
+    {
+      "kind": "animated_sticker",
+      "kind_zh": "animated sticker / GIF",
+      "t0": 27.8,
+      "t1": 32.1,
+      "bbox": [
+        0.2,
+        0.543,
+        0.3,
+        0.057
+      ],
+      "animated": true,
+      "loop_period_s": null,
+      "looping": false,
+      "activity": 25.2,
+      "appears_mid_shot": false,
+      "disappears_mid_shot": false,
+      "crosses_cut": true,
+      "confidence": "medium",
+      "id": "sticker_01",
+      "image": "packaging/sticker_01.jpg",
+      "persistent": {
+        "cuts": 1
+      }
+    }
+  ],
+  "sfx": [
+    {
+      "t": 20.886,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 27.759,
+      "type": "pop",
+      "description": null,
+      "source": "deterministic_anchored",
+      "confidence": "low",
+      "on": {
+        "type": "sticker_in",
+        "what": "animated sticker / GIF appears",
+        "dt": 0.041,
+        "ref": "sticker_01"
+      }
+    },
+    {
+      "t": 29.246,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 29.431,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "cut",
+        "what": "cut",
+        "dt": 0.036,
+        "ref": null
+      }
+    },
+    {
+      "t": 37.489,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 38.29,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 48.042,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 51.653,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 61.881,
+      "type": "pop",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    }
+  ]
+}

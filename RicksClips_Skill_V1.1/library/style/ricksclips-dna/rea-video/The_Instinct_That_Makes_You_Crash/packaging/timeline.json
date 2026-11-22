@@ -1,0 +1,190 @@
+{
+  "text": [],
+  "stickers": [
+    {
+      "kind": "animated_sticker",
+      "kind_zh": "animated sticker / GIF",
+      "t0": 24.5,
+      "t1": 28.6,
+      "bbox": [
+        0.15,
+        0.371,
+        0.15,
+        0.086
+      ],
+      "animated": true,
+      "loop_period_s": null,
+      "looping": false,
+      "activity": 20.4,
+      "appears_mid_shot": false,
+      "disappears_mid_shot": false,
+      "crosses_cut": true,
+      "confidence": "medium",
+      "id": "sticker_01",
+      "image": "packaging/sticker_01.jpg",
+      "persistent": {
+        "cuts": 1
+      }
+    }
+  ],
+  "sfx": [
+    {
+      "t": 0.046,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 3.065,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 11.703,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 12.295,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "cut",
+        "what": "cut",
+        "dt": -0.195,
+        "ref": null
+      }
+    },
+    {
+      "t": 15.186,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 15.975,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 16.08,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 23.359,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 23.8,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 24.497,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic_anchored",
+      "confidence": "low",
+      "on": {
+        "type": "sticker_in",
+        "what": "animated sticker / GIF appears",
+        "dt": 0.003,
+        "ref": "sticker_01"
+      }
+    },
+    {
+      "t": 27.179,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "cut",
+        "what": "cut",
+        "dt": -0.012,
+        "ref": null
+      }
+    },
+    {
+      "t": 28.665,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "cut",
+        "what": "cut",
+        "dt": 0.002,
+        "ref": null
+      }
+    },
+    {
+      "t": 28.781,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "cut",
+        "what": "cut",
+        "dt": -0.114,
+        "ref": null
+      }
+    },
+    {
+      "t": 32.427,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 34.586,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 58.305,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "cut",
+        "what": "cut",
+        "dt": 0.162,
+        "ref": null
+      }
+    }
+  ]
+}

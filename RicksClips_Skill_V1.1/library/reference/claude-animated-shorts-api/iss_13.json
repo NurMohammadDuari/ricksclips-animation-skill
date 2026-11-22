@@ -1,0 +1,82 @@
+{
+  "url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/13",
+  "repository_url": "https://api.github.com/repos/mromidev/claude-animated-shorts",
+  "labels_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/13/labels{/name}",
+  "comments_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/13/comments",
+  "events_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/13/events",
+  "html_url": "https://github.com/mromidev/claude-animated-shorts/issues/13",
+  "id": 6334357937,
+  "node_id": "I_kwDOVevxrM8AAAABeY6hsQ",
+  "number": 13,
+  "title": "short_qa misses frozen spans at the end of a video",
+  "user": {
+    "login": "lisn0",
+    "id": 33394991,
+    "node_id": "MDQ6VXNlcjMzMzk0OTkx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/33394991?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lisn0",
+    "html_url": "https://github.com/lisn0",
+    "followers_url": "https://api.github.com/users/lisn0/followers",
+    "following_url": "https://api.github.com/users/lisn0/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lisn0/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lisn0/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lisn0/subscriptions",
+    "organizations_url": "https://api.github.com/users/lisn0/orgs",
+    "repos_url": "https://api.github.com/users/lisn0/repos",
+    "events_url": "https://api.github.com/users/lisn0/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lisn0/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2026-11-11T18:03:48Z",
+  "updated_at": "2026-11-11T18:03:48Z",
+  "closed_at": null,
+  "assignee": null,
+  "author_association": "NONE",
+  "issue_field_values": [
+
+  ],
+  "type": null,
+  "active_lock_reason": null,
+  "sub_issues_summary": {
+    "total": 0,
+    "completed": 0,
+    "percent_completed": 0
+  },
+  "issue_dependencies_summary": {
+    "blocked_by": 0,
+    "total_blocked_by": 0,
+    "blocking": 0,
+    "total_blocking": 0
+  },
+  "body": "At `e3b817b6afc6cd413466d43f11ba31209e034bbf`, the [frozen-span loop](https://github.com/mromidev/claude-animated-shorts/blob/e3b817b6afc6cd413466d43f11ba31209e034bbf/templates/scripts/short_qa.py#L50-L57) only records a span when a later frame resumes motion. If the video ends during a freeze, the final span is dropped.\n\nI ran the current loop with synthetic frame differences:\n\n| Input to the loop | Detected frozen spans |\n| --- | --- |\n| `[1.0] + [0.0] * 12 + [1.0]` | `[(1, 13)]` |\n| `[1.0] + [0.0] * 12` | `[]` |\n| `[1.0] + [0.0] * 11` | `[]` |\n\nThe second case should report `[(1, 13)]`, while the third should stay below the 12-transition threshold. This matters when a render stalls and repeats its last frame through the end of the export.\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/13/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/13/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null,
+  "pinned_comment": null
+}

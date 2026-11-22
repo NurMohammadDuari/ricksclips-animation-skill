@@ -1,0 +1,48 @@
+[
+  {
+    "url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/comments/6732081497",
+    "html_url": "https://github.com/mromidev/claude-animated-shorts/pull/11#issuecomment-6732081497",
+    "issue_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/11",
+    "id": 6732081497,
+    "node_id": "IC_kwDOVevxrM8AAAABkUNpWQ",
+    "user": {
+      "login": "jayykioh",
+      "id": 169920286,
+      "node_id": "U_kgDOCiDHHg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/169920286?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jayykioh",
+      "html_url": "https://github.com/jayykioh",
+      "followers_url": "https://api.github.com/users/jayykioh/followers",
+      "following_url": "https://api.github.com/users/jayykioh/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jayykioh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jayykioh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jayykioh/subscriptions",
+      "organizations_url": "https://api.github.com/users/jayykioh/orgs",
+      "repos_url": "https://api.github.com/users/jayykioh/repos",
+      "events_url": "https://api.github.com/users/jayykioh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jayykioh/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "created_at": "2026-11-09T04:14:59Z",
+    "updated_at": "2026-11-09T04:14:59Z",
+    "body": "nice",
+    "author_association": "NONE",
+    "reactions": {
+      "url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/comments/6732081497/reactions",
+      "total_count": 2,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 2,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null,
+    "minimized": null
+  }
+]

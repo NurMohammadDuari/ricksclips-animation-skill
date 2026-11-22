@@ -1,0 +1,114 @@
+{
+  "text": [],
+  "stickers": [],
+  "sfx": [
+    {
+      "t": 0.046,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 7.326,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 16.219,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 24.288,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 24.555,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 26.645,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "cut",
+        "what": "cut",
+        "dt": 0.122,
+        "ref": null
+      }
+    },
+    {
+      "t": 28.7,
+      "type": "pop",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "cut",
+        "what": "cut",
+        "dt": 0.2,
+        "ref": null
+      }
+    },
+    {
+      "t": 29.071,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "cut",
+        "what": "cut",
+        "dt": -0.171,
+        "ref": null
+      }
+    },
+    {
+      "t": 36.757,
+      "type": "whoosh",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 40.856,
+      "type": "pop",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 57.853,
+      "type": "ding",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "cut",
+        "what": "cut",
+        "dt": 0.047,
+        "ref": null
+      }
+    }
+  ]
+}

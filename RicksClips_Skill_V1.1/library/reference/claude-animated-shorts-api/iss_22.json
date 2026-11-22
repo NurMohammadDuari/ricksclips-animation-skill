@@ -1,0 +1,82 @@
+{
+  "url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/22",
+  "repository_url": "https://api.github.com/repos/mromidev/claude-animated-shorts",
+  "labels_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/22/labels{/name}",
+  "comments_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/22/comments",
+  "events_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/22/events",
+  "html_url": "https://github.com/mromidev/claude-animated-shorts/issues/22",
+  "id": 6460221651,
+  "node_id": "I_kwDOVevxrM8AAAABgQ8o0w",
+  "number": 22,
+  "title": "alpa",
+  "user": {
+    "login": "alpamys1222-lang",
+    "id": 356973982,
+    "node_id": "U_kgDOFUb9ng",
+    "avatar_url": "https://avatars.githubusercontent.com/u/356973982?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alpamys1222-lang",
+    "html_url": "https://github.com/alpamys1222-lang",
+    "followers_url": "https://api.github.com/users/alpamys1222-lang/followers",
+    "following_url": "https://api.github.com/users/alpamys1222-lang/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alpamys1222-lang/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alpamys1222-lang/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alpamys1222-lang/subscriptions",
+    "organizations_url": "https://api.github.com/users/alpamys1222-lang/orgs",
+    "repos_url": "https://api.github.com/users/alpamys1222-lang/repos",
+    "events_url": "https://api.github.com/users/alpamys1222-lang/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alpamys1222-lang/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2026-11-18T04:49:08Z",
+  "updated_at": "2026-11-18T04:49:08Z",
+  "closed_at": null,
+  "assignee": null,
+  "author_association": "NONE",
+  "issue_field_values": [
+
+  ],
+  "type": null,
+  "active_lock_reason": null,
+  "sub_issues_summary": {
+    "total": 0,
+    "completed": 0,
+    "percent_completed": 0
+  },
+  "issue_dependencies_summary": {
+    "blocked_by": 0,
+    "total_blocked_by": 0,
+    "blocking": 0,
+    "total_blocking": 0
+  },
+  "body": "1",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/22/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/22/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null,
+  "pinned_comment": null
+}

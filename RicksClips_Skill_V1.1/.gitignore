@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+node_modules/
+episodes/*/out/animatic_stills/
+episodes/*/out/animatic_stills2/
+episodes/*/out/.puppet_cache/
+episodes/_hq10*/
+.install_root/
+episodes/*/out/render_*/
+episodes/*/out/part*.mp4
+episodes/*/out/video_full.mp4
+episodes/*/out/concat.txt
+episodes/*/out/audio_full.m4a
+episodes/*/out/*-full.mp4

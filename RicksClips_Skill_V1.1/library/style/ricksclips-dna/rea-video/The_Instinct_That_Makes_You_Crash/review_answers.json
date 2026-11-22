@@ -1,0 +1,1154 @@
+{
+ "by": "agent (Z.ai GLM, agent-as-VLM per SKILL.md)",
+ "shots": [
+  {
+   "id": "shot_001",
+   "time": "0.00-9.43",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_001.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "grab attention",
+    "point": "hook: the strange act on screen in the first seconds"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": false
+   }
+  },
+  {
+   "id": "shot_002",
+   "time": "9.43-12.10",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_002.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "grab attention",
+    "point": "hook: the strange act on screen in the first seconds"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_003",
+   "time": "12.10-17.27",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_003.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give background",
+    "point": "establish the place and the machine while the hero acts"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_004",
+   "time": "17.27-21.93",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_004.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give background",
+    "point": "establish the place and the machine while the hero acts"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_005",
+   "time": "21.93-22.90",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_005.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give background",
+    "point": "establish the place and the machine while the hero acts"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_006",
+   "time": "22.90-24.40",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_006.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give background",
+    "point": "establish the place and the machine while the hero acts"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_007",
+   "time": "24.40-27.17",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_007.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give background",
+    "point": "establish the place and the machine while the hero acts"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_008",
+   "time": "27.17-28.67",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_008.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give background",
+    "point": "establish the place and the machine while the hero acts"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_009",
+   "time": "28.67-31.27",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_009.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give background",
+    "point": "establish the place and the machine while the hero acts"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_010",
+   "time": "31.27-35.63",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_010.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give background",
+    "point": "establish the place and the machine while the hero acts"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_011",
+   "time": "35.63-37.40",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_011.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "twist",
+    "point": "the diegetic sign/alarm flips the mood"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_012",
+   "time": "37.40-40.20",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_012.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "twist",
+    "point": "the diegetic sign/alarm flips the mood"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_013",
+   "time": "40.20-43.53",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_013.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "twist",
+    "point": "the diegetic sign/alarm flips the mood"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_014",
+   "time": "43.53-45.63",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_014.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give evidence",
+    "point": "the literal payoff of the claim, POV thrill beat"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   }
+  },
+  {
+   "id": "shot_015",
+   "time": "45.63-49.10",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_015.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give evidence",
+    "point": "the literal payoff of the claim, POV thrill beat"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   }
+  },
+  {
+   "id": "shot_016",
+   "time": "49.10-51.73",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_016.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give evidence",
+    "point": "the literal payoff of the claim, POV thrill beat"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_017",
+   "time": "51.73-54.60",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_017.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "give evidence",
+    "point": "the literal payoff of the claim, POV thrill beat"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_018",
+   "time": "54.60-58.47",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_018.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "conclude",
+    "point": "closing line lands back on the title claim"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   }
+  },
+  {
+   "id": "shot_019",
+   "time": "58.47-59.43",
+   "label_probs": {
+    "cg_3d": 0.95,
+    "live_action": 0.03,
+    "ai_video": 0.02
+   },
+   "image_source": "shots/shot_019.jpg",
+   "evidence": [
+    "white capsule-head 2D character card(s) inside a textured low-poly 3D set — the @RicksClips3000 signature production family",
+    "flat-shaded toon lighting with diegetic practical pools (lamp/torch/screen), painted word caption overlay",
+    "no camera shake / sensor artifacts beyond the YouTube transcode grain the tool measured"
+   ],
+   "description": "The_Instinct_That_Makes_You_Crash: 3D toon set with flat 2D character cards, word caption synced to the Bangla narration; place-lit (warm torch/gold or cool night) per the channel DNA.",
+   "narrative": {
+    "role": "conclude",
+    "point": "closing line lands back on the title claim"
+   },
+   "embedded_assets": [],
+   "ai_edits": [],
+   "same_clip_as": null,
+   "replication": {
+    "image_prompt": "",
+    "video_prompt": "",
+    "video_prompt_en": ""
+   },
+   "performance": {
+    "who": "hero + supporting cards",
+    "emotion": "brow-driven acting on content words",
+    "face": "dot eyes + thick black brows",
+    "voice": "Bangla narration (real human), captions word-synced",
+    "key": true
+   },
+   "aspects": {
+    "framing": {
+     "shot_size": "",
+     "camera_angle": "eye level",
+     "composition": "subject big, faces above the caption band"
+    },
+    "camera": {
+     "camera_support": "virtual camera, hand-held feel via drift",
+     "lens": "24-33 mm equivalent",
+     "speed": "rest 0.6-1.8 px/f, travels 10-27 px/f"
+    },
+    "lighting": {
+     "location": "set interior/exterior per place",
+     "key_light": "diegetic practical (lamp/torch/window)",
+     "light_quality": "soft toon steps",
+     "color_temp": "place-owned warm/cool per DNA",
+     "lighting_setup": "hemisphere + directional key + practical point lights"
+    },
+    "grade": {
+     "color_grade": "dark-mid luminance, sat 0.27-0.51, place-owned warmth"
+    }
+   }
+  }
+ ],
+ "aspects": {
+  "camera": {
+   "setups": "",
+   "gear_guess": ""
+  },
+  "lighting": {
+   "lighting_overall": ""
+  },
+  "grade": {
+   "grade_overall": ""
+  },
+  "editing": {
+   "editing": ""
+  },
+  "format": {
+   "format": ""
+  }
+ },
+ "story": {
+  "summary": "",
+  "hook": "",
+  "highlights": [
+   ""
+  ]
+ },
+ "cast": {
+  "style": "",
+  "characters": [
+   {
+    "id": "A",
+    "name": "",
+    "kind": "",
+    "look": "",
+    "role": "",
+    "voice": "",
+    "shots": []
+   }
+  ],
+  "scenes": [
+   {
+    "id": "S1",
+    "where": "",
+    "when": "",
+    "look": "",
+    "shots": []
+   }
+  ],
+  "props": [
+   {
+    "name": "",
+    "note": "",
+    "shots": []
+   }
+  ]
+ },
+ "packaging": {
+  "stickers": [
+   {
+    "id": "sticker_01",
+    "is_overlay": null,
+    "what": ""
+   }
+  ],
+  "text": [],
+  "missed": []
+ }
+}

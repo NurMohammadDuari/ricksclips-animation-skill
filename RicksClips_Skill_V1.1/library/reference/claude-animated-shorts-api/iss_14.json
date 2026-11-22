@@ -1,0 +1,82 @@
+{
+  "url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/14",
+  "repository_url": "https://api.github.com/repos/mromidev/claude-animated-shorts",
+  "labels_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/14/labels{/name}",
+  "comments_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/14/comments",
+  "events_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/14/events",
+  "html_url": "https://github.com/mromidev/claude-animated-shorts/issues/14",
+  "id": 6341344429,
+  "node_id": "I_kwDOVevxrM8AAAABefk8rQ",
+  "number": 14,
+  "title": "Fresh install renders blank frames with @react-three/postprocessing ≥ 3.0.5 (plus Windows-only script paths)",
+  "user": {
+    "login": "dewble",
+    "id": 39541657,
+    "node_id": "MDQ6VXNlcjM5NTQxNjU3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/39541657?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dewble",
+    "html_url": "https://github.com/dewble",
+    "followers_url": "https://api.github.com/users/dewble/followers",
+    "following_url": "https://api.github.com/users/dewble/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dewble/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dewble/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dewble/subscriptions",
+    "organizations_url": "https://api.github.com/users/dewble/orgs",
+    "repos_url": "https://api.github.com/users/dewble/repos",
+    "events_url": "https://api.github.com/users/dewble/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dewble/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2026-11-12T02:29:07Z",
+  "updated_at": "2026-11-12T02:29:07Z",
+  "closed_at": null,
+  "assignee": null,
+  "author_association": "NONE",
+  "issue_field_values": [
+
+  ],
+  "type": null,
+  "active_lock_reason": null,
+  "sub_issues_summary": {
+    "total": 0,
+    "completed": 0,
+    "percent_completed": 0
+  },
+  "issue_dependencies_summary": {
+    "blocked_by": 0,
+    "total_blocked_by": 0,
+    "blocking": 0,
+    "total_blocking": 0
+  },
+  "body": "## Summary\nOn a fresh install (macOS, Apple Silicon) `BridgeShort` renders and exits 0, but every frame is a flat `#cfe3f2`: the `AbsoluteFill` background with nothing drawn on top. No error or warning is logged.\n\n## Cause\nnpm currently resolves `@react-three/postprocessing` to 3.2.x. Since **3.0.5**, `EffectComposer` builds its composer inside `useEffect` and stores it with `setState`. Remotion's `ThreeCanvas` renders with `frameloop=\"never\"` and calls `advance()` once per frame. At that moment the composer state is still `null`, so the composer's `useFrame` returns early. Because that `useFrame` subscribes with priority 1, R3F also skips its own render, and the canvas stays transparent.\n\nIn 3.0.4 the composer is built synchronously (`useMemo`), so the first `advance()` already draws through it.\n\nHow I isolated it:\n- A minimal `ThreeCanvas` with a box renders fine.\n- `BridgeShort` with every post toggle off is still blank (the tone-mapping effect keeps the composer mounted).\n- The same world without `EffectComposer` renders.\n- With `@react-three/postprocessing@3.0.4`, the full post chain renders (ink, lens blur, bloom, grade).\n\n## Workaround\nPin `@react-three/postprocessing@3.0.4`. Its types reject `null` children, so `Bridge.tsx` needs the composer children wrapped in one fragment. Rendered stills are byte-identical with and without the fragment.\n\nA proper fix that also works with ≥ 3.0.5 would hold a `delayRender` until the composer exists and then advance once more. I haven't tried that.\n\n## Other fresh-install snags\n- `templates/scripts/bridge-stills.mjs` hardcodes `C:/Program Files/Google/Chrome/Application/chrome.exe`, and redirects only `TEMP`/`TMP`, which macOS and Linux ignore (they read `TMPDIR`).\n- `templates/scripts/bridge-stills.mjs` hardcodes the `BridgeShort` composition id, although SKILL.md step 4 has you register and rename a new composition.\n- `templates/scripts/bridge_merge.py` has `ROOT = os.path.expanduser(\"your Remotion project\")`.\n- The README doesn't list the 26 Kenney models that `world.ts` loads from `public/bridge/kenney/`. `loadKit()` skips missing ones silently, so the trees and stalls just vanish. The Fantasy Town Kit models also need `Textures/colormap.png`.\n\n## Environment\nmacOS (Apple Silicon), Node 26.0.0, remotion / @remotion/three 4.0.541, three 0.187.0, @react-three/fiber 9.8.2, postprocessing 6.39.6, Remotion's Chrome Headless Shell (`--gl=angle`).\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/14/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/mromidev/claude-animated-shorts/issues/14/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null,
+  "pinned_comment": null
+}
