@@ -24,7 +24,7 @@
    ```
    python install.py
    ```
-   It fills in the real path of this folder (`<SKILL_ROOT>`) in every text file. It installs the skill to `~/.claude/skills/ricks-clips-v1-1/` and the agents to `~/.claude/agents/`. It prints what it did. You can run it again any time. It also works after you move the folder.
+   It fills in the real path of this folder (`/home/z/my-project/ricksclips-animation-skill/RicksClips_Skill_V1.1`) in every text file. It installs the skill to `~/.claude/skills/ricks-clips-v1-1/` and the agents to `~/.claude/agents/`. It prints what it did. You can run it again any time. It also works after you move the folder.
 8. Open Claude Code in the skill folder. Paste this first prompt:
 
    > Read START_HERE.md, then make me a new Ricks Clips style short. Pitch me three true stories first.

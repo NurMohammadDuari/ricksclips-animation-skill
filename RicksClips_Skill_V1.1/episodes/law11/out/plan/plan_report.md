@@ -42,7 +42,7 @@ Camera idea: **The counter that changes hands**. The sweet-shop counter is the s
 | PASS | framing: same framing on the same subject in a row (stations) | 3 | <= 3 |  |
 | PASS | story: sentences whose subject or action is on screen, % | 100.0 | >= 90 (Rick 91) |  |
 | PASS | story: named nouns not on screen within 0.5 s of their word | 0 | 0 |  |
-| PASS | acting: pose or face changes per 10 s on screen | 13.5 | >= 4 (Rick 4.5 on one figure, range 3-7; this counts every figure on screen) |  |
+| PASS | acting: pose or face changes per 10 s on screen | 13.3 | >= 4 (Rick 4.5 on one figure, range 3-7; this counts every figure on screen) |  |
 | PASS | acting: longest fully frozen figure with a resting camera, s | 2.3 | <= 3 unless something else moves |  |
 | PASS | acting: held props without a hand | 0 | 0: every held prop is attached to a hand on every frame |  |
 | PASS | acting: effects per 10 s | 1.6 | 1-2, on the action noun or verb (Rick) |  |
