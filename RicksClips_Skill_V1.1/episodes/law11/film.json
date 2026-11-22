@@ -1501,21 +1501,21 @@
    "at": {
     "s": 2.07
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
    "at": {
     "s": 2.7
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "chacha",
    "at": {
     "s": 2.77
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
@@ -1591,21 +1591,21 @@
    "at": {
     "s": 10.93
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
    "at": {
     "s": 11.0
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "ma",
    "at": {
     "s": 11.0
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
@@ -1635,28 +1635,28 @@
    "at": {
     "s": 11.7
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "ma",
    "at": {
     "s": 11.7
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "chacha",
    "at": {
     "s": 13.6
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "chacha",
    "at": {
     "s": 14.3
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "chacha",
@@ -1706,21 +1706,21 @@
    "at": {
     "s": 16.8
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
    "at": {
     "s": 17.2
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "nephew",
    "at": {
     "s": 17.23
    },
-   "face": "cool"
+   "face": "smug"
   },
   {
    "who": "chacha",
@@ -1742,14 +1742,14 @@
    "at": {
     "s": 17.9
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "nephew",
    "at": {
     "s": 17.93
    },
-   "face": "cool"
+   "face": "smug"
   },
   {
    "who": "nephew",
@@ -1771,28 +1771,28 @@
    "at": {
     "s": 19.53
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "ma",
    "at": {
     "s": 19.7
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "nephew",
    "at": {
     "s": 20.1
    },
-   "face": "cool"
+   "face": "smug"
   },
   {
    "who": "rafi",
    "at": {
     "s": 20.5
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "chacha",
@@ -1841,28 +1841,28 @@
    "at": {
     "s": 23.23
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "nephew",
    "at": {
     "s": 23.4
    },
-   "face": "cool"
+   "face": "smug"
   },
   {
    "who": "chacha",
    "at": {
     "s": 23.93
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "nephew",
    "at": {
     "s": 24.1
    },
-   "face": "cool"
+   "face": "smug"
   },
   {
    "who": "ma",
@@ -1896,7 +1896,7 @@
    "at": {
     "s": 27.13
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
@@ -1981,35 +1981,35 @@
    "at": {
     "s": 33.33
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "nephew",
    "at": {
     "s": 33.33
    },
-   "face": "cool"
+   "face": "smug"
   },
   {
    "who": "rafi",
    "at": {
     "s": 34.0
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "nephew",
    "at": {
     "s": 34.03
    },
-   "face": "cool"
+   "face": "smug"
   },
   {
    "who": "rafi",
    "at": {
     "s": 34.03
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "nephew",
@@ -2024,7 +2024,7 @@
    "at": {
     "s": 36.33
    },
-   "face": "cool"
+   "face": "smug"
   },
   {
    "who": "nephew",
@@ -2111,7 +2111,7 @@
    "at": {
     "s": 50.13
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "ma",
@@ -2226,7 +2226,7 @@
    "at": {
     "s": 57.9
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
@@ -2262,7 +2262,7 @@
    "at": {
     "s": 61.0
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "helper",
@@ -2517,14 +2517,14 @@
    "at": {
     "s": 77.03
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
    "at": {
     "s": 77.73
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "chacha",
@@ -2565,28 +2565,28 @@
    "at": {
     "s": 83.2
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "chacha",
    "at": {
     "s": 83.23
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
    "at": {
     "s": 83.9
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "chacha",
    "at": {
     "s": 83.93
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "chacha",
@@ -2635,7 +2635,7 @@
     "s": 90.0
    },
    "pose": "hands_hips",
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "chacha",
@@ -2765,7 +2765,7 @@
     "s": 99.2
    },
    "pose": "point_out",
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "helper",
@@ -2787,7 +2787,7 @@
    "at": {
     "s": 101.33
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "neighbor",
@@ -2802,7 +2802,7 @@
     "s": 102.0
    },
    "pose": "hands_hips",
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "helper",
@@ -2816,7 +2816,7 @@
    "at": {
     "s": 103.5
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
@@ -2883,7 +2883,7 @@
    "pose": "write",
    "prop": "khata",
    "hand": "R",
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
@@ -2892,7 +2892,7 @@
    },
    "pose": "stand",
    "prop": null,
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "helper",
@@ -2939,14 +2939,14 @@
    "at": {
     "s": 118.33
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
    "at": {
     "s": 118.43
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "helper",
@@ -2960,7 +2960,7 @@
    "at": {
     "s": 119.13
    },
-   "face": "cool"
+   "face": "standard"
   },
   {
    "who": "rafi",
