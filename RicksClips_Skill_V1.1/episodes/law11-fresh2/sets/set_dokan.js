@@ -67,10 +67,10 @@ export function build(THREE, scene, film, ctx) {
   anchor('counter', [0.1, 2.0, 1.0]);
 
   // ---- ceiling fan (three flat blades, slow spin is done by the layout's lamp flicker; static here)
-  cyl('fan_rod', 'metal', .025, .5, [0.1, 2.6, 3.0], '#5a5a5f');
+  cyl('fan_rod', 'metal', .025, .5, [2.3, 2.6, 3.0], '#5a5a5f');
   for (let k = 0; k < 3; k++) {
     const b = new THREE.Mesh(new THREE.BoxGeometry(1.1, .03, .16), toon('#6a6a70'));
-    b.position.copy(B2T([0.1, 2.6, 2.62]));
+    b.position.copy(B2T([2.3, 2.6, 2.72]));
     b.rotation.y = k * Math.PI * 2 / 3; b.name = 'fan_blade'; b.userData.role = 'metal'; scene.add(b);
   }
 

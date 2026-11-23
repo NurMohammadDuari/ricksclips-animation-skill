@@ -240,12 +240,13 @@ def main():
                 stations[j]['via'] = [[round(mx, 3), round(min(p0[1], p1[1], my) - 1.3, 3), p1[2]]]
         takes.append({'id': tid, 'place': place, 'stations': stations})
 
-    def station(at, subject, framing, sx, sy, side='front', hold=0.55, travel=None, shows=(), word=None, follow=None, **kw):
+    def station(at, subject, framing, sx, sy, side='front', hold=0.55, travel=None, shows=(), word=None, follow=None, creep=None, **kw):
         s = {'at': at, **cam(subject, framing, sx, sy, side=side, **kw),
              'subject': subject, 'framing': framing, 'shows': list(shows), 'hold': hold}
         if travel is not None: s['travel'] = travel
         if word: s['word'] = word
         if follow: s['follow'] = follow
+        if creep is not None: s['creep'] = creep
         return s
 
     def idle(t, who, face=None, pose=None, look='cam'):
@@ -335,7 +336,7 @@ def main():
         station(S_(6, 'নম্বর'), 'board', 'O', -1.7, 3.1, sz=1.40, hold=0.8, word='নম্বর', shows=['board']),
         station(S_(6, 'খাতা'), 'khoddor', 'M', DOK['khoddor'][0], DOK['khoddor'][1] + 0.1, hold=1.0, word='খাতা', shows=['khoddor', 'khata_desk', 'kaka']),
                 station(S_(6, 'ফেলতেই'), 'bhagne', 'W', DOK['bhagne'][0], DOK['bhagne'][1], hold=0.7, travel=1.0, shows=['bhagne', 'kaka', 'counter']),
-                station(S_(6, 'কথা', n=2), 'kaka', 'C', DOK['kaka'][0], DOK['kaka'][1], hold=1.6, word='কথা', shows=['kaka', 'bhagne', 'rafi']),
+                station(S_(6, 'কথা', n=2), 'kaka', 'M', DOK['kaka'][0], DOK['kaka'][1], hold=1.6, word='কথা', creep=0.0006, shows=['kaka', 'bhagne', 'rafi']),
     ])
     acts += [
         {'who': 'rafi', 'at': {'s': 39.75}, 'pos': [DOK['rafi'][0] + 0.3, DOK['rafi'][1], 0], 'view': '34', 'dir': 1, 'pose': 'write', 'face': 'standard', 'prop': 'pen', 'hand': 'R', 'visible': True, 'look': 'cam'},
