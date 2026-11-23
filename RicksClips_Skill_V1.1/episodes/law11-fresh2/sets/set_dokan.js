@@ -2,7 +2,7 @@
 //   jar glass readable (opacity .45, pale glass + copper lids), brass till with a slot,
 //   supplier board DARK green with BRIGHT paper + red stripe, two warm practical bulbs,
 //   ceiling fan, khata desk. Anchors name every story noun.
-import { buildPlace } from '../../sets/place_kit.js';
+import { buildPlace } from '../../kit/sets/place_kit.js';
 
 export const layout = {
   kind: 'shop', palette: 'warm', size: [10, 7], door: 'back', goods: 'jars', seed: 7,
@@ -82,6 +82,7 @@ export function build(THREE, scene, film, ctx) {
     const warm = new THREE.PointLight('#ffd9a0', 2.4, 9.5, 1.6);
     warm.position.copy(B2T([lx, ly, 2.3])); warm.name = 'warm_pool'; scene.add(warm);
   }
+  scene.traverse(o => { o.castShadow = false; o.receiveShadow = false; });   // noshadow: animatic speed, the Blender look pass owns the real look
   anchor('door', [0.1, 3.4, 0]);
   return base;
 }

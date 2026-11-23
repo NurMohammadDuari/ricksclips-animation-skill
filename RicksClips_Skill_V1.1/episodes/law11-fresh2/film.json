@@ -13,7 +13,8 @@
   "signature": "Cuts only on the script's own place/time jumps; inside a scene one move carries the line and every noun beat rests quietly on its word."
  },
  "puppet_pkg": [
-  "cast"
+  "cast",
+  "../../templates/vector2d_characters/code"
  ],
  "tween": {
   "frames": 6,
@@ -1490,10 +1491,7 @@
    "view": "front",
    "dir": 1,
    "pose": "stand",
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -1507,10 +1505,7 @@
    "view": "front",
    "dir": -1,
    "pose": "stand",
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -1568,10 +1563,7 @@
    "who": "kaka",
    "at": 263,
    "pose": "stand",
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "bhagne"
   },
   {
@@ -1593,10 +1585,7 @@
    "view": "34",
    "dir": 1,
    "pose": "walk",
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "walk_pose": "walk",
    "visible": true,
    "look": [
@@ -1616,10 +1605,7 @@
     0
    ],
    "pose": "stand",
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": [
     0.1,
     3.3,
@@ -1663,10 +1649,7 @@
    "view": "34",
    "dir": 1,
    "pose": "walk",
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "walk_pose": "walk",
    "visible": true,
    "look": [
@@ -1688,10 +1671,7 @@
    "view": "34",
    "dir": 1,
    "pose": "walk",
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "walk_pose": "walk",
    "visible": true,
    "look": [
@@ -1711,10 +1691,7 @@
     0
    ],
    "pose": "stand",
-   "face": [
-    "elder",
-    "sweetSmile"
-   ]
+   "face": "sweetSmile"
   },
   {
    "who": "bhagne",
@@ -1727,10 +1704,7 @@
     0
    ],
    "pose": "stand",
-   "face": [
-    "female",
-    "smug"
-   ]
+   "face": "smug"
   },
   {
    "who": "rafi",
@@ -1753,10 +1727,7 @@
    "who": "kaka",
    "at": 948,
    "pose": "grip_shoulder",
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "say": [
     46,
     56
@@ -1774,10 +1745,7 @@
    "who": "bhagne",
    "at": 1056,
    "pose": "hands_hips",
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -1793,10 +1761,7 @@
    "view": "34",
    "dir": 1,
    "pose": "stand",
-   "face": [
-    "female",
-    "sassy"
-   ],
+   "face": "sassy",
    "enter": true,
    "look": "cam"
   },
@@ -1821,10 +1786,7 @@
    "who": "ma",
    "at": 1133,
    "pose": "lean_in",
-   "face": [
-    "female",
-    "judging"
-   ],
+   "face": "judging",
    "say": [
     57,
     64
@@ -1876,10 +1838,7 @@
    "view": "front",
    "dir": 1,
    "pose": "stand",
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "visible": true,
    "look": "cam"
   },
@@ -1896,10 +1855,7 @@
    "view": "front",
    "dir": -1,
    "pose": "stand",
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "visible": true,
    "look": "cam"
   },
@@ -1936,10 +1892,7 @@
    "who": "kaka",
    "at": 1516,
    "pose": "point_out",
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "say": [
     77,
     82
@@ -1956,10 +1909,7 @@
   {
    "who": "kaka",
    "at": 1553,
-   "face": [
-    "elder",
-    "nostalgic"
-   ],
+   "face": "nostalgic",
    "pose": "stand",
    "say": [
     83,
@@ -1971,10 +1921,7 @@
    "who": "bhagne",
    "at": 1553,
    "pose": "hands_hips",
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -2009,10 +1956,7 @@
    "view": "34",
    "dir": 1,
    "pose": "stand",
-   "face": [
-    "female",
-    "sassy"
-   ],
+   "face": "sassy",
    "visible": true,
    "look": "cam"
   },
@@ -2037,10 +1981,7 @@
    "who": "ma",
    "at": 1689,
    "pose": "grip_shoulder",
-   "face": [
-    "female",
-    "mascaraCry"
-   ],
+   "face": "mascaraCry",
    "say": [
     89,
     97
@@ -2067,10 +2008,7 @@
    "view": "front",
    "dir": -1,
    "pose": "stand",
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "enter": true,
    "look": "cam"
   },
@@ -2104,10 +2042,7 @@
    "view": "34",
    "dir": 1,
    "pose": "stand",
-   "face": [
-    "baby",
-    "curious"
-   ],
+   "face": "curious",
    "enter": true,
    "look": "cam"
   },
@@ -2115,10 +2050,7 @@
    "who": "pashi",
    "at": 1931,
    "pose": "hold_out",
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "prop": "packet",
    "hand": "R",
    "say": [
@@ -2144,20 +2076,14 @@
   {
    "who": "tulu",
    "at": 2078,
-   "face": [
-    "baby",
-    "curious"
-   ],
+   "face": "curious",
    "pose": "stand",
    "look": "khoddor"
   },
   {
    "who": "pashi",
    "at": 1973,
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "pose": "hands_hips",
    "look": "rafi"
   },
@@ -2187,10 +2113,7 @@
    "view": "front",
    "dir": 1,
    "pose": "stand",
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "visible": true,
    "look": "cam"
   },
@@ -2207,10 +2130,7 @@
    "who": "bhagne",
    "at": 2187,
    "pose": "hold_up",
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "prop": "khata",
    "hand": "L",
    "look": "cam"
@@ -2218,10 +2138,7 @@
   {
    "who": "khoddor",
    "at": 2187,
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "pose": "stand",
    "look": "rafi"
   },
@@ -2241,10 +2158,7 @@
     0
    ],
    "pose": "walk",
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "walk_pose": "walk",
    "look": [
     0.4,
@@ -2297,10 +2211,7 @@
    "view": "34",
    "dir": 1,
    "pose": "walk",
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "walk_pose": "walk",
    "visible": true,
    "look": [
@@ -2320,10 +2231,7 @@
     0
    ],
    "pose": "stand",
-   "face": [
-    "elder",
-    "suspicious"
-   ]
+   "face": "suspicious"
   },
   {
    "who": "kaka",
@@ -2454,10 +2362,7 @@
    "view": "34",
    "dir": -1,
    "pose": "stand",
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "visible": true,
    "look": "cam"
   },
@@ -2507,10 +2412,7 @@
    "view": "34",
    "dir": 1,
    "pose": "stand",
-   "face": [
-    "baby",
-    "curious"
-   ],
+   "face": "curious",
    "visible": true,
    "look": "cam"
   },
@@ -2562,10 +2464,7 @@
    "at": {
     "s": 1.4
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -2573,10 +2472,7 @@
    "at": {
     "s": 3.7
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -2584,10 +2480,7 @@
    "at": {
     "s": 6.0
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -2595,10 +2488,7 @@
    "at": {
     "s": 8.3
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -2606,10 +2496,7 @@
    "at": {
     "s": 10.6
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -2617,10 +2504,7 @@
    "at": {
     "s": 1.4
    },
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -2636,10 +2520,7 @@
    "at": {
     "s": 6.0
    },
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -2655,10 +2536,7 @@
    "at": {
     "s": 10.6
    },
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -2666,10 +2544,7 @@
    "at": {
     "s": 12.55
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -2677,10 +2552,7 @@
    "at": {
     "s": 14.85
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -2688,10 +2560,7 @@
    "at": {
     "s": 17.15
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -2699,10 +2568,7 @@
    "at": {
     "s": 19.45
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -2710,10 +2576,7 @@
    "at": {
     "s": 21.55
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -2721,10 +2584,7 @@
    "at": {
     "s": 23.85
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -2732,10 +2592,7 @@
    "at": {
     "s": 26.15
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -2743,10 +2600,7 @@
    "at": {
     "s": 28.45
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -2754,10 +2608,7 @@
    "at": {
     "s": 30.75
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -2765,10 +2616,7 @@
    "at": {
     "s": 33.05
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -2776,10 +2624,7 @@
    "at": {
     "s": 35.35
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -2843,10 +2688,7 @@
    "at": {
     "s": 21.55
    },
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -2862,10 +2704,7 @@
    "at": {
     "s": 26.15
    },
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -2881,10 +2720,7 @@
    "at": {
     "s": 30.75
    },
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -2900,10 +2736,7 @@
    "at": {
     "s": 35.35
    },
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -2911,10 +2744,7 @@
    "at": {
     "s": 36.75
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -2922,10 +2752,7 @@
    "at": {
     "s": 39.05
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -2949,10 +2776,7 @@
    "at": {
     "s": 36.75
    },
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -2968,10 +2792,7 @@
    "at": {
     "s": 36.75
    },
-   "face": [
-    "female",
-    "sassy"
-   ],
+   "face": "sassy",
    "look": "cam"
   },
   {
@@ -2979,10 +2800,7 @@
    "at": {
     "s": 39.05
    },
-   "face": [
-    "female",
-    "judging"
-   ],
+   "face": "judging",
    "look": "cam"
   },
   {
@@ -2990,10 +2808,7 @@
    "at": {
     "s": 41.1
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -3001,10 +2816,7 @@
    "at": {
     "s": 43.4
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -3012,10 +2824,7 @@
    "at": {
     "s": 45.7
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -3023,10 +2832,7 @@
    "at": {
     "s": 48.0
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -3034,10 +2840,7 @@
    "at": {
     "s": 50.3
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -3085,10 +2888,7 @@
    "at": {
     "s": 41.1
    },
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -3104,10 +2904,7 @@
    "at": {
     "s": 45.7
    },
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -3123,10 +2920,7 @@
    "at": {
     "s": 50.3
    },
-   "face": [
-    "female",
-    "smug"
-   ],
+   "face": "smug",
    "look": "cam"
   },
   {
@@ -3150,10 +2944,7 @@
    "at": {
     "s": 56.45
    },
-   "face": [
-    "female",
-    "sassy"
-   ],
+   "face": "sassy",
    "look": "cam"
   },
   {
@@ -3161,10 +2952,7 @@
    "at": {
     "s": 58.75
    },
-   "face": [
-    "female",
-    "judging"
-   ],
+   "face": "judging",
    "look": "cam"
   },
   {
@@ -3228,10 +3016,7 @@
    "at": {
     "s": 61.5
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -3239,10 +3024,7 @@
    "at": {
     "s": 63.8
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -3250,10 +3032,7 @@
    "at": {
     "s": 66.1
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -3261,10 +3040,7 @@
    "at": {
     "s": 68.4
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -3272,10 +3048,7 @@
    "at": {
     "s": 70.7
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -3283,10 +3056,7 @@
    "at": {
     "s": 73.0
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -3294,10 +3064,7 @@
    "at": {
     "s": 75.3
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -3305,10 +3072,7 @@
    "at": {
     "s": 61.5
    },
-   "face": [
-    "baby",
-    "curious"
-   ],
+   "face": "curious",
    "look": "cam"
   },
   {
@@ -3324,10 +3088,7 @@
    "at": {
     "s": 66.1
    },
-   "face": [
-    "baby",
-    "curious"
-   ],
+   "face": "curious",
    "look": "cam"
   },
   {
@@ -3343,10 +3104,7 @@
    "at": {
     "s": 70.7
    },
-   "face": [
-    "baby",
-    "curious"
-   ],
+   "face": "curious",
    "look": "cam"
   },
   {
@@ -3362,10 +3120,7 @@
    "at": {
     "s": 75.3
    },
-   "face": [
-    "baby",
-    "curious"
-   ],
+   "face": "curious",
    "look": "cam"
   },
   {
@@ -3373,10 +3128,7 @@
    "at": {
     "s": 78.7
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -3384,10 +3136,7 @@
    "at": {
     "s": 81.0
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -3395,10 +3144,7 @@
    "at": {
     "s": 83.3
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -3406,10 +3152,7 @@
    "at": {
     "s": 85.6
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -3417,10 +3160,7 @@
    "at": {
     "s": 87.9
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -3428,10 +3168,7 @@
    "at": {
     "s": 90.2
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -3439,10 +3176,7 @@
    "at": {
     "s": 92.5
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -3450,10 +3184,7 @@
    "at": {
     "s": 94.8
    },
-   "face": [
-    "elder",
-    "suspicious"
-   ],
+   "face": "suspicious",
    "look": "cam"
   },
   {
@@ -3461,10 +3192,7 @@
    "at": {
     "s": 97.1
    },
-   "face": [
-    "elder",
-    "sweetSmile"
-   ],
+   "face": "sweetSmile",
    "look": "cam"
   },
   {
@@ -3552,10 +3280,7 @@
    "at": {
     "s": 108.1
    },
-   "face": [
-    "baby",
-    "curious"
-   ],
+   "face": "curious",
    "look": "cam"
   },
   {
@@ -3571,10 +3296,7 @@
    "at": {
     "s": 112.7
    },
-   "face": [
-    "baby",
-    "curious"
-   ],
+   "face": "curious",
    "look": "cam"
   },
   {
@@ -3590,10 +3312,7 @@
    "at": {
     "s": 117.3
    },
-   "face": [
-    "baby",
-    "curious"
-   ],
+   "face": "curious",
    "look": "cam"
   },
   {

@@ -1,7 +1,7 @@
 // SET: pasher — the neighbouring shop where rafi works for half pay (fresh2).
 // Green roll shutter, brass tarazu on the counter, rice sacks, oil tins, partnership desk,
 // ৪-আনা board (fix: DARK board, BRIGHT paper, red stripe — the paper must never read as a lit window).
-import { buildPlace } from '../../sets/place_kit.js';
+import { buildPlace } from '../../kit/sets/place_kit.js';
 
 export const layout = {
   kind: 'shop', palette: 'earth', size: [10, 7], door: 'back', goods: 'grain', seed: 11,
@@ -67,6 +67,7 @@ export function build(THREE, scene, film, ctx) {
     warm.position.copy(B2T([lx, ly, 2.36])); warm.name = 'warm_pool'; scene.add(warm);
   }
   anchor('counter', [1.6, 2.0, 1.0]);
+  scene.traverse(o => { o.castShadow = false; o.receiveShadow = false; });   // noshadow: animatic speed, the Blender look pass owns the real look
   anchor('door', [0.1, 3.4, 0]);
   return base;
 }

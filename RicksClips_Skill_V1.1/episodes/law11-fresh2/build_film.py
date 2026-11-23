@@ -263,14 +263,14 @@ def main():
         station(S_(1, 'ভাগ্নেরে'), 'till', 'O', 1.35, 2.42, sz=1.10, hold=2.2, word='ভাগ্নেরে', shows=['till', 'rafi']),
     ])
     acts += [
-        {'who': 'kaka', 'at': 0, 'pos': DOK['kaka'] + [0], 'view': 'front', 'dir': 1, 'pose': 'stand', 'face': ['elder', 'sweetSmile'], 'look': 'cam'},
-        {'who': 'bhagne', 'at': 0, 'pos': DOK['bhagne'] + [0], 'view': 'front', 'dir': -1, 'pose': 'stand', 'face': ['female', 'smug'], 'look': 'cam'},
+        {'who': 'kaka', 'at': 0, 'pos': DOK['kaka'] + [0], 'view': 'front', 'dir': 1, 'pose': 'stand', 'face': 'sweetSmile', 'look': 'cam'},
+        {'who': 'bhagne', 'at': 0, 'pos': DOK['bhagne'] + [0], 'view': 'front', 'dir': -1, 'pose': 'stand', 'face': 'smug', 'look': 'cam'},
         {'who': 'rafi', 'at': 0, 'pos': DOK['rafi'] + [0], 'view': '34', 'dir': 1, 'pose': 'stand', 'face': 'standard', 'look': 'cam'},
         {'who': 'kaka', 'at': {'s': 0.7}, 'pose': 'point_out', 'say': [ranges[0][0], ranges[0][1]], 'look': 'cam'},
         {'who': 'bhagne', 'at': {'s': 2.9}, 'pose': 'hands_hips', 'look': 'cam'},
         {'who': 'rafi', 'at': S_(1, 'চাচা'), 'face': 'strain', 'pose': 'lean_in', 'say': [ranges[1][0], ranges[1][1]], 'look': 'cam'},
         {'who': 'rafi', 'at': S_(1, 'আমিই'), 'pose': 'point_out', 'look': 'cam'},
-        {'who': 'kaka', 'at': S_(1, 'ভাগ্নেরে'), 'pose': 'stand', 'face': ['elder', 'suspicious'], 'look': 'bhagne'},
+        {'who': 'kaka', 'at': S_(1, 'ভাগ্নেরে'), 'pose': 'stand', 'face': 'suspicious', 'look': 'bhagne'},
         {'who': 'bhagne', 'at': S_(1, 'ভাগ্নেরে'), 'face': 'delight', 'look': 'cam'},
     ]
     for si, w, lk in ((0, 'ভাগ্নে', 'cold'), (1, 'আমিই', 'spot'), (1, 'ভাগ্নেরে', 'cold')): mood(w, 1, lk, at=S_(si, w))
@@ -284,8 +284,8 @@ def main():
         station(S_(2, 'হাজির'), 'kaka', 'M', 0.1, 2.45, side='sideR', door=True, hold=1.6, word='হাজির', shows=['kaka', 'door']),
     ])
     acts += [
-        {'who': 'kaka', 'at': {'s': 11.2}, 'pos': DOR['path0'] + [0], 'view': '34', 'dir': 1, 'pose': 'walk', 'face': ['elder', 'suspicious'], 'walk_pose': 'walk', 'visible': True, 'look': [0.1, 3.3, 0]},
-        {'who': 'kaka', 'at': {'s': 14.5}, 'pos': DOR['pathmid'] + [0], 'pose': 'stand', 'face': ['elder', 'suspicious'], 'look': [0.1, 3.3, 0]},
+        {'who': 'kaka', 'at': {'s': 11.2}, 'pos': DOR['path0'] + [0], 'view': '34', 'dir': 1, 'pose': 'walk', 'face': 'suspicious', 'walk_pose': 'walk', 'visible': True, 'look': [0.1, 3.3, 0]},
+        {'who': 'kaka', 'at': {'s': 14.5}, 'pos': DOR['pathmid'] + [0], 'pose': 'stand', 'face': 'suspicious', 'look': [0.1, 3.3, 0]},
         {'who': 'kaka', 'at': S_(2, 'প্যাকেট'), 'pose': 'hold_out', 'face': 'eek', 'prop': 'packet', 'hand': 'L', 'say': [ranges[2][0], ranges[2][1]], 'look': [0.1, 3.3, 0]},
         {'who': 'kaka', 'at': S_(2, 'হাজির'), 'pose': 'flinch', 'face': 'eek', 'look': 'cam'},
     ]
@@ -302,14 +302,14 @@ def main():
         station(S_(4, 'মতো'), 'kaka', 'C', DOR['kaka_side'][0], DOR['kaka_side'][1], door=True, hold=1.5, word='মতো', shows=['kaka', 'rafi']),
     ])
     acts += [
-        {'who': 'kaka', 'at': {'s': 20.2}, 'pos': [0.55, 1.0, 0], 'view': '34', 'dir': 1, 'pose': 'walk', 'face': ['elder', 'sweetSmile'], 'walk_pose': 'walk', 'visible': True, 'look': [1.7, 2.0, 0]},
-        {'who': 'bhagne', 'at': {'s': 20.2}, 'pos': [1.1, 1.1, 0], 'view': '34', 'dir': 1, 'pose': 'walk', 'face': ['female', 'smug'], 'walk_pose': 'walk', 'visible': True, 'look': [1.7, 2.0, 0]},
-        {'who': 'kaka', 'at': {'s': 24.0}, 'pos': DOR['kaka_side'] + [0], 'pose': 'stand', 'face': ['elder', 'sweetSmile']},
-        {'who': 'bhagne', 'at': {'s': 24.0}, 'pos': [0.5, 2.3, 0], 'pose': 'stand', 'face': ['female', 'smug']},
+        {'who': 'kaka', 'at': {'s': 20.2}, 'pos': [0.55, 1.0, 0], 'view': '34', 'dir': 1, 'pose': 'walk', 'face': 'sweetSmile', 'walk_pose': 'walk', 'visible': True, 'look': [1.7, 2.0, 0]},
+        {'who': 'bhagne', 'at': {'s': 20.2}, 'pos': [1.1, 1.1, 0], 'view': '34', 'dir': 1, 'pose': 'walk', 'face': 'smug', 'walk_pose': 'walk', 'visible': True, 'look': [1.7, 2.0, 0]},
+        {'who': 'kaka', 'at': {'s': 24.0}, 'pos': DOR['kaka_side'] + [0], 'pose': 'stand', 'face': 'sweetSmile'},
+        {'who': 'bhagne', 'at': {'s': 24.0}, 'pos': [0.5, 2.3, 0], 'pose': 'stand', 'face': 'smug'},
         {'who': 'rafi', 'at': {'s': 24.0}, 'pos': [1.7, 1.9, 0], 'view': '34', 'dir': -1, 'pose': 'stand', 'face': 'standard', 'visible': True, 'look': 'cam'},
-        {'who': 'kaka', 'at': S_(4, 'শিখায়'), 'pose': 'grip_shoulder', 'face': ['elder', 'sweetSmile'], 'say': [ranges[4][0], ranges[4][1]], 'look': 'rafi'},
+        {'who': 'kaka', 'at': S_(4, 'শিখায়'), 'pose': 'grip_shoulder', 'face': 'sweetSmile', 'say': [ranges[4][0], ranges[4][1]], 'look': 'rafi'},
         {'who': 'rafi', 'at': S_(4, 'নিজের'), 'pose': 'shrug', 'face': 'awkward', 'look': 'cam'},
-        {'who': 'bhagne', 'at': S_(4, 'মতো'), 'pose': 'hands_hips', 'face': ['female', 'smug'], 'look': 'cam'},
+        {'who': 'bhagne', 'at': S_(4, 'মতো'), 'pose': 'hands_hips', 'face': 'smug', 'look': 'cam'},
     ]
     for w, lk in (('আগে', 'warm'), ('মতো', 'gold')): mood(w, 1, lk, at=S_(3 if w == 'আগে' else 4, w))
 
@@ -320,9 +320,9 @@ def main():
         station(S_(5, 'লোক'), 'ma', 'C', BIT['ma'][0], BIT['ma'][1], hold=1.6, word='লোক', shows=['ma']),
     ])
     acts += [
-        {'who': 'ma', 'at': {'s': 35.45}, 'pos': BIT['ma'] + [0], 'view': '34', 'dir': 1, 'pose': 'stand', 'face': ['female', 'sassy'], 'enter': True, 'look': 'cam'},
+        {'who': 'ma', 'at': {'s': 35.45}, 'pos': BIT['ma'] + [0], 'view': '34', 'dir': 1, 'pose': 'stand', 'face': 'sassy', 'enter': True, 'look': 'cam'},
         {'who': 'rafi', 'at': {'s': 35.45}, 'pos': BIT['rafi'] + [0], 'view': '34', 'dir': -1, 'pose': 'stand', 'face': 'delight', 'visible': True, 'look': 'cam'},
-        {'who': 'ma', 'at': S_(5, 'মালিকের'), 'pose': 'lean_in', 'face': ['female', 'judging'], 'say': [ranges[5][0], ranges[5][1]], 'look': 'rafi'},
+        {'who': 'ma', 'at': S_(5, 'মালিকের'), 'pose': 'lean_in', 'face': 'judging', 'say': [ranges[5][0], ranges[5][1]], 'look': 'rafi'},
         {'who': 'ma', 'at': S_(5, 'লোক'), 'pose': 'finger_up', 'look': 'rafi'},
         {'who': 'rafi', 'at': S_(5, 'বাবা'), 'pose': 'hand_mouth', 'face': 'delight', 'look': 'cam'},
     ]
@@ -339,12 +339,12 @@ def main():
     ])
     acts += [
         {'who': 'rafi', 'at': {'s': 39.75}, 'pos': [DOK['rafi'][0] + 0.3, DOK['rafi'][1], 0], 'view': '34', 'dir': 1, 'pose': 'write', 'face': 'standard', 'prop': 'pen', 'hand': 'R', 'visible': True, 'look': 'cam'},
-        {'who': 'kaka', 'at': {'s': 39.75}, 'pos': DOK['kaka'] + [0], 'view': 'front', 'dir': 1, 'pose': 'stand', 'face': ['elder', 'sweetSmile'], 'visible': True, 'look': 'cam'},
-        {'who': 'bhagne', 'at': {'s': 39.75}, 'pos': DOK['bhagne'] + [0], 'view': 'front', 'dir': -1, 'pose': 'stand', 'face': ['female', 'smug'], 'visible': True, 'look': 'cam'},
+        {'who': 'kaka', 'at': {'s': 39.75}, 'pos': DOK['kaka'] + [0], 'view': 'front', 'dir': 1, 'pose': 'stand', 'face': 'sweetSmile', 'visible': True, 'look': 'cam'},
+        {'who': 'bhagne', 'at': {'s': 39.75}, 'pos': DOK['bhagne'] + [0], 'view': 'front', 'dir': -1, 'pose': 'stand', 'face': 'smug', 'visible': True, 'look': 'cam'},
         {'who': 'khoddor', 'at': S_(6, 'খাতা'), 'pos': DOK['khoddor'] + [0], 'view': '34', 'dir': -1, 'pose': 'stand', 'face': 'proud', 'enter': True, 'look': 'cam'},
         {'who': 'khoddor', 'at': S_(6, 'খদ্দের'), 'pose': 'hands_hips', 'face': 'proud', 'look': 'cam'},
         {'who': 'bhagne', 'at': S_(6, 'ফেলতেই'), 'face': 'delight', 'pose': 'stand', 'look': 'cam'},
-                {'who': 'kaka', 'at': S_(6, 'কথা', n=2), 'pose': 'point_out', 'face': ['elder', 'sweetSmile'], 'say': [ranges[6][0] + 12, ranges[6][0] + 17], 'look': 'cam'},
+                {'who': 'kaka', 'at': S_(6, 'কথা', n=2), 'pose': 'point_out', 'face': 'sweetSmile', 'say': [ranges[6][0] + 12, ranges[6][0] + 17], 'look': 'cam'},
         {'who': 'rafi', 'at': S_(6, 'কথা', n=2), 'face': 'awkward', 'pose': 'stand', 'look': 'kaka'},
     ]
     for w, lk in (('নম্বর', 'gold'), ('খদ্দের', 'warm'), ('ফেলতেই', 'gold'), ('কথা', 'spot')): mood(w, 1, lk, at=S_(6, w, n=2 if w == 'কথা' else 1))
@@ -358,8 +358,8 @@ def main():
         station(S_(6, 'ফিরলো'), 'rafi', 'W', -1.5, 1.4, side='sideR', hold=1.6, word='ফিরলো', shows=['rafi', 'door']),
     ])
     acts += [
-        {'who': 'kaka', 'at': S_(6, 'বছর'), 'face': ['elder', 'nostalgic'], 'pose': 'stand', 'say': [ranges[6][0] + 18, ranges[6][0] + 26], 'look': 'cam'},
-        {'who': 'bhagne', 'at': S_(6, 'বছর'), 'pose': 'hands_hips', 'face': ['female', 'smug'], 'look': 'cam'},
+        {'who': 'kaka', 'at': S_(6, 'বছর'), 'face': 'nostalgic', 'pose': 'stand', 'say': [ranges[6][0] + 18, ranges[6][0] + 26], 'look': 'cam'},
+        {'who': 'bhagne', 'at': S_(6, 'বছর'), 'pose': 'hands_hips', 'face': 'smug', 'look': 'cam'},
         {'who': 'rafi', 'at': S_(6, 'ফিরলো'), 'pos': [-1.5, 1.4, 0], 'view': 'side', 'dir': 1, 'pose': 'walk', 'face': 'soul', 'walk_pose': 'walk', 'look': [-1.5, 3.4, 0]},
     ]
     for w, lk in (('বছর', 'cold'), ('ফিরলো', 'dark')): mood(w, 1, lk, at=S_(6, w))
@@ -373,9 +373,9 @@ def main():
         station(S_(7, 'কাড়লো'), 'rafi', 'C', BIT['rafi'][0], BIT['rafi'][1], side='sideR', hold=1.7, word='কাড়লো', shows=['rafi', 'ma']),
     ])
     acts += [
-        {'who': 'ma', 'at': {'s': 55.1}, 'pos': BIT['ma'] + [0], 'view': '34', 'dir': 1, 'pose': 'stand', 'face': ['female', 'sassy'], 'visible': True, 'look': 'cam'},
+        {'who': 'ma', 'at': {'s': 55.1}, 'pos': BIT['ma'] + [0], 'view': '34', 'dir': 1, 'pose': 'stand', 'face': 'sassy', 'visible': True, 'look': 'cam'},
         {'who': 'rafi', 'at': {'s': 55.1}, 'pos': BIT['rafi'] + [0], 'view': '34', 'dir': -1, 'pose': 'stand', 'face': 'soul', 'visible': True, 'look': 'cam'},
-        {'who': 'ma', 'at': S_(7, 'ভাত'), 'pose': 'grip_shoulder', 'face': ['female', 'mascaraCry'], 'say': [ranges[7][0], ranges[7][1]], 'look': 'rafi'},
+        {'who': 'ma', 'at': S_(7, 'ভাত'), 'pose': 'grip_shoulder', 'face': 'mascaraCry', 'say': [ranges[7][0], ranges[7][1]], 'look': 'rafi'},
         {'who': 'rafi', 'at': S_(7, 'কাড়লো'), 'pose': 'stand', 'face': 'wail', 'look': 'cam'},
     ]
     for w, lk in (('ভাত', 'warm'), ('কাড়লো', 'dark')): mood(w, 1, lk, at=S_(7, w))
@@ -391,21 +391,21 @@ def main():
                 station(S_(8, 'রাফিকে'), 'bhagne', 'W', PAS['bhagne'][0], PAS['bhagne'][1], hold=4.6, word='রাফিকে', shows=['bhagne', 'khoddor', 'rafi', 'desk']),
     ])
     acts += [
-        {'who': 'pashi', 'at': {'s': 60.15}, 'pos': PAS['pashi'] + [0], 'view': 'front', 'dir': -1, 'pose': 'stand', 'face': ['elder', 'suspicious'], 'enter': True, 'look': 'cam'},
+        {'who': 'pashi', 'at': {'s': 60.15}, 'pos': PAS['pashi'] + [0], 'view': 'front', 'dir': -1, 'pose': 'stand', 'face': 'suspicious', 'enter': True, 'look': 'cam'},
         {'who': 'rafi', 'at': {'s': 60.15}, 'pos': PAS['rafi'] + [0], 'view': '34', 'dir': -1, 'pose': 'stand', 'face': 'standard', 'visible': True, 'look': 'cam'},
-        {'who': 'tulu', 'at': {'s': 60.15}, 'pos': PAS['tulu'] + [0], 'view': '34', 'dir': 1, 'pose': 'stand', 'face': ['baby', 'curious'], 'enter': True, 'look': 'cam'},
-        {'who': 'pashi', 'at': S_(8, 'বেতনে'), 'pose': 'hold_out', 'face': ['elder', 'sweetSmile'], 'prop': 'packet', 'hand': 'R', 'say': [ranges[8][0], ranges[8][0] + 6], 'look': 'cam'},
+        {'who': 'tulu', 'at': {'s': 60.15}, 'pos': PAS['tulu'] + [0], 'view': '34', 'dir': 1, 'pose': 'stand', 'face': 'curious', 'enter': True, 'look': 'cam'},
+        {'who': 'pashi', 'at': S_(8, 'বেতনে'), 'pose': 'hold_out', 'face': 'sweetSmile', 'prop': 'packet', 'hand': 'R', 'say': [ranges[8][0], ranges[8][0] + 6], 'look': 'cam'},
         {'who': 'rafi', 'at': S_(8, 'শিখালো'), 'pose': 'grip_shoulder', 'face': 'standard', 'look': 'tulu'},
         {'who': 'tulu', 'at': S_(8, 'শিখালো'), 'pose': 'stand', 'face': 'delight', 'look': 'rafi'},
-        {'who': 'tulu', 'at': st_at('হাতে', 2), 'face': 'curious', 'pose': 'stand', 'look': 'khoddor'} if False else {'who': 'tulu', 'at': S_(8, 'হাতে'), 'face': ['baby', 'curious'], 'pose': 'stand', 'look': 'khoddor'},
-        {'who': 'pashi', 'at': S_(8, 'শিখালো'), 'face': ['elder', 'suspicious'], 'pose': 'hands_hips', 'look': 'rafi'},
+        {'who': 'tulu', 'at': st_at('হাতে', 2), 'face': 'curious', 'pose': 'stand', 'look': 'khoddor'} if False else {'who': 'tulu', 'at': S_(8, 'হাতে'), 'face': 'curious', 'pose': 'stand', 'look': 'khoddor'},
+        {'who': 'pashi', 'at': S_(8, 'শিখালো'), 'face': 'suspicious', 'pose': 'hands_hips', 'look': 'rafi'},
         {'who': 'khoddor', 'at': S_(8, 'হাতে'), 'pos': PAS['khoddor'] + [0], 'view': '34', 'dir': -1, 'pose': 'stand', 'face': 'proud', 'visible': True, 'look': 'cam'},
-        {'who': 'bhagne', 'at': S_(8, 'হাতে'), 'pos': PAS['bhagne'] + [0], 'view': 'front', 'dir': 1, 'pose': 'stand', 'face': ['female', 'smug'], 'visible': True, 'look': 'cam'},
+        {'who': 'bhagne', 'at': S_(8, 'হাতে'), 'pos': PAS['bhagne'] + [0], 'view': 'front', 'dir': 1, 'pose': 'stand', 'face': 'smug', 'visible': True, 'look': 'cam'},
         {'who': 'khoddor', 'at': S_(8, 'খাতা'), 'pose': 'hold_out', 'face': 'proud', 'prop': 'khata', 'hand': 'R', 'look': 'bhagne'},
-        {'who': 'bhagne', 'at': S_(8, 'রাফিকে'), 'pose': 'hold_up', 'face': ['female', 'smug'], 'prop': 'khata', 'hand': 'L', 'look': 'cam'},
-        {'who': 'khoddor', 'at': S_(8, 'রাফিকে'), 'face': ['elder', 'suspicious'], 'pose': 'stand', 'look': 'rafi'},
+        {'who': 'bhagne', 'at': S_(8, 'রাফিকে'), 'pose': 'hold_up', 'face': 'smug', 'prop': 'khata', 'hand': 'L', 'look': 'cam'},
+        {'who': 'khoddor', 'at': S_(8, 'রাফিকে'), 'face': 'suspicious', 'pose': 'stand', 'look': 'rafi'},
         {'who': 'bhagne', 'at': S_(8, 'চোর'), 'face': 'rage', 'pose': 'point_out', 'look': 'rafi'},
-        {'who': 'khoddor', 'at': S_(8, 'মাল'), 'pos': PAS['khoddor_pay'] + [0], 'pose': 'walk', 'face': ['elder', 'suspicious'], 'walk_pose': 'walk', 'look': [0.4, 1.5, 0]},
+        {'who': 'khoddor', 'at': S_(8, 'মাল'), 'pos': PAS['khoddor_pay'] + [0], 'pose': 'walk', 'face': 'suspicious', 'walk_pose': 'walk', 'look': [0.4, 1.5, 0]},
         {'who': 'khoddor', 'at': S_(8, 'কাছে'), 'pose': 'hold_out', 'face': 'proud', 'prop': 'packet', 'hand': 'R', 'look': 'rafi'},
         {'who': 'rafi', 'at': S_(8, 'কাছে'), 'pose': 'hold_out', 'face': 'standard', 'prop': 'packet', 'hand': 'L', 'look': 'khoddor'},
         {'who': 'pashi', 'at': S_(8, 'কাছে'), 'face': 'delight', 'pose': 'stand', 'look': 'khoddor'},
@@ -425,8 +425,8 @@ def main():
         station(S_(11, 'যায়'), 'rafi', 'C', DOR['rafi_door'][0], DOR['rafi_door'][1], side='sideL', door=True, hold=2.2, word='যায়', shows=['rafi', 'door']),
     ])
     acts += [
-        {'who': 'kaka', 'at': {'s': 77.4}, 'pos': [0.1, 1.0, 0], 'view': '34', 'dir': 1, 'pose': 'walk', 'face': ['elder', 'suspicious'], 'walk_pose': 'walk', 'visible': True, 'look': [0.1, 3.3, 0]},
-        {'who': 'kaka', 'at': {'s': 80.5}, 'pos': DOR['pathmid'] + [0], 'pose': 'stand', 'face': ['elder', 'suspicious']},
+        {'who': 'kaka', 'at': {'s': 77.4}, 'pos': [0.1, 1.0, 0], 'view': '34', 'dir': 1, 'pose': 'walk', 'face': 'suspicious', 'walk_pose': 'walk', 'visible': True, 'look': [0.1, 3.3, 0]},
+        {'who': 'kaka', 'at': {'s': 80.5}, 'pos': DOR['pathmid'] + [0], 'pose': 'stand', 'face': 'suspicious'},
         {'who': 'kaka', 'at': S_(9, 'প্যাকেট'), 'pose': 'hold_out', 'face': 'eek', 'prop': 'packet', 'hand': 'L', 'say': [ranges[9][0], ranges[9][1]], 'look': [0.1, 3.3, 0]},
         {'who': 'kaka', 'at': S_(10, 'আসো'), 'pose': 'grip_two', 'face': 'wail', 'say': [ranges[10][0], ranges[10][1]], 'look': 'cam'},
         {'who': 'rafi', 'at': S_(10, 'রাফি'), 'pos': DOR['rafi_door'] + [0], 'view': '34', 'dir': -1, 'pose': 'stand', 'face': 'standard', 'visible': True, 'look': 'cam'},
@@ -447,7 +447,7 @@ def main():
         {'who': 'rafi', 'at': {'s': 98.35}, 'pos': [-2.6, 3.2, 0], 'view': 'side', 'dir': 1, 'pose': 'walk', 'face': 'standard', 'walk_pose': 'walk', 'visible': True, 'look': [1.5, 5.5, 0]},
         {'who': 'rafi', 'at': {'s': 102.0}, 'pos': [1.0, 5.0, 0], 'pose': 'stand', 'face': 'standard'},
         {'who': 'khoddor', 'at': S_(12, 'মালিক'), 'pos': [2.0, 5.3, 0], 'view': '34', 'dir': -1, 'pose': 'stand', 'face': 'proud', 'visible': True, 'look': 'cam'},
-        {'who': 'pashi', 'at': S_(12, 'মালিক'), 'pos': [2.9, 5.2, 0], 'view': '34', 'dir': -1, 'pose': 'stand', 'face': ['elder', 'sweetSmile'], 'visible': True, 'look': 'cam'},
+        {'who': 'pashi', 'at': S_(12, 'মালিক'), 'pos': [2.9, 5.2, 0], 'view': '34', 'dir': -1, 'pose': 'stand', 'face': 'sweetSmile', 'visible': True, 'look': 'cam'},
         {'who': 'khoddor', 'at': S_(12, 'মালিক'), 'pose': 'grip_two', 'face': 'delight', 'prop': 'khata', 'hand': 'R', 'look': 'rafi'},
         {'who': 'rafi', 'at': S_(12, 'মালিক'), 'pose': 'grip_two', 'face': 'delight', 'look': 'khoddor'},
     ]
@@ -466,7 +466,7 @@ def main():
     ])
     acts += [
         {'who': 'rafi', 'at': {'s': 106.8}, 'pos': PAS['rafi'] + [0], 'view': '34', 'dir': -1, 'pose': 'stand', 'face': 'standard', 'visible': True, 'look': 'cam'},
-        {'who': 'tulu', 'at': {'s': 106.8}, 'pos': PAS['tulu'] + [0], 'view': '34', 'dir': 1, 'pose': 'stand', 'face': ['baby', 'curious'], 'visible': True, 'look': 'cam'},
+        {'who': 'tulu', 'at': {'s': 106.8}, 'pos': PAS['tulu'] + [0], 'view': '34', 'dir': 1, 'pose': 'stand', 'face': 'curious', 'visible': True, 'look': 'cam'},
         {'who': 'rafi', 'at': S_(13, 'শেখান'), 'pose': 'grip_shoulder', 'face': 'standard', 'say': [ranges[13][0], ranges[13][1]], 'look': 'tulu'},
         {'who': 'rafi', 'at': S_(14, 'চাকরিতেও'), 'pose': 'point_out', 'face': 'standard', 'say': [ranges[14][0], ranges[14][1]], 'look': 'cam'},
         {'who': 'rafi', 'at': S_(14, 'লিখুন'), 'pose': 'point_out', 'face': 'delight', 'look': 'cam'},
@@ -479,12 +479,12 @@ def main():
     # ---- ACTING IDLES: while a figure is on screen with nothing to say, its face still acts.
     # Faces alternate on the character's own pair, never during a walk, never twice in 1.8 s.
     IDLE_FACE = {
-        'kaka': (['elder', 'sweetSmile'], ['elder', 'suspicious']),
+        'kaka': ('sweetSmile', 'suspicious'),
         'rafi': ('standard', 'delight'),
-        'bhagne': (['female', 'smug'], 'delight'),
-        'ma': (['female', 'sassy'], ['female', 'judging']),
-        'pashi': (['elder', 'suspicious'], ['elder', 'sweetSmile']),
-        'tulu': (['baby', 'curious'], 'delight'),
+        'bhagne': ('smug', 'delight'),
+        'ma': ('sassy', 'judging'),
+        'pashi': ('suspicious', 'sweetSmile'),
+        'tulu': ('curious', 'delight'),
         'khoddor': ('proud', 'delight'),
     }
     spans = [('t1', 0.0, 11.15), ('t2', 11.15, 20.15), ('t3', 20.15, 35.35), ('t4', 35.35, 39.7), ('t5', 39.7, 51.2),
@@ -533,7 +533,7 @@ def main():
             'why': 'Every station camera is computed from its subject height and the framing target (whole 0.45 / medium 0.62 / close head 0.52), so head widths, feet heights and the caption band are true by construction. The courtyard keeps every eye-line at 1.32 m or higher (the porch_roof fix).',
             'signature': 'Cuts only on the script\'s own place/time jumps; inside a scene one move carries the line and every noun beat rests quietly on its word.',
         },
-        'puppet_pkg': ['cast'],
+        'puppet_pkg': ['cast', '../../templates/vector2d_characters/code'],
         'tween': {'frames': 6, 'ease': 'out', 'walk_frames': 8},
         'auto_view': True,
         'cast': {k: {'puppet': PUPPET[k], 'height': v[0], 'heads_tall': v[1], 'head_aspect': v[2],

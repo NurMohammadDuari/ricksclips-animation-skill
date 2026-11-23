@@ -63,6 +63,7 @@ export function build(THREE, scene, film, ctx) {
   for (let k = 0; k < 8; k++) box('fence_post', 'wood', .12, .12, 1.0, [-5.2 + k * 1.5, 6.4, 0], '#8a6a48', { cast: false });
   box('fence_rail', 'wood', 12.0, .1, .1, [0, 6.4, .78], '#8a6a48', { cast: false });
 
+  scene.traverse(o => { o.castShadow = false; o.receiveShadow = false; });   // noshadow: animatic speed, the Blender look pass owns the real look
   anchor('door', [0.1, 3.3, 0]);
   anchor('step', [0.1, 2.5, .18]);
   anchor('path', [0.1, 1.2, 0]);

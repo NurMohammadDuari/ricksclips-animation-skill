@@ -55,5 +55,6 @@ export function build(THREE, scene, film, ctx) {
 
   anchor('street', [0.1, 2.8, 0]);
   anchor('shopdoor', [1.5, 5.8, 0]);
+  scene.traverse(o => { o.castShadow = false; o.receiveShadow = false; });   // noshadow
   return { anchors: ctx._anchors, update: () => {} };
 }

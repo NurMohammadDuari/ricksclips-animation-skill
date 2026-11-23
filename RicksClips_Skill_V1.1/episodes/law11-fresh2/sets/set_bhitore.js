@@ -1,6 +1,6 @@
 // SET: bhitore — inside rafi's home (fresh2). Warm room: clay stove + kettle, low tea table,
 // calendar on the wall, radio shelf, cot by the window, light-shaft window (morning/golden light).
-import { buildPlace } from '../../sets/place_kit.js';
+import { buildPlace } from '../../kit/sets/place_kit.js';
 
 export const layout = {
   kind: 'room', palette: 'earth', size: [9, 7], door: 'left', seed: 4,
@@ -52,6 +52,7 @@ export function build(THREE, scene, film, ctx) {
   const warm = new THREE.PointLight('#ffd9a0', 2.2, 9.0, 1.6);
   warm.position.copy(B2T([0.1, 2.2, 2.3])); warm.name = 'warm_pool'; scene.add(warm);
 
+  scene.traverse(o => { o.castShadow = false; o.receiveShadow = false; });   // noshadow: animatic speed, the Blender look pass owns the real look
   anchor('door', [-4.3, 1.5, 0]);
   anchor('center', [0.1, 1.6, 0]);
   return base;
