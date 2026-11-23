@@ -1,0 +1,37 @@
+[
+ {
+  "t": 20.067,
+  "name": "door_knock",
+  "gain": 0
+ },
+ {
+  "t": 43.767,
+  "name": "paper_turn",
+  "gain": 0
+ },
+ {
+  "t": 53.233,
+  "name": "coin_box",
+  "gain": 0
+ },
+ {
+  "t": 64.367,
+  "name": "coin_box",
+  "gain": 0
+ },
+ {
+  "t": 73.933,
+  "name": "flash",
+  "gain": 0
+ },
+ {
+  "t": 82.2,
+  "name": "door_knock",
+  "gain": 0
+ },
+ {
+  "t": 105.967,
+  "name": "paper_turn",
+  "gain": 0
+ }
+]
