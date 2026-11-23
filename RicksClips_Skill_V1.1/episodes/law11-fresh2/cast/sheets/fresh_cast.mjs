@@ -17,11 +17,11 @@ const W = (cx, shL, shR) => Math.max(Math.abs(shR[0] - cx), Math.abs(shL[0] - cx
 // ---------------------------------------------------------------- kaka — the uncle
 const kaka = {
   name: 'kaka', label: 'কাকা', form: 'dad', coat: TEAL, face: ['elder', 'sweetSmile'],
-  hat: ({ cx, hy }) =>
+  hat: ({ cx, hy }) => [
     // white embroidered taqi cap — a shallow dome sitting HIGH on the head
     fillPts([[cx - 62, hy - 46], [cx - 52, hy - 84], [cx - 20, hy - 98], [cx + 24, hy - 96], [cx + 54, hy - 80], [cx + 62, hy - 44], [cx + 58, hy - 40], [cx - 58, hy - 40]], CREAMS, 6) +
     `<path d="M${f1(cx - 40)},${f1(hy - 74)} Q${f1(cx)},${f1(hy - 88)} ${f1(cx + 40)},${f1(hy - 74)}" fill="none" stroke="${GOLD}" stroke-width="3.5" stroke-opacity=".8"/>` +
-    circ(cx - 18, hy - 62, 3.4, GOLD, 0) + circ(cx + 16, hy - 60, 3.4, GOLD, 0) + circ(cx, hy - 80, 3.4, GOLD, 0),
+    circ(cx - 18, hy - 62, 3.4, GOLD, 0) + circ(cx + 16, hy - 60, 3.4, GOLD, 0) + circ(cx, hy - 80, 3.4, GOLD, 0)],
   faceTop: ({ cx, hy }) =>
     // silver round spectacles ON the eye line (cy = hy-16), bridge + thin temples
     `<circle cx="${f1(cx - 21)}" cy="${f1(hy - 16)}" r="26" fill="#eef3f7" fill-opacity=".26" stroke="${SILVER}" stroke-width="7"/>` +
@@ -65,10 +65,10 @@ const rafi = {
 // ---------------------------------------------------------------- bhagne — the nephew
 const bhagne = {
   name: 'bhagne', label: 'ভাগ্নে', form: 'kid', coat: CREAMS, face: ['female', 'smug'],
-  hat: ({ cx, hy }) =>
+  hat: ({ cx, hy }) => [
     // mustard cap worn BACKWARDS: dome high, brim sticking out behind
     fillPts([[cx - 56, hy - 40], [cx - 50, hy - 78], [cx - 18, hy - 94], [cx + 26, hy - 92], [cx + 52, hy - 72], [cx + 56, hy - 38], [cx - 56, hy - 38]], MUSTARD, 6) +
-    rect(cx + 50, hy - 74, 40, 14, '#b8873c', 5, 6),
+    rect(cx + 50, hy - 74, 40, 14, '#b8873c', 5, 6)],
   faceTop: ({ cx, hy }) =>
     // earbud wire down from the left ear (the kid who was handed everything)
     `<path d="M${f1(cx + 62)},${f1(hy - 4)} q6,40 -4,78" fill="none" stroke="${INK}" stroke-width="4" stroke-opacity=".85"/>` + circ(cx + 57, hy + 76, 6, '#2f2f38', 3),
@@ -103,10 +103,10 @@ const ma = {
 // ---------------------------------------------------------------- pashi — the neighbouring shopkeeper
 const pashi = {
   name: 'pashi', label: 'পাশি', form: 'dad', coat: GREYK, face: ['elder', 'suspicious'],
-  hat: ({ cx, hy }) =>
+  hat: ({ cx, hy }) => [
     // tall white Karaila topi — the silhouette signature (sits ON the head, band at the hairline)
     rect(cx - 32, hy - 124, 64, 74, CREAMS, 6, 8) + rect(cx - 36, hy - 58, 72, 15, '#e4e0d4', 5, 4) +
-    `<path d="M${f1(cx - 20)},${f1(hy - 116)} L${f1(cx - 20)},${f1(hy - 62)} M${f1(cx + 2)},${f1(hy - 118)} L${f1(cx + 2)},${f1(hy - 62)} M${f1(cx + 24)},${f1(hy - 114)} L${f1(cx + 24)},${f1(hy - 62)}" stroke="${INK}" stroke-opacity=".22" stroke-width="4" fill="none"/>`,
+    `<path d="M${f1(cx - 20)},${f1(hy - 116)} L${f1(cx - 20)},${f1(hy - 62)} M${f1(cx + 2)},${f1(hy - 118)} L${f1(cx + 2)},${f1(hy - 62)} M${f1(cx + 24)},${f1(hy - 114)} L${f1(cx + 24)},${f1(hy - 62)}" stroke="${INK}" stroke-opacity=".22" stroke-width="4" fill="none"/>`],
   faceTop: ({ cx, hy }) =>
     // thin grey moustache AT the mouth (hy+18 — fix), two soft arcs
     `<path d="M${f1(cx - 26)},${f1(hy + 18)} q12,-9 24,0 M${f1(cx + 2)},${f1(hy + 18)} q12,-9 24,0" fill="none" stroke="#9aa0a6" stroke-width="7" stroke-linecap="round"/>`,
