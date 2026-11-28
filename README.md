@@ -2,6 +2,9 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-Contributor%20Covenant%202.1-purple.svg)](CODE_OF_CONDUCT.md)
+[![Security Policy](https://img.shields.io/badge/security-policy-blue.svg)](SECURITY.md)
+[![Accessibility](https://img.shields.io/badge/accessibility-statement-teal.svg)](ACCESSIBILITY.md)
 
 A working animation studio in a folder: it turns a Bangla/English narration track into a Ricks Clips-style
 3D-cartoon vertical Short — three.js sets, flat 2D characters inside the 3D world, word-by-word captions,
@@ -26,9 +29,23 @@ RicksClips_Skill_V1.1/          the skill: rules, tools, kits, agents
     law11/                      Bangla Law 11 episode — full plan, sets, voice, storyboard, docs
     lantern/, railway-time/     small test episodes
 docs/                           architecture, runbook, episode index (start here)
+tools/render-monitor/           optional C++/GTK render progress monitors
+.github/                        issue forms, PR template, CODEOWNERS, dependabot
+CODE_OF_CONDUCT.md              Contributor Covenant 2.1
+SECURITY.md                     private reporting + threat model
+ACCESSIBILITY.md                supported environments and known barriers
+ACKNOWLEDGEMENTS.md             thanks to CB and the open-source stack
+CITATION.cff                    how to cite the pipeline
 ```
 
 ## Quick start
+
+> **Clone size:** example renders and narration are committed, so a full clone is
+> ~1 GB. If you only want the skill, use a shallow clone:
+>
+> ```bash
+> git clone --depth 1 https://github.com/NurMohammadDuari/ricksclips-animation-skill.git
+> ```
 
 ```bash
 cd RicksClips_Skill_V1.1/templates/threejs_film
@@ -123,6 +140,18 @@ head cut by edge, caption band, shot mix…), world, story (sentence subject on 
 
 Node 18+, Python 3.11+, ffmpeg, Playwright Chromium. Blender + NVIDIA GPU only for the final look pass.
 Fish Audio key only if you generate voice with the skill instead of supplying your own track.
+
+## Community
+
+| | |
+|---|---|
+| [Code of Conduct](CODE_OF_CONDUCT.md) | Contributor Covenant 2.1 |
+| [Contributing](CONTRIBUTING.md) | setup, PR rules, where help is useful |
+| [Security](SECURITY.md) | private reporting and the threat model for running episodes |
+| [Accessibility](ACCESSIBILITY.md) | supported environments, known barriers, how to report one |
+| [Acknowledgements](ACKNOWLEDGEMENTS.md) | CB, three.js, Playwright, Blender, ffmpeg |
+| [Issues](https://github.com/NurMohammadDuari/ricksclips-animation-skill/issues/new/choose) | bug, feature, episode showcase, accessibility |
+| [Cite](CITATION.cff) | BibTeX/CFF entry for the pipeline |
 
 ## Contributors
 

@@ -1,0 +1,48 @@
+name: Episode showcase
+description: Share a film you made with the pipeline
+title: "[Episode]: "
+labels: ["showcase"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We love seeing what the pipeline makes. Please only share work you own
+        or have permission to publish.
+  - type: input
+    id: link
+    attributes:
+      label: Link to the film
+      placeholder: https://youtube.com/shorts/...
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Narration language
+      options:
+        - Bangla
+        - English
+        - Other / mixed
+    validations:
+      required: true
+  - type: textarea
+    id: built
+    attributes:
+      label: What did you use?
+      description: autofilm, a hand-built episode, which sets and cast, which gates you fought.
+    validations:
+      required: true
+  - type: textarea
+    id: lessons
+    attributes:
+      label: What broke, and what did you learn?
+      description: This is how the pitfall library grows.
+    validations:
+      required: false
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Permission
+      options:
+        - label: You may feature a still and a short description in the README or docs.
+          required: false

@@ -21,3 +21,10 @@ RicksClips_Skill_V1.1/episodes/*/out/lock/
 RicksClips_Skill_V1.1/episodes/*/out/render_stills/
 RicksClips_Skill_V1.1/episodes/*/out/.puppet_cache/
 RicksClips_Skill_V1.1/episodes/*/out/stills/
+
+# compiled render monitor binaries (build from tools/render-monitor/)
+/render-monitor
+/render-monitor-gui
+
+# source narration kept local; episodes carry their own voice files
+/*.mp3

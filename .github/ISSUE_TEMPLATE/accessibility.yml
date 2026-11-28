@@ -1,0 +1,37 @@
+name: Accessibility barrier
+description: Report something that blocks people with disabilities
+title: "[Accessibility]: "
+labels: ["accessibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Accessibility reports are bugs. Thank you for helping make the pipeline
+        usable for more people.
+  - type: textarea
+    id: barrier
+    attributes:
+      label: What is the barrier?
+      description: What were you trying to do, and where did it fail?
+    validations:
+      required: true
+  - type: input
+    id: at
+    attributes:
+      label: Assistive technology and version
+      placeholder: NVDA 2026.1 on Windows 11, VoiceOver on macOS 15, Orca on Ubuntu 24.04
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: File, page or step
+      placeholder: docs/PIPELINE.md, the gate report, the storyboard HTML
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would work better?
+    validations:
+      required: false

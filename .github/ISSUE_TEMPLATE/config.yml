@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security report
+    url: https://github.com/NurMohammadDuari/ricksclips-animation-skill/security/advisories/new
+    about: Report a vulnerability privately. Do not open a public issue.
+  - name: Start here
+    url: https://github.com/NurMohammadDuari/ricksclips-animation-skill/blob/main/RicksClips_Skill_V1.1/START_HERE.md
+    about: The read order for the AI crew and for you.
+  - name: Pipeline runbook
+    url: https://github.com/NurMohammadDuari/ricksclips-animation-skill/blob/main/docs/PIPELINE.md
+    about: Audio to words to plan to gates to storyboard to animatic to final.
+  - name: Common pitfalls
+    url: https://github.com/NurMohammadDuari/ricksclips-animation-skill/tree/main/RicksClips_Skill_V1.1/library/pitfall
+    about: Check the pitfall library before reporting a bug.

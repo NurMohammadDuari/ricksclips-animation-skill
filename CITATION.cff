@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this pipeline or build a film with it, please cite it as below."
+title: "RicksClips — animated true-story Shorts pipeline"
+abstract: "A working animation studio in a folder: turns a Bangla or English narration into a 3D-cartoon vertical Short with three.js sets, 2D characters, word-level captions and 42 measured quality gates."
+authors:
+  - family-names: "Duari"
+    given-names: "Nur Mohammad"
+    alias: "NurMohammadDuari"
+    website: "https://github.com/NurMohammadDuari"
+  - name: "CB (Viral Shorts)"
+repository-code: "https://github.com/NurMohammadDuari/ricksclips-animation-skill"
+url: "https://github.com/NurMohammadDuari/ricksclips-animation-skill"
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+version: "1.1.0"
+date-released: "2026-11-23"
+keywords:
+  - animation
+  - bangla
+  - blender
+  - storyboard
+  - threejs
+  - video-pipeline
+  - youtube-shorts

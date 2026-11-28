@@ -1,0 +1,63 @@
+name: Bug report
+description: Something in the pipeline is broken, wrong or misleading
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please **do not** paste API keys, private audio or
+        personal data. A minimal reproduction is worth more than a long story.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What broke, and what did you expect instead?
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command you ran
+      placeholder: python tools/film_plan.py check episodes/law11/film.json
+    validations:
+      required: true
+  - type: input
+    id: episode
+    attributes:
+      label: Episode / film.json
+      placeholder: RicksClips_Skill_V1.1/episodes/<slug>/film.json
+    validations:
+      required: false
+  - type: textarea
+    id: gate-output
+    attributes:
+      label: Gate output or error
+      description: Paste the last ~40 lines. Remove absolute paths if they are private.
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. cd RicksClips_Skill_V1.1
+        2. python tools/film_plan.py check ...
+        3. see FAIL gate ...
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: Ubuntu 24.04, Python 3.12, Node 20, ffmpeg 7.0
+    validations:
+      required: true
+  - type: textarea
+    id: stills
+    attributes:
+      label: Stills or logs
+      description: Drag a frame, storyboard tile or `plan_report.md` excerpt here.
+    validations:
+      required: false
