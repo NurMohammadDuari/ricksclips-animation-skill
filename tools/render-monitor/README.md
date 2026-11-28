@@ -31,7 +31,7 @@ The compiled binaries are **not** committed — build them locally.
 Example, while `render.mjs` writes frames:
 
 ```bash
-./render-monitor ../RicksClips_Skill_V1.1/episodes/law11/film_frames_1080
+./render-monitor ../../RicksClips_Skill_V1.1/episodes/law11/film_frames_1080
 ```
 
 Keys in the terminal monitor: `p` pause, `q` quit.
