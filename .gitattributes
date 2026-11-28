@@ -1,0 +1,15 @@
+# Keep text normalised, but never diff binary media as text.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.mp4 binary
+*.mov binary
+*.wav binary
+*.mp3 binary
+*.blend binary
+*.glb binary
+
+# Third-party and archived code should not dominate the language stats.
+RicksClips_Skill_V1.1/templates/threejs_film/vendor/** linguist-vendored
+RicksClips_Skill_V1.1/_archive/** linguist-vendored
+RicksClips_Skill_V1.1/templates/vector2d_characters/sheets_png/** linguist-documentation

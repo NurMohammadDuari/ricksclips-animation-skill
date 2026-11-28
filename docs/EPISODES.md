@@ -30,6 +30,14 @@ The generator produced 4 levelled sets (`set_p1…p4.js`), a staged cast, a leve
 `SCRIPT.md`, `SETS.md`, `CAMERA_NOTE.md` and **0 FAIL** at the gate. Stills confirm every character
 stands on the floor and the camera is level to each head.
 
+## Experimental variants
+
+`law11-ai`, `law11-art`, `law11-auto`, `law11-fresh`, `law11-fresh2`, `law11-hq10` and
+`law11-s10` are iteration snapshots kept for comparison (different casting, set
+builds and audio paths). They are **not** part of the release path and some are
+incomplete. Start from `law11` or from `autofilm.py`; read the variants only when
+you want to see how a decision was reached.
+
 ## Adding an episode
 
 **Easiest:** `python tools/autofilm.py episodes/<name> --script story.txt` — see [`PIPELINE.md`](PIPELINE.md) §1b.
