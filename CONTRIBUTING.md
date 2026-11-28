@@ -3,6 +3,8 @@
 Thanks for helping make the pipeline better. This repo is a working animation studio: everything is
 data + code, and every change is measured by the same gates before it is judged by eye.
 
+By participating you agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
+
 ## Dev setup
 
 ```bash
@@ -51,6 +53,13 @@ or you will silently render the old plan.
 | **Docs** | clarify the runbook, add a worked example | `docs/` |
 | **Episodes** | a new film built with the pipeline | `episodes/<name>/` |
 | **Bugs** | repro + `out/plan/plan_report.md` + a still | open an issue |
+
+## Reporting
+
+- **Bugs and features:** use the [issue forms](https://github.com/NurMohammadDuari/ricksclips-animation-skill/issues/new/choose).
+- **Security:** report privately, never in a public issue — see [SECURITY.md](SECURITY.md).
+- **Accessibility:** use the Accessibility form or read [ACCESSIBILITY.md](ACCESSIBILITY.md).
+- **Licence:** contributions are shared under [CC BY 4.0](LICENSE).
 
 ## Style
 
