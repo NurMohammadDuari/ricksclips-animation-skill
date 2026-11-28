@@ -2,6 +2,7 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Release](https://img.shields.io/github/v/release/NurMohammadDuari/ricksclips-animation-skill?label=release)](https://github.com/NurMohammadDuari/ricksclips-animation-skill/releases)
 [![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-Contributor%20Covenant%202.1-purple.svg)](CODE_OF_CONDUCT.md)
 [![Security Policy](https://img.shields.io/badge/security-policy-blue.svg)](SECURITY.md)
 [![Accessibility](https://img.shields.io/badge/accessibility-statement-teal.svg)](ACCESSIBILITY.md)
@@ -12,6 +13,8 @@ a measured camera, and 42 automatic quality gates taken from 24 reference films.
 
 This repository is the V1.1 skill (rules + tools + kits) plus the episodes built with it, including the
 complete **Law 11** Bangla episode.
+
+> **New here?** Read [`START_HERE.md`](RicksClips_Skill_V1.1/START_HERE.md), then the [pipeline runbook](docs/PIPELINE.md). Current release: **[V1.1](https://github.com/NurMohammadDuari/ricksclips-animation-skill/releases)**.
 
 ## What is in here
 
@@ -152,6 +155,7 @@ Fish Audio key only if you generate voice with the skill instead of supplying yo
 | [Acknowledgements](ACKNOWLEDGEMENTS.md) | CB, three.js, Playwright, Blender, ffmpeg |
 | [Issues](https://github.com/NurMohammadDuari/ricksclips-animation-skill/issues/new/choose) | bug, feature, episode showcase, accessibility |
 | [Cite](CITATION.cff) | BibTeX/CFF entry for the pipeline |
+| [Releases](https://github.com/NurMohammadDuari/ricksclips-animation-skill/releases) | versioned snapshots and notes |
 
 ## Contributors
 
