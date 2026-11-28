@@ -11,7 +11,7 @@ node render.mjs <film.json> --export-lock     # out/lock/: what the Blender look
 node render.mjs <film.json> --serve           # watch it play in a browser
 ```
 
-Options: `--scale 0.5`, `--no-captions`, `--card-px 2`, `--puppets <dir-or-file,...>`. Needs node 18+, playwright with its Chromium (`npm i playwright` then `npx playwright install chromium`, once) and ffmpeg on the PATH. Built and tested in the cloud session; not yet run on the PC. three.js r165 is in `vendor/`.
+Options: `--scale 0.5`, `--no-captions`, `--card-px 2`, `--puppets <dir-or-file,...>`. Needs node 20+, playwright with its Chromium (`npm i playwright` then `npx playwright install chromium`, once) and ffmpeg on the PATH. Built and tested in the cloud session; not yet run on the PC. three.js r165 is in `vendor/`.
 
 - **Files.** `film.js` + `film_page.html`: the player (`window.setup(cfg)`, `window.renderFrame(f)`). `render.mjs`: the command line. `puppets.mjs`: adapter to the character package (`stateKey`, `svgFor`). `poses.mjs`: pose library (hand targets, held props drawn at the hand). `sets/<name>.js`: one module per set.
 - **Characters.** The package path is one value: `--puppets`, else env `PUPPET_PKG`, else film.json `"puppet_pkg"`, else the locked package `templates/vector2d_characters/code/` (the characters work owns it; this kit never edits it). It is copied to `out/.puppet_cache/` and never edited. Cast entry: `"puppet": "stationmaster"` (a name in cast.mjs) or `"form:<name>"` (a body form: kid, lady, elder, baby, ...), plus `"height"` in metres.

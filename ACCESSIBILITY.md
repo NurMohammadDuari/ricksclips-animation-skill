@@ -13,7 +13,7 @@ Accessibility reports are treated as bugs.
 | Operating systems | Linux (primary), macOS, Windows via WSL |
 | Shells | bash, zsh; PowerShell for the install step only |
 | Python | 3.11+ |
-| Node | 18+ |
+| Node | 20+ |
 | Browser render | Playwright Chromium |
 | Final look pass | Blender 4.x + NVIDIA GPU (optional) |
 | Render monitor | Linux terminal; GTK3 GUI on Linux |

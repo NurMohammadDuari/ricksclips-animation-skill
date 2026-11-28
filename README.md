@@ -138,7 +138,7 @@ head cut by edge, caption band, shot mix…), world, story (sentence subject on 
 
 ## Requirements
 
-Node 18+, Python 3.11+, ffmpeg, Playwright Chromium. Blender + NVIDIA GPU only for the final look pass.
+Node 20+, Python 3.11+, ffmpeg, Playwright Chromium. Blender + NVIDIA GPU only for the final look pass.
 Fish Audio key only if you generate voice with the skill instead of supplying your own track.
 
 ## Community
